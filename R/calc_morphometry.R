@@ -1,11 +1,15 @@
 source(here::here("R/packages.R"))
 
-# Read in data - below is just an example to get started.
-lakes <- st_read(here("data/lakemorpho/national_lake_morphometry.gpkg")) |>
+
+# Read in data
+flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusps") |> 
+  sfarrow::read_sf_dataset() |>
   st_transform(5072)
-lakes <- lakes[1:10,]
+
+lakes <- flooded_lands[1:100,]
 
 morph_it <- function(lake) {
+ 
   elev <- elevatr::get_elev_raster(lake, 12)
   lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
   perim <- lakeShorelineLength(lake_lm)
@@ -22,7 +26,7 @@ morph_it <- function(lake) {
 #}
 #xdf
 
-plan(multisession, workers = 4)
+plan(multisession, workers = 6)
 morpho_metrics <- future_lapply(split(lakes, 1:nrow(lakes)), morph_it, 
                                 future.seed=TRUE)
 
