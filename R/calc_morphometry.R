@@ -1,10 +1,10 @@
 source(here::here("R/packages.R"))
 
 #fs::dir_create(here("data/surge"))
-site <- get_sharepoint_site('SuRGE: Survey of Reservoir Greenhouse gas Emissions')
-surge_sp <- site$get_drive()
-surge_sp$download_file("data/spatial/2023_Flooded_Lands_Reservoir_Inventory_Final_121923.gpkg", 
-                       dest = here("data/flooded_lands_inventory.gpkg"))
+#site <- get_sharepoint_site('SuRGE: Survey of Reservoir Greenhouse gas Emissions')
+#surge_sp <- site$get_drive()
+#surge_sp$download_file("data/spatial/2023_Flooded_Lands_Reservoir_Inventory_Final_121923.gpkg", 
+#                       dest = here("data/flooded_lands_inventory.gpkg"))
 
 # Read in data - below is just an example to get started.
 lakes <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
