@@ -20,6 +20,9 @@ example_flooded <- filter(ri_flooded_lands, objectid == 1425826)
 example_nhd <- filter(ri_nhd_lakes, COMID == 6139676)
 mapview(example_flooded) + mapview(example_nhd, col.regions = "red")
 
+# One way
+# But what about legit islands?
+
 perim_holes <- example_flooded |>
   st_cast("MULTILINESTRING") |>
   st_length()
