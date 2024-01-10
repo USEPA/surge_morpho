@@ -20,6 +20,21 @@ example_flooded <- filter(ri_flooded_lands, objectid == 1425826)
 example_nhd <- filter(ri_nhd_lakes, COMID == 6139676)
 mapview(example_flooded) + mapview(example_nhd, col.regions = "red")
 
+example2_flooded <- filter(ri_flooded_lands, objectid == 1421971)
+
+#Buffer/unbuffer to remove slivers connected to legit lines
+#remove holes with a minimum size specified.
+#test on scituate with islands/
+example_flooded_b <- st_buffer(example_flooded, 2)
+example_flooded_b <- st_buffer(example_flooded_b, -2)
+example_flooded_no_hole <- st_remove_holes(example_flooded_b, max_area = 100)
+mapview(example_flooded_no_hole) + mapview(example_flooded)
+
+example2_flooded_b <- st_buffer(example2_flooded, 1)
+example2_flooded_b <- st_buffer(example2_flooded_b, -1)
+example2_flooded_no_hole <- st_remove_holes(example2_flooded_b, max_area = 100)
+mapview(example2_flooded_no_hole) + mapview(example2_flooded)
+
 # One way
 # But what about legit islands?
 

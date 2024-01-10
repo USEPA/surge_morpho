@@ -17,7 +17,11 @@ lakes <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
 lakes_sub <- st_make_valid(lakes[1000:1010,])
 
 morph_it <- function(lake) {
- 
+  # Removes slivers from lake
+  lake <- st_buffer(lake, 1)
+  lake <- st_buffer(lake, -1)
+  lake <- st_remove_holes(lake, max_area = 100)
+  
   elev <- elevatr::get_elev_raster(lake, 12)
   lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
   perim <- lakeShorelineLength(lake_lm)
@@ -28,9 +32,9 @@ morph_it <- function(lake) {
   bind_cols(comid, round(data.frame(metrics), 2))
 }
 
-plan(multisession, workers = 6)
+plan(multisession, workers = 2)
 morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
                                 future.seed=TRUE)
-
+plan(sequential)
 bind_rows(morpho_metrics)
        
