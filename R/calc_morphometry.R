@@ -17,7 +17,7 @@ flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusp
 #flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
 #  st_transform(5072)
 
-lakes_sub <- st_make_valid(flooded_lands[1:100,])
+lakes_sub <- st_make_valid(flooded_lands[sample(seq_along(flooded_lands$nid_id), 1000),])
 
 morph_it <- function(lake, p = function(...) message(...)) {
   p()
@@ -37,10 +37,10 @@ morph_it <- function(lake, p = function(...) message(...)) {
   bind_cols(comid, round(data.frame(metrics), 2))
 }
 
-handlers("progress", "beepr")
+handlers("progress")
 
 tictoc::tic()
-plan(multisession, workers = 6)
+plan(multisession, workers = 7)
 with_progress({
   p <- progressor(length(lakes_sub$nid_id))
   morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
