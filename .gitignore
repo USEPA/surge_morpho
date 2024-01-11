@@ -3,3 +3,9 @@
 .RData
 .Ruserdata
 surge_morpho.Rproj
+.httr-oauth
+data
+flood
+flooded_lands
+lakemorphometry.zip
+
