@@ -17,4 +17,5 @@ library(mapview)
 library(lubridate)
 library(future.apply)
 library(nngeo)
+library(progressr)
 

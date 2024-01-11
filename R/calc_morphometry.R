@@ -1,4 +1,8 @@
+
+remotes::install_github("jhollist/lakemorpho")
 source(here::here("R/packages.R"))
+
+
 
 #fs::dir_create(here("data/surge"))
 #site <- get_sharepoint_site('SuRGE: Survey of Reservoir Greenhouse gas Emissions')
@@ -7,16 +11,19 @@ source(here::here("R/packages.R"))
 #                       dest = here("data/flooded_lands_inventory.gpkg"))
 
 # Read in data
-flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusps") |> 
-  sfarrow::read_sf_dataset() |>
-  st_transform(5072)
+#flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusps") |> 
+#  sfarrow::read_sf_dataset() |>
+#  st_transform(5072)
 
 # Read in data - below is just an example to get started.
 lakes <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
   st_transform(5072)
-lakes_sub <- st_make_valid(lakes[1000:1010,])
 
-morph_it <- function(lake) {
+lakes_sub <- st_make_valid(lakes[1:100,])
+
+morph_it <- function(lake, p = function(...) message(...)) {
+  p()
+  
   # Removes slivers from lake
   lake <- st_buffer(lake, 1)
   lake <- st_buffer(lake, -1)
@@ -32,9 +39,17 @@ morph_it <- function(lake) {
   bind_cols(comid, round(data.frame(metrics), 2))
 }
 
-plan(multisession, workers = 2)
-morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
-                                future.seed=TRUE)
+handlers("progress", "beepr")
+
+tictoc::tic()
+plan(multisession, workers = 6)
+with_progress({
+  p <- progressor(length(lakes_sub$nid_id))
+  morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
+                                  p = p, 
+                                  future.seed=TRUE)
+})
 plan(sequential)
-bind_rows(morpho_metrics)
-       
+tictoc::toc()
+
+morpho_metrics <- bind_rows(morpho_metrics)
