@@ -2,8 +2,6 @@
 remotes::install_github("jhollist/lakemorpho")
 source(here::here("R/packages.R"))
 
-
-
 #fs::dir_create(here("data/surge"))
 #site <- get_sharepoint_site('SuRGE: Survey of Reservoir Greenhouse gas Emissions')
 #surge_sp <- site$get_drive()
@@ -16,10 +14,10 @@ flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusp
   st_transform(5072)
 
 # Read in data - below is just an example to get started.
-#lakes <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
+#flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
 #  st_transform(5072)
 
-lakes_sub <- st_make_valid(lakes[1:100,])
+lakes_sub <- st_make_valid(flooded_lands[1:100,])
 
 morph_it <- function(lake, p = function(...) message(...)) {
   p()
@@ -29,7 +27,7 @@ morph_it <- function(lake, p = function(...) message(...)) {
   lake <- st_buffer(lake, -1)
   lake <- st_remove_holes(lake, max_area = 100)
   
-  elev <- elevatr::get_elev_raster(lake, 12)
+  elev <- suppressMessages(elevatr::get_elev_raster(lake, 12))
   lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
   perim <- lakeShorelineLength(lake_lm)
   num_pts <- round(perim/50)
