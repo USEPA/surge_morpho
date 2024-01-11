@@ -1,5 +1,5 @@
 
-remotes::install_github("jhollist/lakemorpho")
+#remotes::install_github("jhollist/lakemorpho")
 source(here::here("R/packages.R"))
 
 #fs::dir_create(here("data/surge"))
