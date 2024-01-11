@@ -10,6 +10,7 @@ small <- split(flooded_lands[1:5,], 1:nrow(flooded_lands[1:5,]))
 flooded_lands_l <- split(flooded_lands, 1:nrow(flooded_lands))
 
 morph_it <- function(lake) {
+  tryCatch({
   lake <- st_make_valid(lake)
   elev <- suppressMessages(elevatr::get_elev_raster(lake, 12, override_size_check = TRUE))
   lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
@@ -23,7 +24,14 @@ morph_it <- function(lake) {
   st_geometry(df) <- NULL
   id <- c(df$comid, df$objectid, df$globalid)
   id <- id[!is.na(id)]
-  data.table::fwrite(df,paste0(here("data/metrics/metrics"), id, ".csv"))
+  },
+  
+  error = function(e){
+    df <- list(NA)
+    id <- c(df$comid, df$objectid, df$globalid)
+    sf <- NA
+  })
+  data.table::fwrite(df,here("data/metrics/metrics.csv"), append = TRUE)
   sf
 }
 
