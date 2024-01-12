@@ -1,5 +1,5 @@
 
-#remotes::install_github("jhollist/lakemorpho")
+remotes::install_github("jhollist/lakemorpho")
 source(here::here("R/packages.R"))
 
 #fs::dir_create(here("data/surge"))
@@ -17,24 +17,32 @@ flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusp
 #flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
 #  st_transform(5072)
 
+set.seed(23)
 lakes_sub <- st_make_valid(flooded_lands[sample(seq_along(flooded_lands$nid_id), 1000),])
+lakes_sub2 <- lakes_sub[1:50,]
 
 morph_it <- function(lake, p = function(...) message(...)) {
-  p()
-  
-  # Removes slivers from lake
-  lake <- st_buffer(lake, 1)
-  lake <- st_buffer(lake, -1)
-  lake <- st_remove_holes(lake, max_area = 100)
-  
-  elev <- suppressMessages(elevatr::get_elev_raster(lake, 12))
-  lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
-  perim <- lakeShorelineLength(lake_lm)
-  num_pts <- round(perim/50)
-  if(num_pts > 1000) {num_pts <- 1000}
-  metrics <- calcLakeMetrics(lake_lm, 0, num_pts)
-  comid <- select(lake, comid, globalid, objectid)
-  bind_cols(comid, round(data.frame(metrics), 2))
+  suppressWarnings({
+  result <- tryCatch({
+    p()
+    # Removes slivers from lake
+    lake <- st_buffer(lake, 1)
+    lake <- st_buffer(lake, -1)
+    lake <- st_remove_holes(lake, max_area = 100)
+    
+    elev <- suppressMessages(elevatr::get_elev_raster(lake, 12))
+    lake_lm <- lakemorpho::lakeSurroundTopo(lake, elev)
+    perim <- lakeShorelineLength(lake_lm)
+    num_pts <- round(perim/50)
+    if(num_pts > 1000) {num_pts <- 1000}
+    metrics <- calcLakeMetrics(lake_lm, 0, num_pts)
+    comid <- select(lake, comid, globalid, objectid)
+    bind_cols(comid, round(data.frame(metrics), 2))
+  }, error = function(e){
+    select(lake, comid, globalid, objectid)
+  })
+  result
+  })
 }
 
 handlers("progress")
