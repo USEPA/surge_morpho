@@ -41,6 +41,14 @@ morph_it <- function(lake, p = function(...) message(...)) {
   }, error = function(e){
     select(lake, comid, globalid, objectid)
   })
+  if(!dir.exists(here("data/calcout"))){
+    dir.create(here("data/calcout"))
+  }
+  filename <- paste0("data/calcout/", 
+                    paste0(c(result$comid, result$globalid, result$objectid), 
+                           collapse = ""), ".gpkg")
+  st_write(obj = result, dsn = filename , append = FALSE, driver = "GPKG", 
+           quiet = TRUE)
   result
   })
 }
@@ -50,13 +58,17 @@ handlers("progress")
 tictoc::tic()
 plan(multisession, workers = 7)
 with_progress({
-  p <- progressor(length(lakes_sub$nid_id))
-  morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
+  p <- progressor(length(lakes_sub2$nid_id))
+  morpho_metrics <- future_lapply(split(lakes_sub2, 1:nrow(lakes_sub2)), morph_it, 
                                   p = p, 
                                   future.seed=TRUE)
 })
 plan(sequential)
 tictoc::toc()
 
+ncols <- lapply(morpho_metrics, ncol)
+morpho_metrics_errors <- morpho_metrics[ncols < 17]
+morpho_metrics_errors <- bind_rows(morpho_metrics_errors)
+morpho_metrics <- morpho_metrics[ncols==17]
 morpho_metrics <- bind_rows(morpho_metrics)
-
+mapview(morpho_metrics_errors)
