@@ -47,6 +47,14 @@ morph_it <- function(lake, p = function(...) message(...)) {
   }, error = function(e){
     select(lake, lake_id, lake_name)
   })
+  if(!dir.exists(here("data/calcout"))){
+    dir.create(here("data/calcout"))
+  }
+  filename <- paste0("data/calcout/", 
+                    paste0(c(result$comid, result$globalid, result$objectid), 
+                           collapse = ""), ".gpkg")
+  st_write(obj = result, dsn = filename , append = FALSE, driver = "GPKG", 
+           quiet = TRUE)
   result
   })
 }
@@ -56,6 +64,7 @@ handlers("progress")
 tictoc::tic()
 plan(multisession, workers = 7)
 with_progress({
+
   p <- progressor(length(surge_reservoirs$lake_id))
   morpho_metrics <- future_lapply(split(surge_reservoirs, 1:nrow(surge_reservoirs)), morph_it, 
                                   p = p, 
@@ -64,9 +73,17 @@ with_progress({
 plan(sequential)
 tictoc::toc()
 
+ncols <- lapply(morpho_metrics, ncol)
+morpho_metrics_errors <- morpho_metrics[ncols < 17]
+morpho_metrics_errors <- bind_rows(morpho_metrics_errors)
+morpho_metrics <- morpho_metrics[ncols==17]
 morpho_metrics <- bind_rows(morpho_metrics)
+<<<<<<< HEAD
 sf::st_geometry(morpho_metrics) <- NULL 
 readr::write_csv(morpho_metrics, here::here("data/all_lakes_lakemorpho.csv"))
 surge_sp$upload_file(here::here("data/all_lakes_lakemorpho.csv"), 
                      dest = "data/siteDescriptors/all_lakes_lakemorpho.csv")
 
+=======
+mapview(morpho_metrics_errors)
+>>>>>>> b33e93457d6420f747e23a517ef6efced1ed5d97
