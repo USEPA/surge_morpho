@@ -52,6 +52,9 @@ if(!dir.exists(here::here("data/surge"))){
   surge_sp$download_file("surgeDsn/SuRGE_design_20191206_eval_status.xlsx", 
                          dest = "data/surge/SuRGE_design_20191206_eval_status.xlsx", 
                          overwrite = TRUE)
+  surge_sp$download_file("lakeDsn/all_lakes.gpkg", 
+                         dest = "data/surge/all_lakes.gpkg", 
+                         overwrite = TRUE)
 }
 # Get Lake morphometry
 fs::dir_create(here::here("data/lakemorpho"))
@@ -114,3 +117,24 @@ nla2017_profile <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nl
 # Get all NHD+
 httr::GET("https://dmap-data-commons-ow.s3.amazonaws.com/NHDPlusV21/Data/NationalData/NHDPlusV21_NationalData_Seamless_Geodatabase_Lower48_07.7z",
           httr::write_disk(here::here("data/nhd/NHDPlusV21_NationalData_Seamless_Geodatabase_Lower48_07.7z")))
+
+# Get LAGOS US
+# https://portal.edirepository.org/nis/dataviewer?packageid=edi.1043.1&entityid=f6ffb2325156008edffbea5b6c1ea24c
+lagos_depth <- read_csv("https://portal.edirepository.org/nis/dataviewer?packageid=edi.1043.1&entityid=f6ffb2325156008edffbea5b6c1ea24c")
+write_csv(lagos_depth, here("data/lagos/lagos_depth.csv"))
+
+
+# Get existing crosswalks
+# surge_sp <- site$get_drive()
+surge_sp$download_file("data/siteDescriptors/SuRGE_design_hylakID.csv", 
+                       dest = "data/surge/SuRGE_design_hylakID.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/NID_data_for_Surge_and_hand_sites.csv", 
+                       dest = "data/surge/NID_data_for_Surge_and_hand_sites.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/lake_link.csv", 
+                       dest = "data/surge/lake_link.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/Surge_nhdhr.csv", 
+                       dest = "data/surge/Surge_nhdhr.csv", 
+                       overwrite = TRUE)

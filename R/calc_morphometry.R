@@ -9,8 +9,12 @@ source(here::here("R/packages.R"))
 #                       dest = here("data/flooded_lands_inventory.gpkg"))
 
 # Read in data
-flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusps") |> 
-  sfarrow::read_sf_dataset() |>
+#flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusps") |> 
+#  sfarrow::read_sf_dataset() |>
+#  st_transform(5072)
+
+surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"), 
+                                layer = "all_lakes") |>
   st_transform(5072)
 
 # Read in data - below is just an example to get started.
@@ -18,10 +22,12 @@ flooded_lands <- arrow::open_dataset(here("data/flooded"), partitioning = "stusp
 #  st_transform(5072)
 
 set.seed(23)
-lakes_sub <- st_make_valid(flooded_lands[sample(seq_along(flooded_lands$nid_id), 1000),])
-lakes_sub2 <- lakes_sub[1:50,]
+#lakes_sub <- st_make_valid(flooded_lands[sample(seq_along(flooded_lands$nid_id), 1000),])
+#lakes_sub2 <- lakes_sub[1:50,]
+surge_reservoirs_na <- filter(surge_reservoirs, lake_id == "070")
 
 morph_it <- function(lake, p = function(...) message(...)) {
+  browser()
   suppressWarnings({
   result <- tryCatch({
     p()
@@ -36,10 +42,10 @@ morph_it <- function(lake, p = function(...) message(...)) {
     num_pts <- round(perim/50)
     if(num_pts > 1000) {num_pts <- 1000}
     metrics <- calcLakeMetrics(lake_lm, 0, num_pts)
-    comid <- select(lake, comid, globalid, objectid)
+    comid <- select(lake, lake_id, lake_name)
     bind_cols(comid, round(data.frame(metrics), 2))
   }, error = function(e){
-    select(lake, comid, globalid, objectid)
+    select(lake, lake_id, lake_name)
   })
   result
   })
@@ -50,8 +56,8 @@ handlers("progress")
 tictoc::tic()
 plan(multisession, workers = 7)
 with_progress({
-  p <- progressor(length(lakes_sub$nid_id))
-  morpho_metrics <- future_lapply(split(lakes_sub, 1:nrow(lakes_sub)), morph_it, 
+  p <- progressor(length(surge_reservoirs$lake_id))
+  morpho_metrics <- future_lapply(split(surge_reservoirs, 1:nrow(surge_reservoirs)), morph_it, 
                                   p = p, 
                                   future.seed=TRUE)
 })
@@ -59,4 +65,8 @@ plan(sequential)
 tictoc::toc()
 
 morpho_metrics <- bind_rows(morpho_metrics)
+sf::st_geometry(morpho_metrics) <- NULL 
+readr::write_csv(morpho_metrics, here::here("data/all_lakes_lakemorpho.csv"))
+surge_sp$upload_file(here::here("data/all_lakes_lakemorpho.csv"), 
+                     dest = "data/siteDescriptors/all_lakes_lakemorpho.csv")
 
