@@ -4,8 +4,12 @@
 .Ruserdata
 surge_morpho.Rproj
 .httr-oauth
-data
+data/globathy
 flood
-flooded_lands
+data/flooded
 lakemorphometry.zip
-
+data/flooded_lands_inventory.gpkg
+data/lagos
+data/lagos
+data/lakemorpho
+data/nhd

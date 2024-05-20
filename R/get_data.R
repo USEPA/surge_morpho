@@ -122,6 +122,10 @@ httr::GET("https://dmap-data-commons-ow.s3.amazonaws.com/NHDPlusV21/Data/Nationa
 # https://portal.edirepository.org/nis/dataviewer?packageid=edi.1043.1&entityid=f6ffb2325156008edffbea5b6c1ea24c
 lagos_depth <- read_csv("https://portal.edirepository.org/nis/dataviewer?packageid=edi.1043.1&entityid=f6ffb2325156008edffbea5b6c1ea24c")
 write_csv(lagos_depth, here("data/lagos/lagos_depth.csv"))
+download.file("https://portal.edirepository.org/nis/dataviewer?packageid=edi.854.1&entityid=5488e333ce818597fa3dbfc9b4e0c131",
+              here("data/lagos/lake_link.csv"))
+download.file("https://portal.edirepository.org/nis/dataviewer?packageid=edi.854.1&entityid=fd70ea9852cda4caa7eb44c0c7348630",
+              here("data/lagos/gis_locus_v1.0_gpkg.zip"))
 
 
 # Get existing crosswalks
