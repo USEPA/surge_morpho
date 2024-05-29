@@ -79,12 +79,12 @@ morpho_metrics_errors <- morpho_metrics[ncols < 17]
 morpho_metrics_errors <- bind_rows(morpho_metrics_errors)
 morpho_metrics <- morpho_metrics[ncols==17]
 morpho_metrics <- bind_rows(morpho_metrics)
-<<<<<<< HEAD
+
 sf::st_geometry(morpho_metrics) <- NULL 
 readr::write_csv(morpho_metrics, here::here("data/all_lakes_lakemorpho.csv"))
 surge_sp$upload_file(here::here("data/all_lakes_lakemorpho.csv"), 
                      dest = "data/siteDescriptors/all_lakes_lakemorpho.csv")
 
-=======
+
 mapview(morpho_metrics_errors)
->>>>>>> b33e93457d6420f747e23a517ef6efced1ed5d97
+
