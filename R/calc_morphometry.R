@@ -15,7 +15,8 @@ source(here::here("R/packages.R"))
 
 surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"), 
                                 layer = "all_lakes") |>
-  st_transform(5072)
+  st_transform(5072) |>
+  filter(lake_id %in% c("069", "070"))
 
 # Read in data - below is just an example to get started.
 #flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
@@ -27,7 +28,7 @@ set.seed(23)
 surge_reservoirs_na <- filter(surge_reservoirs, lake_id == "070")
 
 morph_it <- function(lake, p = function(...) message(...)) {
-  browser()
+  #browser()
   suppressWarnings({
   result <- tryCatch({
     p()
