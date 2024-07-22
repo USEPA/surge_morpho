@@ -16,7 +16,7 @@ source(here::here("R/packages.R"))
 surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"), 
                                 layer = "all_lakes") |>
   st_transform(5072) |>
-  filter(lake_id %in% c("069", "070"))
+  filter(lake_id %in% c("167", "67", "76", "157", "325", "10", "316"))
 
 # Read in data - below is just an example to get started.
 #flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
@@ -28,7 +28,7 @@ set.seed(23)
 surge_reservoirs_na <- filter(surge_reservoirs, lake_id == "070")
 
 morph_it <- function(lake, p = function(...) message(...)) {
-  #browser()
+  browser()
   suppressWarnings({
   result <- tryCatch({
     p()
@@ -51,11 +51,11 @@ morph_it <- function(lake, p = function(...) message(...)) {
   if(!dir.exists(here("data/calcout"))){
     dir.create(here("data/calcout"))
   }
-  filename <- paste0("data/calcout/", 
-                    paste0(c(result$comid, result$globalid, result$objectid), 
-                           collapse = ""), ".gpkg")
-  st_write(obj = result, dsn = filename , append = FALSE, driver = "GPKG", 
-           quiet = TRUE)
+  #filename <- paste0("data/calcout/", 
+  #                  paste0(c(result$comid, result$globalid, result$objectid), 
+  #                         collapse = ""), ".gpkg")
+  #st_write(obj = result, dsn = filename , append = FALSE, driver = "GPKG", 
+  #         quiet = TRUE)
   result
   })
 }

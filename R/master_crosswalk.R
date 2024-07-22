@@ -111,3 +111,5 @@ surge_master_crosswalk_long <- pivot_longer(surge_master_crosswalk, 3:13,
   filter(join_id != " ") |>
   filter(join_id != "NA") |>
   unique()
+
+write_csv(surge_master_crosswalk_long, "data/surge_master_crosswalk_long.csv")
