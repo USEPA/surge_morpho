@@ -3,4 +3,5 @@
 -	Leveraging SuRGE depth measurements
 -	Leveraging bathymetric maps
 -	Volume estimates for residence time calculations using Renee’s water isotope data
- 
+- Done by Aug 13
+- AGU abstract

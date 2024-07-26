@@ -77,11 +77,18 @@ tictoc::toc()
 ncols <- lapply(morpho_metrics, ncol)
 morpho_metrics_errors <- morpho_metrics[ncols < 16]
 morpho_metrics_errors <- bind_rows(morpho_metrics_errors)
+
 morpho_metrics_2 <- morpho_metrics[ncols==16]
 morpho_metrics_2 <- bind_rows(morpho_metrics_2)
 
-sf::st_geometry(morpho_metrics) <- NULL 
-readr::write_csv(morpho_metrics, here::here("data/all_lakes_lakemorpho.csv"))
+sf::st_geometry(morpho_metrics_2) <- NULL 
+sf::st_geometry(morpho_metrics_errors) <- NULL
+
+miss_names <- setdiff(names(morpho_metrics_2), names(morpho_metrics_errors))
+morpho_metrics_errors[miss_names] <- NA
+morpho_metrics_all <- bind_rows(morpho_metrics_2, morpho_metrics_errors)
+
+readr::write_csv(morpho_metrics_all, here::here("data/all_lakes_lakemorpho.csv"))
 surge_sp$upload_file(here::here("data/all_lakes_lakemorpho.csv"), 
                      dest = "data/siteDescriptors/all_lakes_lakemorpho.csv")
 
