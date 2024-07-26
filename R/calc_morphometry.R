@@ -15,8 +15,8 @@ source(here::here("R/packages.R"))
 
 surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"), 
                                 layer = "all_lakes") |>
-  st_transform(5072) |>
-  filter(lake_id %in% c("167", "67", "76", "157", "325", "10", "316"))
+  st_transform(5072) #|>
+  #filter(lake_id %in% c("167", "67", "76", "157", "325", "10", "316"))
 
 # Read in data - below is just an example to get started.
 #flooded_lands <- st_read(here("data/flooded_lands_inventory.gpkg")) |>
@@ -28,7 +28,7 @@ set.seed(23)
 surge_reservoirs_na <- filter(surge_reservoirs, lake_id == "070")
 
 morph_it <- function(lake, p = function(...) message(...)) {
-  browser()
+  #browser()
   suppressWarnings({
   result <- tryCatch({
     p()
@@ -75,10 +75,10 @@ plan(sequential)
 tictoc::toc()
 
 ncols <- lapply(morpho_metrics, ncol)
-morpho_metrics_errors <- morpho_metrics[ncols < 17]
+morpho_metrics_errors <- morpho_metrics[ncols < 16]
 morpho_metrics_errors <- bind_rows(morpho_metrics_errors)
-morpho_metrics <- morpho_metrics[ncols==17]
-morpho_metrics <- bind_rows(morpho_metrics)
+morpho_metrics_2 <- morpho_metrics[ncols==16]
+morpho_metrics_2 <- bind_rows(morpho_metrics_2)
 
 sf::st_geometry(morpho_metrics) <- NULL 
 readr::write_csv(morpho_metrics, here::here("data/all_lakes_lakemorpho.csv"))

@@ -1,7 +1,0 @@
----
-title: "Development of a reservoir morphology dataset to inform greenhouse gas emissions for U.S. reservoirs."
-author: "Hollister, Beaulieu, Deemer, and Schroeder"
-format: docx
----
-
-Understanding ecological processes in lentic systems, such as reservoirs, often requires the quantification of metrics of the waterbody's shape and size (i.e. morphology).  In support of ongoing efforts in the United States (U.S.) to better characterize greenhouse gas emissions from reservoirs, we have expanded past efforts (e.g. in NHD Plus), and are building a database of lake morphology for U.S. reservoirs.  The database currently includes estimates for XX reservoirs measured as part of the Survey of Greenhouse Gas Emissions project led by the U.S. Environmental Protection Agency.  Efforts are underway to expand the number of included reservoirs.  Metrics in this database current include: xx,xx,xx,xx,xx,xx,xx.  To develop these metrics we use publicly available datasets to first build a database of U.S. reservoirs and then calculate the metrics for each using open source geospatial software.  In this talk we review our procedures for developing the reservoir database and approaches for calculating each of the metrics.  The final database will be made publicly available and will initially support modelling of greenhouse gas emissions.       

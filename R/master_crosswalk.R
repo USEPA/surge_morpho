@@ -6,7 +6,13 @@ surge_reservoirs <- st_read(here("data/surge/all_lakes.gpkg"), "all_lakes") |>
 # NLA
 nla17 <- read_csv(here("data/nla/nla_2017_profile-data.csv")) |>
   select(nla17_site_id = SITE_ID, lon = INDEX_LON_DD, 
-         lat = INDEX_LAT_DD) |>
+         lat = INDEX_LAT_DD) %>%
+  mutate(lon = case_when(str_detect(lon, "^w") ~
+                           str_replace(lon, "^w", "-"),
+                         # get weird characters out prior to leading -
+                         !str_detect(lon, "^-") ~
+                           paste0("-", lon),
+                         TRUE ~ lon))
   mutate(lon = as.numeric(lon),
          lat = as.numeric(lat)) |>
   filter(!is.na(lon)) |> #Some issues with a few locations no entered in correctly. These are thrown out.

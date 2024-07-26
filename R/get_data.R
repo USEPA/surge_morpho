@@ -1,25 +1,5 @@
 source(here::here("R/packages.R"))
 
-# Download GLOBathy datasets from figshare
-# The raster is big... 15GB +
-
-if(!dir.exists(here::here("data/globathy"))){
-  fs::dir_create("data/globathy")
-  globathy_max_resp <- httr::GET("https://api.figshare.com/v2/file/download/28919991", 
-                                 httr::write_disk(here::here("data/globathy/globathy_max.zip"),
-                                                  overwrite = FALSE))
-  unzip(here::here("data/globathy/globathy_max.zip"),
-        exdir = here::here("data/globathy/globathy_max"))
-  globathy_hav_resp <- httr::GET("https://api.figshare.com/v2/file/download/28917783", 
-                                 httr::write_disk(here::here("data/globathy/globathy_hav.nc"),
-                                                  overwrite = TRUE))
-  globathy_rast_resp <- httr::GET("https://api.figshare.com/v2/file/download/28919850", 
-                                 httr::write_disk(here::here("data/globathy/globathy_rast.zip"),
-                                                  overwrite = FALSE))
-  unzip(here::here("data/globathy/globathy_rast.zip"),
-         exdir = here::here("data/globathy/globathy_rast"))
-}
-
 # Get SuRGE Lakes
 if(!dir.exists(here::here("data/surge"))){
   get_lab_sites <- function(lab){
@@ -47,6 +27,8 @@ if(!dir.exists(here::here("data/surge"))){
   labs <- list("ADA", "NAR", "CIN","DOE", "R10", "RTP", "USGS")
   data_paths <- purrr::map(labs, function(x) get_lab_sites(x))
   data_paths <- unlist(data_paths)
+  not_falls_lake <- !grepl("Falls_Lake", data_paths)
+  data_paths <- data_paths[not_falls_lake]
   purrr::map(data_paths, download_it)
   
   surge_sp$download_file("surgeDsn/SuRGE_design_20191206_eval_status.xlsx", 
@@ -56,6 +38,21 @@ if(!dir.exists(here::here("data/surge"))){
                          dest = "data/surge/all_lakes.gpkg", 
                          overwrite = TRUE)
 }
+
+# Get existing crosswalks
+surge_sp$download_file("data/siteDescriptors/SuRGE_design_hylakID.csv", 
+                       dest = "data/surge/SuRGE_design_hylakID.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/NID_data_for_Surge_and_hand_sites.csv", 
+                       dest = "data/surge/NID_data_for_Surge_and_hand_sites.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/lake_link.csv", 
+                       dest = "data/surge/lake_link.csv", 
+                       overwrite = TRUE)
+surge_sp$download_file("data/siteDescriptors/Surge_nhdhr.csv", 
+                       dest = "data/surge/Surge_nhdhr.csv", 
+                       overwrite = TRUE)
+
 # Get Lake morphometry
 fs::dir_create(here::here("data/lakemorpho"))
 if(!file.exists(here::here("data/lakemorpho/lakemorphometry.zip"))){
@@ -84,34 +81,34 @@ if(!file.exists(here::here("data/lakemorpho/national_lake_morphometry.gpkg"))){
 # Get NLA max depth 
 fs::dir_create(here::here("data/nla"))
 if(!file.exists(here::here("data/nla/nla2007_sampledlakeinformation_20091113.csv"))){
-nla2007_site <- httr::GET("https://www.epa.gov/sites/default/files/2014-01/nla2007_sampledlakeinformation_20091113.csv", 
-                          httr::write_disk(here::here("data/nla/nla2007_sampledlakeinformation_20091113.csv"),
-                                           overwrite = TRUE))
+  nla2007_site <- httr::GET("https://www.epa.gov/sites/default/files/2014-01/nla2007_sampledlakeinformation_20091113.csv", 
+                            httr::write_disk(here::here("data/nla/nla2007_sampledlakeinformation_20091113.csv"),
+                                             overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla2012_secchi_08232016.csv"))){
-nla2012_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_secchi_08232016.csv", 
-                            httr::write_disk(here::here("data/nla/nla2012_secchi_08232016.csv"),
-                                             overwrite = TRUE))
+  nla2012_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_secchi_08232016.csv", 
+                              httr::write_disk(here::here("data/nla/nla2012_secchi_08232016.csv"),
+                                               overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla12_keyvariables_data.csv"))){
-nla2012_key <- httr::GET("https://www.epa.gov/sites/default/files/2020-12/nla12_keyvariables_data.csv", 
-                         httr::write_disk(here::here("data/nla/nla12_keyvariables_data.csv"),
-                                          overwrite = TRUE))
+  nla2012_key <- httr::GET("https://www.epa.gov/sites/default/files/2020-12/nla12_keyvariables_data.csv", 
+                           httr::write_disk(here::here("data/nla/nla12_keyvariables_data.csv"),
+                                            overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla2012_wide_profile_08232016.csv"))){
-nla2012_profile <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_wide_profile_08232016.csv", 
-                            httr::write_disk(here::here("data/nla/nla2012_wide_profile_08232016.csv"),
-                                             overwrite = TRUE))
+  nla2012_profile <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_wide_profile_08232016.csv", 
+                               httr::write_disk(here::here("data/nla/nla2012_wide_profile_08232016.csv"),
+                                                overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla_2017_secchi-data.csv"))){
-nla2017_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_secchi-data.csv", 
-                            httr::write_disk(here::here("data/nla/nla_2017_secchi-data.csv"),
-                                             overwrite = TRUE))
+  nla2017_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_secchi-data.csv", 
+                              httr::write_disk(here::here("data/nla/nla_2017_secchi-data.csv"),
+                                               overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla_2017_profile-data.csv"))){
-nla2017_profile <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_profile-data.csv", 
-                            httr::write_disk(here::here("data/nla/nla_2017_profile-data.csv"),
-                                             overwrite = TRUE))
+  nla2017_profile <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_profile-data.csv", 
+                               httr::write_disk(here::here("data/nla/nla_2017_profile-data.csv"),
+                                                overwrite = TRUE))
 }
 
 # Get all NHD+
@@ -128,17 +125,26 @@ download.file("https://portal.edirepository.org/nis/dataviewer?packageid=edi.854
               here("data/lagos/gis_locus_v1.0_gpkg.zip"))
 
 
-# Get existing crosswalks
-# surge_sp <- site$get_drive()
-surge_sp$download_file("data/siteDescriptors/SuRGE_design_hylakID.csv", 
-                       dest = "data/surge/SuRGE_design_hylakID.csv", 
-                       overwrite = TRUE)
-surge_sp$download_file("data/siteDescriptors/NID_data_for_Surge_and_hand_sites.csv", 
-                       dest = "data/surge/NID_data_for_Surge_and_hand_sites.csv", 
-                       overwrite = TRUE)
-surge_sp$download_file("data/siteDescriptors/lake_link.csv", 
-                       dest = "data/surge/lake_link.csv", 
-                       overwrite = TRUE)
-surge_sp$download_file("data/siteDescriptors/Surge_nhdhr.csv", 
-                       dest = "data/surge/Surge_nhdhr.csv", 
-                       overwrite = TRUE)
+
+
+# Download GLOBathy datasets from figshare
+# The raster is big... 15GB +
+
+if(!dir.exists(here::here("data/globathy"))){
+  fs::dir_create("data/globathy")
+  globathy_max_resp <- httr::GET("https://api.figshare.com/v2/file/download/28919991", 
+                                 httr::write_disk(here::here("data/globathy/globathy_max.zip"),
+                                                  overwrite = FALSE))
+  unzip(here::here("data/globathy/globathy_max.zip"),
+        exdir = here::here("data/globathy/globathy_max"))
+  globathy_hav_resp <- httr::GET("https://api.figshare.com/v2/file/download/28917783", 
+                                 httr::write_disk(here::here("data/globathy/globathy_hav.nc"),
+                                                  overwrite = TRUE))
+  globathy_rast_resp <- httr::GET("https://api.figshare.com/v2/file/download/28919850", 
+                                 httr::write_disk(here::here("data/globathy/globathy_rast.zip"),
+                                                  overwrite = FALSE))
+  unzip(here::here("data/globathy/globathy_rast.zip"),
+         exdir = here::here("data/globathy/globathy_rast"))
+}
+
+
