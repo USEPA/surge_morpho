@@ -1,28 +1,34 @@
 source(here::here("R/packages.R"))
+source(here("R/functions.R"))
 
 surge_reservoirs <- st_read(here("data/surge/all_lakes.gpkg"), "all_lakes") |>
   st_transform(4326)
 
 # NLA
+nla22 <- read_csv(here("data/nla/nla22_siteinfo.csv"), guess_max = 35000) |>
+  select(nla22_site_id = SITE_ID, lon = INDEX_LON_DD, lat = INDEX_LAT_DD) |>
+  drop_na() |>
+  sf::st_as_sf(coords = c("lon", "lat"), crs = 4326)
+surge_nla22 <- st_join(surge_reservoirs, nla22)
+st_geometry(surge_nla22) <- NULL
+surge_nla22 <- unique(surge_nla22) |>
+  select(-lake_name)
+
 nla17 <- read_csv(here("data/nla/nla_2017_profile-data.csv")) |>
   select(nla17_site_id = SITE_ID, lon = INDEX_LON_DD, 
-         lat = INDEX_LAT_DD) %>%
-  mutate(lon = case_when(str_detect(lon, "^w") ~
-                           str_replace(lon, "^w", "-"),
-                         # get weird characters out prior to leading -
-                         !str_detect(lon, "^-") ~
-                           paste0("-", lon),
-                         TRUE ~ lon))
-  mutate(lon = as.numeric(lon),
-         lat = as.numeric(lat)) |>
-  filter(!is.na(lon)) |> #Some issues with a few locations no entered in correctly. These are thrown out.
-  filter(!is.na(lat))|>
+         lat = INDEX_LAT_DD) |>
+  fix_lon_lat("lon", "lat", "nla17_site_id") |>
   sf::st_as_sf(coords = c("lon", "lat"), crs = 4326)
 surge_nla17 <- st_join(surge_reservoirs, nla17)
 st_geometry(surge_nla17) <- NULL
 surge_nla17 <- unique(surge_nla17) |>
   select(-lake_name)
 
+# Column 19, 54, and 21 have some characters in them.  If important for 
+# crosswalk, clean up.
+# Col 19 - COND_STD1_VALUE - not important
+# Col 54 - TEMP_SENSOR - not important, but converts N/A to NA anyway
+# Col 21 - COND_STD2_VALUE - not importnat, but converts N/A to NA anyway
 nla12 <- read_csv(here("data/nla/nla2012_wide_profile_08232016.csv")) |>
   select(nla12_site_id = SITE_ID, lon = INDEX_LON_DD, 
          lat = INDEX_LAT_DD) |>
@@ -34,7 +40,7 @@ surge_nla12 <- unique(surge_nla12)  |>
   select(-lake_name)
 
 nla07 <- read_csv(here("data/nla/nla2007_sampledlakeinformation_20091113.csv")) |>
-  select(nl07_site_id = SITE_ID, lon = LON_DD, lat = LAT_DD) |>
+  select(nla07_site_id = SITE_ID, lon = LON_DD, lat = LAT_DD) |>
   filter(!is.na(lon)) |>
   sf::st_as_sf(coords = c("lon", "lat"), crs = 4326)
 surge_nla07 <- st_join(surge_reservoirs, nla07)
@@ -85,13 +91,8 @@ surge_nid <- readr::read_csv(here::here("data/surge/NID_data_for_Surge_and_hand_
   mutate(lake_id = str_replace(lake_id, "CH4-", "")) |>
   mutate(lake_id = str_replace(lake_id, "^0+", ""))
 
-# Jake indicated some issues...
-#link <- readr::read_csv(here::here("data/surge/lake_link.csv"))
-
 # Existing Crosswalks: nhdhr
 surge_nhdhr <- readr::read_csv(here::here("data/surge/Surge_nhdhr.csv"))
-
-
 
 # Combine in Master
 surge_master_crosswalk <- surge_reservoirs
@@ -100,6 +101,7 @@ st_geometry(surge_master_crosswalk) <- NULL
 surge_master_crosswalk <- left_join(surge_master_crosswalk, surge_nla17, 
                                     by = "lake_id",  
                                     relationship = "many-to-many") |>
+  left_join(surge_nla22, by = "lake_id", relationship = "many-to-many") |>
   left_join(surge_nla12, by = "lake_id", relationship = "many-to-many") |>
   left_join(surge_nla07, by = "lake_id", relationship = "many-to-many") |>
   left_join(surge_lmorpho, by = "lake_id", relationship = "many-to-many") |>
@@ -110,7 +112,7 @@ surge_master_crosswalk <- left_join(surge_master_crosswalk, surge_nla17,
   mutate(across(c(lmorpho_comid, nhdplus_comid, lagoslakeid, hylak_comid, 
                 hylak_id), as.character))
 
-surge_master_crosswalk_long <- pivot_longer(surge_master_crosswalk, 3:13, 
+surge_master_crosswalk_long <- pivot_longer(surge_master_crosswalk, 3:14, 
                                             names_to = "join_id_name",
                                             values_to = "join_id") |>
   filter(!is.na(join_id)) |>

@@ -1,7 +1,12 @@
--	Lakes 69 and 70 (large Missouri River reservoirs)
--	Newly added lakes 188 and 253
--	Leveraging SuRGE depth measurements
--	Leveraging bathymetric maps
--	Volume estimates for residence time calculations using Renee’s water isotope data
-- Done by Aug 13
-- AGU abstract
+-	[x] Lakes 69 and 70 (large Missouri River reservoirs)
+-	[x] Newly added lakes 188 and 253
+-	[ ] Leveraging SuRGE depth measurements
+-	[ ] Leveraging bathymetric maps
+-	[ ] Volume estimates for residence time calculations using Renee’s water isotope data
+- [ ] Done by Aug 13
+- [x] AGU abstract
+  - [x] Fix Author screw up.
+    - [x] remove Jeremy, add Alex?
+- crosswalk
+  - [x] fix NLA17 coord problems
+  - [x] Add NLA22

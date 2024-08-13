@@ -1,7 +1,7 @@
 lake_name,lake_id,join_id_name,join_id
 Lake O' the Pines,3,nla17_site_id,NLA17_TX-10007
 Lake O' the Pines,3,nla12_site_id,NLA12_TX-113
-Lake O' the Pines,3,nl07_site_id,NLA06608-1560
+Lake O' the Pines,3,nla07_site_id,NLA06608-1560
 Lake O' the Pines,3,lmorpho_comid,1010832
 Lake O' the Pines,3,lmorpho_nla07,NLA06608-1560
 Lake O' the Pines,3,nhdplus_comid,1010832
@@ -13,7 +13,7 @@ Lake O' the Pines,3,nhdplus_comid,1010928
 Lake O' the Pines,3,lmorpho_comid,1010928
 Cotile Lake,4,nla17_site_id,NLA17_LA-10002
 Cotile Lake,4,nla12_site_id,NLA12_LA-105
-Cotile Lake,4,nl07_site_id,NLA06608-2823
+Cotile Lake,4,nla07_site_id,NLA06608-2823
 Cotile Lake,4,lmorpho_comid,19918180
 Cotile Lake,4,lmorpho_nla07,NLA06608-2823
 Cotile Lake,4,nhdplus_comid,19918180
@@ -24,7 +24,7 @@ Cotile Lake,4,hylak_id,113773
 Cotile Lake,4,nid_id,LA00031
 Lake Jacksonville,11,nla17_site_id,NLA17_TX-10010
 Lake Jacksonville,11,nla12_site_id,NLA12_TX-137
-Lake Jacksonville,11,nl07_site_id,NLA06608-TX:19
+Lake Jacksonville,11,nla07_site_id,NLA06608-TX:19
 Lake Jacksonville,11,lmorpho_comid,4452402
 Lake Jacksonville,11,lmorpho_nla07,NLA06608-TX:19
 Lake Jacksonville,11,nhdplus_comid,4452402
@@ -33,9 +33,6 @@ Lake Jacksonville,11,lagoslakeid,415369
 Lake Jacksonville,11,hylak_comid,4452402
 Lake Jacksonville,11,hylak_id,113707
 Lake Jacksonville,11,nid_id,TX00583
-Haney Creek Watershed Site Two Reservoir,15,nla17_site_id,NLA17_AR-10021
-Haney Creek Watershed Site Two Reservoir,15,lmorpho_comid,9541707
-Haney Creek Watershed Site Two Reservoir,15,nhdplus_comid,9541707
 Crooked Creek Reservoir,18,nla17_site_id,NLA17_LA-10006
 Crooked Creek Reservoir,18,nla12_site_id,NLA12_LA-152
 Crooked Creek Reservoir,18,lmorpho_comid,15138463
@@ -46,8 +43,9 @@ Crooked Creek Reservoir,18,hylak_comid,15138463
 Crooked Creek Reservoir,18,hylak_id,113825
 Crooked Creek Reservoir,18,nid_id,LA00046
 Lake Hamilton,99,nla17_site_id,NLA17_AR-10002
+Lake Hamilton,99,nla22_site_id,NES22-10107
 Lake Hamilton,99,nla12_site_id,NLA12_AR-103
-Lake Hamilton,99,nl07_site_id,NLA06608-1204
+Lake Hamilton,99,nla07_site_id,NLA06608-1204
 Lake Hamilton,99,lmorpho_comid,15232080
 Lake Hamilton,99,lmorpho_nla07,NLA06608-1204
 Lake Hamilton,99,nhdplus_comid,167794922
@@ -73,7 +71,7 @@ Arrow Head Lake,136,hylak_comid,7557711
 Arrow Head Lake,136,hylak_id,1059628
 Canton Lake,146,nla17_site_id,NLA17_OK-10007
 Canton Lake,146,nla12_site_id,NLA12_OK-106
-Canton Lake,146,nl07_site_id,NLA06608-4056
+Canton Lake,146,nla07_site_id,NLA06608-4056
 Canton Lake,146,lmorpho_comid,389774
 Canton Lake,146,lmorpho_nla07,NLA06608-4056
 Canton Lake,146,nhdplus_comid,389774
@@ -83,8 +81,9 @@ Canton Lake,146,hylak_comid,389774
 Canton Lake,146,hylak_id,9331
 Canton Lake,146,nid_id,OK10316
 Lake Jean Neustadt,147,nla17_site_id,NLA17_OK-10009
+Lake Jean Neustadt,147,nla22_site_id,NLA22_OK-10120
 Lake Jean Neustadt,147,nla12_site_id,NLA12_OK-119
-Lake Jean Neustadt,147,nl07_site_id,NLA06608-0856
+Lake Jean Neustadt,147,nla07_site_id,NLA06608-0856
 Lake Jean Neustadt,147,lmorpho_comid,19959244
 Lake Jean Neustadt,147,lmorpho_nla07,NLA06608-0856
 Lake Jean Neustadt,147,nhdplus_comid,19959244
@@ -110,7 +109,7 @@ Cloud Southern Plains,166,lagoslakeid,367833
 Cloud Southern Plains,166,hylak_comid,5925122
 Lake Overholser,167,nla17_site_id,NLA17_OK-10003
 Lake Overholser,167,nla12_site_id,NLA12_OK-105
-Lake Overholser,167,nl07_site_id,NLA06608-4472
+Lake Overholser,167,nla07_site_id,NLA06608-4472
 Lake Overholser,167,lmorpho_comid,167300171
 Lake Overholser,167,lmorpho_nla07,NLA06608-4472
 Lake Overholser,167,nhdplus_comid,167300171
@@ -119,13 +118,9 @@ Lake Overholser,167,lagoslakeid,389511
 Lake Overholser,167,hylak_comid,167300171
 Lake Overholser,167,hylak_id,112917
 Lake Overholser,167,nid_id,OK02537
-Lake Copper Breaks,183,nla17_site_id,NLA17_TX-10096
-Lake Copper Breaks,183,lmorpho_comid,14002215
-Lake Copper Breaks,183,nhdplus_comid,14002215
-Lake Copper Breaks,183,gnis_id,1889675
 Rush Cr. Site 17 Reservoir,184,nla17_site_id,NLA17_OK-10005
 Rush Cr. Site 17 Reservoir,184,nla12_site_id,NLA12_OK-132
-Rush Cr. Site 17 Reservoir,184,nl07_site_id,NLA06608-4382
+Rush Cr. Site 17 Reservoir,184,nla07_site_id,NLA06608-4382
 Rush Cr. Site 17 Reservoir,184,lmorpho_comid,19956504
 Rush Cr. Site 17 Reservoir,184,lmorpho_nla07,NLA06608-4382
 Rush Cr. Site 17 Reservoir,184,nhdplus_comid,19956504
@@ -134,7 +129,7 @@ Rush Cr. Site 17 Reservoir,184,hylak_comid,19956504
 Rush Cr. Site 17 Reservoir,184,nid_id,OK00157
 Boulder Reservoir,186,nla17_site_id,NLA17_CO-10002
 Boulder Reservoir,186,nla12_site_id,NLA12_CO-111
-Boulder Reservoir,186,nl07_site_id,NLA06608-1851
+Boulder Reservoir,186,nla07_site_id,NLA06608-1851
 Boulder Reservoir,186,lmorpho_comid,2888348
 Boulder Reservoir,186,lmorpho_nla07,NLA06608-1851
 Boulder Reservoir,186,nhdplus_comid,2888348
@@ -145,7 +140,7 @@ Boulder Reservoir,186,hylak_id,112156
 Boulder Reservoir,186,nid_id,CO00215
 Bluestem Lake,190,nla17_site_id,NLA17_OK-10004
 Bluestem Lake,190,nla12_site_id,NLA12_OK-109
-Bluestem Lake,190,nl07_site_id,NLA06608-0824
+Bluestem Lake,190,nla07_site_id,NLA06608-0824
 Bluestem Lake,190,lmorpho_comid,846154
 Bluestem Lake,190,lmorpho_nla07,NLA06608-0824
 Bluestem Lake,190,nhdplus_comid,846154
@@ -154,10 +149,6 @@ Bluestem Lake,190,lagoslakeid,386238
 Bluestem Lake,190,hylak_comid,846154
 Bluestem Lake,190,hylak_id,112769
 Bluestem Lake,190,nid_id,OK02570
-Shawnee Mission Lake,194,nla17_site_id,NLA17_KS-10041
-Shawnee Mission Lake,194,lmorpho_comid,3729635
-Shawnee Mission Lake,194,nhdplus_comid,3729635
-Shawnee Mission Lake,194,gnis_id,479200
 Wyandotte County Lake,206,nla17_site_id,NLA17_KS-10007
 Wyandotte County Lake,206,nla12_site_id,NLA12_KS-125
 Wyandotte County Lake,206,lmorpho_comid,2254441
@@ -167,19 +158,9 @@ Wyandotte County Lake,206,lagoslakeid,125419
 Wyandotte County Lake,206,hylak_comid,2254441
 Wyandotte County Lake,206,hylak_id,112363
 Wyandotte County Lake,206,nid_id,KS02555
-Pennock Lake,212,nla17_site_id,NLA17_MO-10001
-Pennock Lake,212,nla12_site_id,NLA12_MO-101
-Pennock Lake,212,lmorpho_comid,2986560
-Pennock Lake,212,lmorpho_nla07,NLA06608-0808
-Pennock Lake,212,nhdplus_comid,2986560
-Pennock Lake,212,lagoslakeid,65328
-East Fork Big Creek,213,nla17_site_id,NLA17_MO-10036
-East Fork Big Creek,213,lmorpho_comid,5105048
-East Fork Big Creek,213,nhdplus_comid,5105048
-East Fork Big Creek,213,gnis_id,760373
 Concord Pond,13,nla17_site_id,NLA17_DE-10002
 Concord Pond,13,nla12_site_id,NLA12_DE-103
-Concord Pond,13,nl07_site_id,NLA06608-2333
+Concord Pond,13,nla07_site_id,NLA06608-2333
 Concord Pond,13,lmorpho_comid,8390734
 Concord Pond,13,lmorpho_nla07,NLA06608-2333
 Concord Pond,13,nhdplus_comid,8390734
@@ -204,7 +185,7 @@ Maple Lake,46,hylak_id,1056710
 Maple Lake,46,nid_id,NJ00687
 Mirror Lake,47,nla17_site_id,NLA17_NJ-10003
 Mirror Lake,47,nla12_site_id,NLA12_NJ-104
-Mirror Lake,47,nl07_site_id,NLA06608-0013
+Mirror Lake,47,nla07_site_id,NLA06608-0013
 Mirror Lake,47,lmorpho_comid,4489294
 Mirror Lake,47,lmorpho_nla07,NLA06608-0013
 Mirror Lake,47,nhdplus_comid,4489312
@@ -234,19 +215,12 @@ Spencer Lake,54,hylak_comid,15595957
 Spencer Lake,54,hylak_id,1054666
 Spencer Lake,54,nid_id,OH00619
 Zepernick Lake,55,nla17_site_id,NLA17_OH-10027
+Zepernick Lake,55,nla22_site_id,NLA22_OH-10018
 Zepernick Lake,55,lmorpho_comid,19386918
 Zepernick Lake,55,nhdplus_comid,19386918
 Zepernick Lake,55,gnis_id,1078733
 Zepernick Lake,55,hylak_comid,19386918
 Zepernick Lake,55,nid_id,OH00637
-Mount Hope,56,nla17_site_id,NLA17_NJ-10002
-Mount Hope,56,nla12_site_id,NLA12_NJ-102
-Mount Hope,56,nl07_site_id,NLA06608-0077
-Mount Hope,56,lmorpho_comid,6248768
-Mount Hope,56,lmorpho_nla07,NLA06608-0077
-Mount Hope,56,nhdplus_comid,6248768
-Mount Hope,56,gnis_id,878547
-Mount Hope,56,lagoslakeid,13302
 Fort Peck Trout pond,67,nla17_site_id,NLA17_MT-10036
 Fort Peck Trout pond,67,nla12_site_id,NLA12_MT-161
 Fort Peck Trout pond,67,lmorpho_comid,12461540
@@ -266,7 +240,7 @@ Tschida Lake,68,hylak_id,8643
 Tschida Lake,68,nid_id,ND00149
 willow creek,71,nla17_site_id,NLA17_MT-10001
 willow creek,71,nla12_site_id,NLA12_MT-104
-willow creek,71,nl07_site_id,NLA06608-0378
+willow creek,71,nla07_site_id,NLA06608-0378
 willow creek,71,lmorpho_comid,12394688
 willow creek,71,lmorpho_nla07,NLA06608-0378
 willow creek,71,nhdplus_comid,12394688
@@ -277,7 +251,7 @@ willow creek,71,hylak_id,105301
 willow creek,71,nid_id,MT00577
 Nelson,72,nla17_site_id,NLA17_MT-10003
 Nelson,72,nla12_site_id,NLA12_MT-109
-Nelson,72,nl07_site_id,NLA06608-0240
+Nelson,72,nla07_site_id,NLA06608-0240
 Nelson,72,lmorpho_comid,167204935
 Nelson,72,lmorpho_nla07,NLA06608-0240
 Nelson,72,nhdplus_comid,167204935
@@ -328,8 +302,9 @@ Roosevelt Lake,79,hylak_comid,11666754
 Roosevelt Lake,79,hylak_id,1048970
 Roosevelt Lake,79,nid_id,SD00043
 Monroe,83,nla17_site_id,NLA17_IN-10009
+Monroe,83,nla22_site_id,NES22-10087
 Monroe,83,nla12_site_id,NLA12_IN-115
-Monroe,83,nl07_site_id,NLA06608-0212
+Monroe,83,nla07_site_id,NLA06608-0212
 Monroe,83,lmorpho_comid,166899251
 Monroe,83,lmorpho_nla07,NLA06608-0212
 Monroe,83,nhdplus_comid,18443736
@@ -350,7 +325,8 @@ Hammertown Lake,101,hylak_comid,3484673
 Hammertown Lake,101,hylak_id,1057141
 Hammertown Lake,101,nid_id,OH00507
 Piney Run Lake,103,nla17_site_id,NLA17_MD-10026
-Piney Run Lake,103,nl07_site_id,NLA06608-R31
+Piney Run Lake,103,nla22_site_id,NLA22_MD-10022
+Piney Run Lake,103,nla07_site_id,NLA06608-R31
 Piney Run Lake,103,lmorpho_comid,125914857
 Piney Run Lake,103,lmorpho_nla07,NLA06608-R31
 Piney Run Lake,103,nhdplus_comid,125914857
@@ -365,8 +341,9 @@ Krodel Park,116,nhdplus_comid,19314376
 Krodel Park,116,lagoslakeid,259224
 Krodel Park,116,hylak_comid,19314376
 Sherman Reservoir,149,nla17_site_id,NLA17_NE-10029
+Sherman Reservoir,149,nla22_site_id,NES22-10144
 Sherman Reservoir,149,nla12_site_id,NLA12_NE-114
-Sherman Reservoir,149,nl07_site_id,NLA06608-2740
+Sherman Reservoir,149,nla07_site_id,NLA06608-2740
 Sherman Reservoir,149,lmorpho_comid,17373390
 Sherman Reservoir,149,lmorpho_nla07,NLA06608-2740
 Sherman Reservoir,149,nhdplus_comid,17373390
@@ -395,19 +372,28 @@ Storrie Lake,157,hylak_comid,20814160
 Storrie Lake,157,hylak_id,112888
 Storrie Lake,157,nid_id,NM00245
 Eaglewatch Lake,159,nla17_site_id,NLA17_CO-10050
+Eaglewatch Lake,159,nla22_site_id,NLA22_CO-10036
 Eaglewatch Lake,159,lmorpho_comid,188011
 Eaglewatch Lake,159,nhdplus_comid,188011
 Eaglewatch Lake,159,hylak_comid,188011
 Eaglewatch Lake,159,hylak_id,1056529
 Beaver pond,165,nla17_site_id,NLA17_CO-10057
+Beaver pond,165,nla22_site_id,NLA22_CO-10043
 Beaver pond,165,lmorpho_comid,167246042
 Beaver pond,165,nhdplus_comid,167246042
 Beaver pond,165,hylak_comid,167246042
 Beaver pond,165,hylak_id,1055507
-Red Lake,185,nla17_site_id,NLA17_NM-10041
-Red Lake,185,lmorpho_comid,20044108
-Red Lake,185,nhdplus_comid,20044108
-Red Lake,185,gnis_id,923940
+Stubblefield,188,nla17_site_id,NLA17_NM-10022
+Stubblefield,188,nla22_site_id,NLA22_NM-10013
+Stubblefield,188,nla07_site_id,NLA06608-1380
+Stubblefield,188,lmorpho_comid,20064419
+Stubblefield,188,lmorpho_nla07,NLA06608-1380
+Stubblefield,188,nhdplus_comid,20064419
+Stubblefield,188,gnis_id,923893
+Stubblefield,188,lagoslakeid,386846
+Stubblefield,188,hylak_comid,20064419
+Stubblefield,188,hylak_id,112776
+Stubblefield,188,nid_id,NM00124
 Lake Fisher,191,nla17_site_id,NLA17_IA-10007
 Lake Fisher,191,nla12_site_id,NLA12_IA-127
 Lake Fisher,191,lmorpho_comid,5798096
@@ -418,6 +404,7 @@ Lake Fisher,191,hylak_comid,5798096
 Lake Fisher,191,hylak_id,1055205
 Lake Fisher,191,nid_id,IA01339
 Monee Reservoir,195,nla17_site_id,NLA17_IL-10011
+Monee Reservoir,195,nla22_site_id,NLA22_IL-10005
 Monee Reservoir,195,lmorpho_comid,13435489
 Monee Reservoir,195,nhdplus_comid,13435489
 Monee Reservoir,195,gnis_id,413721
@@ -446,7 +433,7 @@ Old Mans Lake,207,lagoslakeid,6445
 Old Mans Lake,207,hylak_comid,13583718
 Old Mans Lake,207,hylak_id,1055540
 Lake Lancelot,208,nla17_site_id,NLA17_IL-10009
-Lake Lancelot,208,nl07_site_id,NLA06608-1724
+Lake Lancelot,208,nla07_site_id,NLA06608-1724
 Lake Lancelot,208,lmorpho_comid,13604166
 Lake Lancelot,208,lmorpho_nla07,NLA06608-1724
 Lake Lancelot,208,nhdplus_comid,13604166
@@ -454,6 +441,7 @@ Lake Lancelot,208,gnis_id,1692499
 Lake Lancelot,208,lagoslakeid,6573
 Lake Lancelot,208,hylak_comid,13604166
 Lake Lancelot,208,nid_id,IL01147
+Otter Lake,209,nla22_site_id,NLA22_KY-10018
 Otter Lake,209,lmorpho_comid,11895232
 Otter Lake,209,nhdplus_comid,11895232
 Otter Lake,209,hylak_comid,11895232
@@ -466,6 +454,7 @@ Lake Dalercarlia,210,hylak_comid,13435551
 Lake Dalercarlia,210,hylak_id,1054250
 Lake Dalercarlia,210,nid_id,IN00791
 Madison Lake,211,nla17_site_id,NLA17_OH-10013
+Madison Lake,211,nla22_site_id,NLA22_OH-10005
 Madison Lake,211,lmorpho_comid,3483393
 Madison Lake,211,nhdplus_comid,3483393
 Madison Lake,211,gnis_id,1042876
@@ -474,14 +463,16 @@ Madison Lake,211,hylak_comid,3483393
 Madison Lake,211,hylak_id,1056158
 Madison Lake,211,nid_id,OH00439
 Lake of the Woods,214,nla17_site_id,NLA17_IL-10013
+Lake of the Woods,214,nla22_site_id,NLA22_IL-10007
 Lake of the Woods,214,lmorpho_comid,13570445
 Lake of the Woods,214,nhdplus_comid,13570445
 Lake of the Woods,214,gnis_id,421484
 Lake of the Woods,214,lagoslakeid,6522
 Lake of the Woods,214,hylak_comid,13570445
 Lake of the Woods,214,nid_id,IL00511
+Yellow Banks Lake,230,nla17_site_id,NLA17_IN-10002
 Yellow Banks Lake,230,nla12_site_id,NLA12_IN-104
-Yellow Banks Lake,230,nl07_site_id,NLA06608-2916
+Yellow Banks Lake,230,nla07_site_id,NLA06608-2916
 Yellow Banks Lake,230,lmorpho_comid,10107773
 Yellow Banks Lake,230,lmorpho_nla07,NLA06608-2916
 Yellow Banks Lake,230,nhdplus_comid,10107773
@@ -490,6 +481,7 @@ Yellow Banks Lake,230,hylak_comid,10107773
 Yellow Banks Lake,230,hylak_id,1058041
 Yellow Banks Lake,230,nid_id,IN00189
 mina lake,231,nla17_site_id,NLA17_SD-10112
+mina lake,231,nla22_site_id,NLA22_SD-10088
 mina lake,231,lmorpho_comid,12554996
 mina lake,231,nhdplus_comid,12555002
 mina lake,231,lagoslakeid,353133
@@ -502,6 +494,7 @@ mina lake,231,nhdplus_comid,12554996
 mina lake,231,lmorpho_comid,12555002
 mina lake,231,lmorpho_comid,12555004
 harvey dam,232,nla17_site_id,NLA17_ND-10126
+harvey dam,232,nla22_site_id,NLA22_ND-10101
 harvey dam,232,lmorpho_comid,14278116
 harvey dam,232,nhdplus_comid,14278116
 harvey dam,232,lagoslakeid,315741
@@ -523,7 +516,7 @@ Redstone Lake,233,hylak_id,110902
 Redstone Lake,233,nid_id,WI00707
 Palmer Lake,234,nla17_site_id,NLA17_MI-10007
 Palmer Lake,234,nla12_site_id,NLA12_MI-112
-Palmer Lake,234,nl07_site_id,NLA06608-0363
+Palmer Lake,234,nla07_site_id,NLA06608-0363
 Palmer Lake,234,lmorpho_comid,15677567
 Palmer Lake,234,lmorpho_nla07,NLA06608-0363
 Palmer Lake,234,nhdplus_comid,15677567
@@ -557,7 +550,7 @@ Sidie Hollow Lake,237,hylak_comid,13205684
 Sidie Hollow Lake,237,hylak_id,1048247
 stockade lake,240,nla17_site_id,NLA17_SD-10009
 stockade lake,240,nla12_site_id,NLA12_SD-107
-stockade lake,240,nl07_site_id,NLA06608-0979
+stockade lake,240,nla07_site_id,NLA06608-0979
 stockade lake,240,lmorpho_comid,14395602
 stockade lake,240,lmorpho_nla07,NLA06608-0979
 stockade lake,240,nhdplus_comid,14395602
@@ -582,6 +575,7 @@ East Fork Reservoir,250,lagoslakeid,457983
 East Fork Reservoir,250,hylak_comid,24315765
 East Fork Reservoir,250,hylak_id,107881
 Troutvale Reservoir #1,264,nla17_site_id,NLA17_CO-10037
+Troutvale Reservoir #1,264,nla22_site_id,NLA22_CO-10023
 Troutvale Reservoir #1,264,lmorpho_comid,17905661
 Troutvale Reservoir #1,264,nhdplus_comid,17905661
 Troutvale Reservoir #1,264,gnis_id,199649
@@ -589,6 +583,7 @@ Troutvale Reservoir #1,264,hylak_comid,17905661
 Troutvale Reservoir #1,264,hylak_id,1058547
 Troutvale Reservoir #1,264,nid_id,CO00812
 gooseberry reservoir,276,nla17_site_id,NLA17_UT-10009
+gooseberry reservoir,276,nla22_site_id,NLA22_UT-10125
 gooseberry reservoir,276,nla12_site_id,NLA12_UT-196
 gooseberry reservoir,276,lmorpho_comid,3906261
 gooseberry reservoir,276,nhdplus_comid,3906261
@@ -598,6 +593,7 @@ gooseberry reservoir,276,hylak_comid,3906261
 gooseberry reservoir,276,hylak_id,1056355
 gooseberry reservoir,276,nid_id,UT10142
 Upper Twin Lake,281,nla17_site_id,NLA17_MT-10101
+Upper Twin Lake,281,nla22_site_id,NLA22_MT-10091
 Upper Twin Lake,281,lmorpho_comid,24331578
 Upper Twin Lake,281,nhdplus_comid,24331578
 Upper Twin Lake,281,gnis_id,796284
@@ -605,10 +601,6 @@ Upper Twin Lake,281,lagoslakeid,459210
 Upper Twin Lake,281,hylak_comid,24331578
 Upper Twin Lake,281,hylak_id,1030644
 Upper Twin Lake,281,nid_id,MT01166
-Crouse Reservoir,325,lmorpho_comid,10038730
-Crouse Reservoir,325,lmorpho_nla07,NLA06608-2655
-Crouse Reservoir,325,nhdplus_comid,10038730
-Crouse Reservoir,325,gnis_id,1434843
 Kemmerer Reservoir,328,nla17_site_id,NLA17_WY-10005
 Kemmerer Reservoir,328,nla12_site_id,NLA12_WY-131
 Kemmerer Reservoir,328,lmorpho_comid,3192814
@@ -625,7 +617,7 @@ French Creek,1,hylak_comid,21677972
 French Creek,1,hylak_id,113618
 Arkabutla,2,nla17_site_id,NLA17_MS-10002
 Arkabutla,2,nla12_site_id,NLA12_MS-107
-Arkabutla,2,nl07_site_id,NLA06608-0432
+Arkabutla,2,nla07_site_id,NLA06608-0432
 Arkabutla,2,lmorpho_comid,15252778
 Arkabutla,2,lmorpho_nla07,NLA06608-0432
 Arkabutla,2,nhdplus_comid,15252778
@@ -634,15 +626,9 @@ Arkabutla,2,lagoslakeid,287042
 Arkabutla,2,hylak_comid,15252778
 Arkabutla,2,hylak_id,9378
 Arkabutla,2,nid_id,MS01496
-Dunavant Lake,9,nla17_site_id,NLA17_MS-10017
-Dunavant Lake,9,nla12_site_id,NLA12_MS-116
-Dunavant Lake,9,lmorpho_comid,18012552
-Dunavant Lake,9,nhdplus_comid,18012552
-Dunavant Lake,9,gnis_id,704577
-Dunavant Lake,9,lagoslakeid,288071
 Johnson Family Boating Lake,14,nla17_site_id,NLA17_MS-10015
 Johnson Family Boating Lake,14,nla12_site_id,NLA12_MS-102
-Johnson Family Boating Lake,14,nl07_site_id,NLA06608-0812
+Johnson Family Boating Lake,14,nla07_site_id,NLA06608-0812
 Johnson Family Boating Lake,14,lmorpho_comid,19139667
 Johnson Family Boating Lake,14,lmorpho_nla07,NLA06608-0812
 Johnson Family Boating Lake,14,nhdplus_comid,19139667
@@ -657,6 +643,7 @@ Marrowbone Lake,84,lagoslakeid,270107
 Marrowbone Lake,84,hylak_comid,18407394
 Marrowbone Lake,84,nid_id,TN03707
 acworth lake,117,nla17_site_id,NLA17_GA-10023
+acworth lake,117,nla22_site_id,NLA22_GA-10012
 acworth lake,117,lmorpho_comid,6495242
 acworth lake,117,nhdplus_comid,6495242
 acworth lake,117,gnis_id,310382
@@ -673,7 +660,8 @@ Tully Lake,51,hylak_comid,9343025
 Tully Lake,51,hylak_id,1050358
 Tully Lake,51,nid_id,MA00970
 Lake Zoar,52,nla17_site_id,NLA17_CT-10010
-Lake Zoar,52,nl07_site_id,NLA06608-1010
+Lake Zoar,52,nla22_site_id,NLA22_CT-10009
+Lake Zoar,52,nla07_site_id,NLA06608-1010
 Lake Zoar,52,lmorpho_comid,120052268
 Lake Zoar,52,lmorpho_nla07,NLA06608-1010
 Lake Zoar,52,nhdplus_comid,120052268
@@ -681,7 +669,7 @@ Lake Zoar,52,lagoslakeid,7429
 Lake Zoar,52,hylak_comid,120052268
 Morris Reservoir,53,nla17_site_id,NLA17_CT-10004
 Morris Reservoir,53,nla12_site_id,NLA12_CT-103
-Morris Reservoir,53,nl07_site_id,NLA06608-0006
+Morris Reservoir,53,nla07_site_id,NLA06608-0006
 Morris Reservoir,53,lmorpho_comid,7711476
 Morris Reservoir,53,lmorpho_nla07,NLA06608-0006
 Morris Reservoir,53,nhdplus_comid,7711476
@@ -691,8 +679,9 @@ Morris Reservoir,53,hylak_comid,7711476
 Morris Reservoir,53,hylak_id,1053336
 Morris Reservoir,53,nid_id,CT00473
 Slatersville Reservoir,57,nla17_site_id,NLA17_RI-10002
+Slatersville Reservoir,57,nla22_site_id,NES22-10006
 Slatersville Reservoir,57,nla12_site_id,NLA12_RI-103
-Slatersville Reservoir,57,nl07_site_id,NLA06608-0690
+Slatersville Reservoir,57,nla07_site_id,NLA06608-0690
 Slatersville Reservoir,57,lmorpho_comid,6117396
 Slatersville Reservoir,57,lmorpho_nla07,NLA06608-0690
 Slatersville Reservoir,57,nhdplus_comid,6117396
@@ -713,6 +702,7 @@ Halls pond,64,hylak_comid,6161203
 Halls pond,64,hylak_id,1052823
 Halls pond,64,nid_id,CT00598
 Weatherhead Hollow,65,nla17_site_id,NLA17_VT-10019
+Weatherhead Hollow,65,nla22_site_id,NLA22_VT-10013
 Weatherhead Hollow,65,lmorpho_comid,6777539
 Weatherhead Hollow,65,nhdplus_comid,6777539
 Weatherhead Hollow,65,lagoslakeid,5519
@@ -729,7 +719,7 @@ Norton Reservoir,66,hylak_comid,6126713
 Norton Reservoir,66,nid_id,MA00815
 beulah,238,nla17_site_id,NLA17_OR-10003
 beulah,238,nla12_site_id,NLA12_OR-112
-beulah,238,nl07_site_id,NLA06608-0933
+beulah,238,nla07_site_id,NLA06608-0933
 beulah,238,lmorpho_comid,23422703
 beulah,238,lmorpho_nla07,NLA06608-0933
 beulah,238,nhdplus_comid,23422703
@@ -739,7 +729,7 @@ beulah,238,hylak_comid,23422703
 beulah,238,hylak_id,110691
 beulah,238,nid_id,OR00589
 Philips,239,nla12_site_id,NLA12_OR-105
-Philips,239,nl07_site_id,NLA06608-0881
+Philips,239,nla07_site_id,NLA06608-0881
 Philips,239,lmorpho_comid,24215523
 Philips,239,lmorpho_nla07,NLA06608-0881
 Philips,239,nhdplus_comid,24215523
@@ -757,9 +747,20 @@ Emigrant,249,lagoslakeid,469968
 Emigrant,249,hylak_comid,23934034
 Emigrant,249,hylak_id,111445
 Emigrant,249,nid_id,OR00581
+Lost_Valley,253,nla17_site_id,NLA17_ID-10001
+Lost_Valley,253,nla12_site_id,NLA12_ID-101
+Lost_Valley,253,nla07_site_id,NLA06608-3121
+Lost_Valley,253,lmorpho_comid,24189308
+Lost_Valley,253,lmorpho_nla07,NLA06608-3121
+Lost_Valley,253,nhdplus_comid,24189308
+Lost_Valley,253,gnis_id,397875
+Lost_Valley,253,lagoslakeid,464872
+Lost_Valley,253,hylak_comid,24189308
+Lost_Valley,253,hylak_id,109578
+Lost_Valley,253,nid_id,ID00255
 Swofford,263,nla17_site_id,NLA17_WA-10006
 Swofford,263,nla12_site_id,NLA12_WA-106
-Swofford,263,nl07_site_id,NLA06608-0721
+Swofford,263,nla07_site_id,NLA06608-0721
 Swofford,263,lmorpho_comid,24252344
 Swofford,263,lmorpho_nla07,NLA06608-0721
 Swofford,263,nhdplus_comid,24252344
@@ -775,6 +776,7 @@ elk cr,265,hylak_comid,23634788
 elk cr,265,hylak_id,1023145
 elk cr,265,nid_id,ID00146
 owyhee,287,nla17_site_id,NLA17_OR-10060
+owyhee,287,nla22_site_id,NLA22_OR-10042
 owyhee,287,lmorpho_comid,120052938
 owyhee,287,nhdplus_comid,120052938
 owyhee,287,gnis_id,1125099
@@ -791,7 +793,7 @@ Lower Goose,302,hylak_id,111430
 Lower Goose,302,nid_id,ID00233
 Wapato Lake,308,nla17_site_id,NLA17_WA-10002
 Wapato Lake,308,nla12_site_id,NLA12_WA-111
-Wapato Lake,308,nl07_site_id,NLA06608-2833
+Wapato Lake,308,nla07_site_id,NLA06608-2833
 Wapato Lake,308,lmorpho_comid,23078085
 Wapato Lake,308,lmorpho_nla07,NLA06608-2833
 Wapato Lake,308,nhdplus_comid,23078085
@@ -823,6 +825,7 @@ Baker Lake,999,hylak_comid,24260671
 Baker Lake,999,hylak_id,8279
 Baker Lake,999,nid_id,WA00173
 okeheelee,10,nla17_site_id,NLA17_FL-10030
+okeheelee,10,nla22_site_id,NLA22_FL-10019
 okeheelee,10,lmorpho_comid,56038
 okeheelee,10,nhdplus_comid,56038
 okeheelee,10,hylak_comid,56068
@@ -834,7 +837,7 @@ okeheelee,10,lmorpho_comid,56068
 okeheelee,10,lmorpho_comid,56090
 jolly pond,16,nla17_site_id,NLA17_VA-10002
 jolly pond,16,nla12_site_id,NLA12_VA-106
-jolly pond,16,nl07_site_id,NLA06608-0221
+jolly pond,16,nla07_site_id,NLA06608-0221
 jolly pond,16,lmorpho_comid,10062717
 jolly pond,16,lmorpho_nla07,NLA06608-0221
 jolly pond,16,nhdplus_comid,10062717
@@ -850,6 +853,7 @@ lake juniper,44,hylak_comid,9164888
 lake juniper,44,hylak_id,1061366
 lake juniper,44,nid_id,SC00028
 Four Prong Lake,45,nla17_site_id,NLA17_FL-10029
+Four Prong Lake,45,nla22_site_id,NLA22_FL-10018
 Four Prong Lake,45,lmorpho_comid,478125
 Four Prong Lake,45,nhdplus_comid,478125
 Four Prong Lake,45,gnis_id,282740
@@ -880,7 +884,7 @@ Atagahi,102,hylak_id,1060692
 Atagahi,102,nid_id,NC00197
 Beaver Pond,119,nla17_site_id,NLA17_VA-10001
 Beaver Pond,119,nla12_site_id,NLA12_VA-101
-Beaver Pond,119,nl07_site_id,NLA06608-0045
+Beaver Pond,119,nla07_site_id,NLA06608-0045
 Beaver Pond,119,lmorpho_comid,8606221
 Beaver Pond,119,lmorpho_nla07,NLA06608-0045
 Beaver Pond,119,nhdplus_comid,8606221
@@ -888,7 +892,7 @@ Beaver Pond,119,gnis_id,1489117
 Beaver Pond,119,hylak_comid,8606221
 Burnsville Lake,137,nla17_site_id,NLA17_WV-10002
 Burnsville Lake,137,nla12_site_id,NLA12_WV-102
-Burnsville Lake,137,nl07_site_id,NLA06608-0681
+Burnsville Lake,137,nla07_site_id,NLA06608-0681
 Burnsville Lake,137,lmorpho_comid,76669453
 Burnsville Lake,137,lmorpho_nla07,NLA06608-0681
 Burnsville Lake,137,nhdplus_comid,76669453
@@ -897,17 +901,14 @@ Burnsville Lake,137,hylak_comid,76669453
 Burnsville Lake,137,hylak_id,112416
 Burnsville Lake,137,nid_id,WV00707
 Suck cr,138,nla17_site_id,NLA17_NC-10023
+Suck cr,138,nla22_site_id,NLA22_NC-10016
 Suck cr,138,lmorpho_comid,8874182
 Suck cr,138,nhdplus_comid,8874182
 Suck cr,138,hylak_comid,8874182
 Suck cr,138,hylak_id,1060479
-Lower Sunset Lake,244,nla17_site_id,NLA17_CA-10052
-Lower Sunset Lake,244,lmorpho_comid,8921771
-Lower Sunset Lake,244,nhdplus_comid,8921771
-Lower Sunset Lake,244,gnis_id,263047
 Willow Lake,275,nla17_site_id,NLA17_AZ-10004
 Willow Lake,275,nla12_site_id,NLA12_AZ-102
-Willow Lake,275,nl07_site_id,NLA06608-0569
+Willow Lake,275,nla07_site_id,NLA06608-0569
 Willow Lake,275,lmorpho_comid,20451100
 Willow Lake,275,lmorpho_nla07,NLA06608-0569
 Willow Lake,275,nhdplus_comid,20451100
@@ -916,17 +917,9 @@ Willow Lake,275,lagoslakeid,454810
 Willow Lake,275,hylak_comid,20451100
 Willow Lake,275,hylak_id,1061426
 Willow Lake,275,nid_id,AZ00019
-Nicasio,285,nla17_site_id,NLA17_CA-10001
-Nicasio,285,nla12_site_id,NLA12_CA-101
-Nicasio,285,nl07_site_id,NLA06608-1781
-Nicasio,285,lmorpho_comid,5329251
-Nicasio,285,lmorpho_nla07,NLA06608-1781
-Nicasio,285,nhdplus_comid,5329251
-Nicasio,285,gnis_id,229536
-Nicasio,285,lagoslakeid,481308
 Saguaro,288,nla17_site_id,NLA17_AZ-10001
 Saguaro,288,nla12_site_id,NLA12_AZ-101
-Saguaro,288,nl07_site_id,NLA06608-0834
+Saguaro,288,nla07_site_id,NLA06608-0834
 Saguaro,288,lmorpho_comid,20476542
 Saguaro,288,lmorpho_nla07,NLA06608-0834
 Saguaro,288,nhdplus_comid,20476542
@@ -944,6 +937,7 @@ Upper San Leandro Reservoir,291,hylak_comid,2803209
 Upper San Leandro Reservoir,291,hylak_id,112601
 Upper San Leandro Reservoir,291,nid_id,CA01082
 Shadow Cliffs Lake,296,nla17_site_id,NLA17_CA-10081
+Shadow Cliffs Lake,296,nla22_site_id,NLA22_CA-10067
 Shadow Cliffs Lake,296,lmorpho_comid,2806007
 Shadow Cliffs Lake,296,nhdplus_comid,2806007
 Shadow Cliffs Lake,296,lagoslakeid,480705
@@ -963,6 +957,7 @@ New Melones,297,gnis_id,253643
 New Melones,297,lmorpho_comid,342271
 New Melones,297,lmorpho_comid,342321
 Wild Horse Reservoir,298,nla17_site_id,NLA17_NV-10090
+Wild Horse Reservoir,298,nla22_site_id,NLA22_NV-10079
 Wild Horse Reservoir,298,lmorpho_comid,23326906
 Wild Horse Reservoir,298,nhdplus_comid,23326906
 Wild Horse Reservoir,298,gnis_id,862000
@@ -971,6 +966,7 @@ Wild Horse Reservoir,298,hylak_comid,23326906
 Wild Horse Reservoir,298,hylak_id,9147
 Wild Horse Reservoir,298,nid_id,NV10119
 Mitry,316,nla17_site_id,NLA17_AZ-10041
+Mitry,316,nla22_site_id,NLA22_AZ-10032
 Mitry,316,lmorpho_comid,21411459
 Mitry,316,nhdplus_comid,21411459
 Mitry,316,hylak_comid,21411459
@@ -978,7 +974,7 @@ Mitry,316,hylak_id,1063576
 Mitry,316,nid_id,AZ10315
 Lake Greenhaven,317,nla17_site_id,NLA17_CA-10003
 Lake Greenhaven,317,nla12_site_id,NLA12_CA-105
-Lake Greenhaven,317,nl07_site_id,NLA06608-1269
+Lake Greenhaven,317,nla07_site_id,NLA06608-1269
 Lake Greenhaven,317,lmorpho_comid,15033533
 Lake Greenhaven,317,lmorpho_nla07,NLA06608-1269
 Lake Greenhaven,317,nhdplus_comid,15033533
@@ -1017,7 +1013,7 @@ Lake Francis Case,070,gnis_id,1255140
 Lake Francis Case,070,nhdplus_comid,167245953
 Lake Oahe,069,nla17_site_id,NLA17_SD-10001
 Lake Oahe,069,nla12_site_id,NLA12_SD-101
-Lake Oahe,069,nl07_site_id,NLA06608-0243
+Lake Oahe,069,nla07_site_id,NLA06608-0243
 Lake Oahe,069,lmorpho_comid,14489102
 Lake Oahe,069,lmorpho_nla07,NLA06608-0243
 Lake Oahe,069,nhdplus_comid,14496248
@@ -1052,7 +1048,8 @@ Apple Valley Lake,1003,gnis_id,1078224
 Apple Valley Lake,1003,hylak_comid,15400440
 Apple Valley Lake,1003,hylak_id,112083
 Apple Valley Lake,1003,nid_id,OH00345
-Atwood Lake,1004,nl07_site_id,NLA06608-0863
+Atwood Lake,1004,nla22_site_id,NES22-10062
+Atwood Lake,1004,nla07_site_id,NLA06608-0863
 Atwood Lake,1004,lmorpho_comid,19387446
 Atwood Lake,1004,nhdplus_comid,19387446
 Atwood Lake,1004,lagoslakeid,543
@@ -1130,7 +1127,7 @@ Dillon Lake,1014,lagoslakeid,4031
 Dillon Lake,1014,hylak_comid,166899180
 Dillon Lake,1014,hylak_id,112177
 Dillon Lake,1014,nid_id,OH00007
-Falls Lake,1033,nl07_site_id,NLA06608-0921
+Falls Lake,1033,nla07_site_id,NLA06608-0921
 Falls Lake,1033,lmorpho_comid,166737717
 Falls Lake,1033,lmorpho_nla07,NLA06608-0921
 Falls Lake,1033,nhdplus_comid,12050086
@@ -1155,7 +1152,7 @@ Hocking County Lake,1015,lagoslakeid,2821
 Hocking County Lake,1015,hylak_comid,15417761
 Hocking County Lake,1015,hylak_id,112268
 Hocking County Lake,1015,nid_id,OH00260
-Kiser Lake,1016,nl07_site_id,NLA06608-1359
+Kiser Lake,1016,nla07_site_id,NLA06608-1359
 Kiser Lake,1016,lmorpho_comid,3980812
 Kiser Lake,1016,lmorpho_nla07,NLA06608-1359
 Kiser Lake,1016,nhdplus_comid,3980812
@@ -1171,7 +1168,7 @@ Knox Lake,1017,lagoslakeid,1500
 Knox Lake,1017,hylak_comid,167484602
 Knox Lake,1017,hylak_id,112062
 Knox Lake,1017,nid_id,OH00638
-La Due Reservoir,1018,nl07_site_id,NLA06608-0367
+La Due Reservoir,1018,nla07_site_id,NLA06608-0367
 La Due Reservoir,1018,lmorpho_comid,15585938
 La Due Reservoir,1018,lmorpho_nla07,NLA06608-0367
 La Due Reservoir,1018,nhdplus_comid,15585996
@@ -1182,8 +1179,9 @@ La Due Reservoir,1018,nid_id,OH00756
 La Due Reservoir,1018,nhdplus_comid,15585938
 La Due Reservoir,1018,gnis_id,1084011
 La Due Reservoir,1018,lmorpho_comid,15585996
+Lake Loramie,1019,nla22_site_id,NES22-10058
 Lake Loramie,1019,nla12_site_id,NLA12_OH-102
-Lake Loramie,1019,nl07_site_id,NLA06608-0783
+Lake Loramie,1019,nla07_site_id,NLA06608-0783
 Lake Loramie,1019,lmorpho_comid,3982320
 Lake Loramie,1019,lmorpho_nla07,NLA06608-0783
 Lake Loramie,1019,nhdplus_comid,3982320
@@ -1199,7 +1197,7 @@ Lake Milton,1020,lagoslakeid,3855
 Lake Milton,1020,hylak_comid,13152651
 Lake Milton,1020,hylak_id,111867
 Lake Milton,1020,nid_id,OH00419
-Michael J Kirwan Reservoir,1024,nl07_site_id,NLA06608-0111
+Michael J Kirwan Reservoir,1024,nla07_site_id,NLA06608-0111
 Michael J Kirwan Reservoir,1024,lmorpho_comid,13155459
 Michael J Kirwan Reservoir,1024,lmorpho_nla07,NLA06608-0111
 Michael J Kirwan Reservoir,1024,nhdplus_comid,13155459
@@ -1259,7 +1257,7 @@ Tappan Lake,1030,lagoslakeid,494
 Tappan Lake,1030,hylak_comid,19390686
 Tappan Lake,1030,hylak_id,112099
 Tappan Lake,1030,nid_id,OH00010
-Lake Waynoka,1023,nl07_site_id,NLA06608-1007
+Lake Waynoka,1023,nla07_site_id,NLA06608-1007
 Lake Waynoka,1023,lmorpho_comid,1918274
 Lake Waynoka,1023,lmorpho_nla07,NLA06608-1007
 Lake Waynoka,1023,nhdplus_comid,1918274

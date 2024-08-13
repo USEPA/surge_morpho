@@ -80,15 +80,18 @@ if(!file.exists(here::here("data/lakemorpho/national_lake_morphometry.gpkg"))){
 
 # Get NLA max depth 
 fs::dir_create(here::here("data/nla"))
+
 if(!file.exists(here::here("data/nla/nla2007_sampledlakeinformation_20091113.csv"))){
   nla2007_site <- httr::GET("https://www.epa.gov/sites/default/files/2014-01/nla2007_sampledlakeinformation_20091113.csv", 
                             httr::write_disk(here::here("data/nla/nla2007_sampledlakeinformation_20091113.csv"),
                                              overwrite = TRUE))
 }
-if(!file.exists(here::here("data/nla/nla2012_secchi_08232016.csv"))){
-  nla2012_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_secchi_08232016.csv", 
-                              httr::write_disk(here::here("data/nla/nla2012_secchi_08232016.csv"),
-                                               overwrite = TRUE))
+
+## NLA 12
+if(!file.exists(here::here("data/nla/nla2012_wide_phab_08232016_0.csv"))){
+  nla2012_key <- httr::GET("https://www.epa.gov/sites/default/files/2016-12/nla2012_wide_phab_08232016_0.csv", 
+                           httr::write_disk(here::here("data/nla/nla2012_wide_phab_08232016_0.csv"),
+                                            overwrite = TRUE))
 }
 if(!file.exists(here::here("data/nla/nla12_keyvariables_data.csv"))){
   nla2012_key <- httr::GET("https://www.epa.gov/sites/default/files/2020-12/nla12_keyvariables_data.csv", 
@@ -100,16 +103,36 @@ if(!file.exists(here::here("data/nla/nla2012_wide_profile_08232016.csv"))){
                                httr::write_disk(here::here("data/nla/nla2012_wide_profile_08232016.csv"),
                                                 overwrite = TRUE))
 }
-if(!file.exists(here::here("data/nla/nla_2017_secchi-data.csv"))){
-  nla2017_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_secchi-data.csv", 
-                              httr::write_disk(here::here("data/nla/nla_2017_secchi-data.csv"),
-                                               overwrite = TRUE))
-}
+
+
+## NLA 17
 if(!file.exists(here::here("data/nla/nla_2017_profile-data.csv"))){
   nla2017_profile <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_profile-data.csv", 
                                httr::write_disk(here::here("data/nla/nla_2017_profile-data.csv"),
                                                 overwrite = TRUE))
 }
+if(!file.exists(here::here("data/nla/nla_2017_phab-data.csv"))){
+  nla2017_profile <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_phab-data.csv", 
+                               httr::write_disk(here::here("data/nla/nla_2017_phab-data.csv"),
+                                                overwrite = TRUE))
+}
+if(!file.exists(here::here("data/nla/nla_2017_secchi-data.csv"))){
+  nla2017_secchi <- httr::GET("https://www.epa.gov/sites/default/files/2021-04/nla_2017_secchi-data.csv", 
+                              httr::write_disk(here::here("data/nla/nla_2017_secchi-data.csv"),
+                                               overwrite = TRUE))
+}
+## NLA 22
+if(!file.exists(here::here("data/nla/nla22_siteinfo.csv"))){
+  nla2007_site <- httr::GET("https://www.epa.gov/system/files/other-files/2024-04/nla22_siteinfo.csv", 
+                            httr::write_disk(here::here("data/nla/nla22_siteinfo.csv"),
+                                             overwrite = TRUE))
+}
+if(!file.exists(here::here("data/nla/nla22_phab_wide.csv"))){
+  nla2007_site <- httr::GET("https://www.epa.gov/system/files/other-files/2024-04/nla22_phab_wide.csv", 
+                            httr::write_disk(here::here("data/nla/nla22_phab_wide.csv"),
+                                             overwrite = TRUE))
+}
+
 
 # Get all NHD+
 httr::GET("https://dmap-data-commons-ow.s3.amazonaws.com/NHDPlusV21/Data/NationalData/NHDPlusV21_NationalData_Seamless_Geodatabase_Lower48_07.7z",

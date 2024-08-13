@@ -1,6 +1,6 @@
 ---
 title: "Development of a reservoir morphology dataset to inform modeling greenhouse gas emissions from U.S. reservoirs."
-author: "Jeffrey Hollister, Jake Beaulieu, Bridget Deemer, and Jeremy Schroeder"
+author: "Jeffrey Hollister, Jake Beaulieu, Bridget Deemer, and Alex Hall"
 format: docx
 ---
 
