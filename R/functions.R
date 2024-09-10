@@ -4,7 +4,7 @@
 #' @param lat the column name for latitude
 
 fix_lon_lat <- function(df, lon, lat, site = "site_id") {
- 
+
   df <- drop_na(df)
   fixed_df <- df |>
     mutate({{lon}} := case_when(str_detect(.data[[lon]], "^w") ~
@@ -37,8 +37,8 @@ fix_lon_lat <- function(df, lon, lat, site = "site_id") {
                              str_replace(.data[[lon]], "\\?$", ""),
                            str_detect(.data[[lon]], "\\?\\?") ~ str_replace(paste(
                              str_split(.data[[lon]], "\\?\\?", simplify = TRUE)[,1],
-                             round(as.numeric(str_split(.data[[lon]], "\\?\\?", 
-                                                        simplify = TRUE)[,2])/60, 5), 
+                             round(as.numeric(str_split(.data[[lon]], "\\?\\?",
+                                                        simplify = TRUE)[,2])/60, 5),
                              sep = "."), ".0.","."),
                            str_detect(.data[[lon]], "(\\..*?)\\.") ~
                              str_replace(.data[[lon]], "(\\..*?)\\.", "."),
@@ -46,25 +46,25 @@ fix_lon_lat <- function(df, lon, lat, site = "site_id") {
     mutate({{lon}} := case_when(!str_detect(.data[[lon]], "^-") ~
                              paste0("-", .data[[lon]]),
                            TRUE ~ .data[[lon]])) |>
-    
+
     mutate({{lat}} := case_when(str_detect(.data[[lat]], "\\?$") ~
                              str_replace(.data[[lat]], "\\?$", ""),
                            str_detect(.data[[lat]], "\\?\\?") ~ str_replace(paste(
                              str_split(.data[[lat]], "\\?\\?", simplify = TRUE)[,1],
-                             round(as.numeric(str_split(.data[[lat]], "\\?\\?", 
-                                                        simplify = TRUE)[,2])/60, 5), 
+                             round(as.numeric(str_split(.data[[lat]], "\\?\\?",
+                                                        simplify = TRUE)[,2])/60, 5),
                              sep = "."), ".0.","."),
                            .data[[lat]] == "." ~
                              NA_character_,
                            str_detect(.data[[lat]], " ") ~
                              str_replace(.data[[lat]], " ",""),
                            TRUE ~ .data[[lat]])) |>
-    filter(!is.na(.data[[lon]])) |> 
+    filter(!is.na(.data[[lon]])) |>
     filter(!is.na(.data[[lat]])) |>
     filter(!is.na(.data[[site]])) |>
     mutate({{lon}} := str_replace(str_remove(str_replace(.data[[lon]],"\\.", ";"), "\\."),
                              ";", "."),
-           {{lat}} := str_replace(str_remove(str_replace(.data[[lat]],"\\.", ";"), "\\."), 
+           {{lat}} := str_replace(str_remove(str_replace(.data[[lat]],"\\.", ";"), "\\."),
                              ";", ".")) |>
     mutate({{lon}} := as.numeric(.data[[lon]]),
            {{lat}} := as.numeric(.data[[lat]]))
@@ -75,22 +75,27 @@ fix_lon_lat <- function(df, lon, lat, site = "site_id") {
 #' @param path for dataset
 #' @param col_names columns to read in
 
-read_in_nla_depth <- function(path, col_names, 
+read_in_nla_depth <- function(path, col_names,
                               nla = c("nla2007", "nla2012", "nla2017", "nla2022"),
                               src = c("phab", "profile", "site")){
 
   nla <- match.arg(nla)
   src <- match.arg(src)
-  df <- readr::read_csv(here(path), 
+  df <- readr::read_csv(here(path),
                   guess_max = 35000) |>
     select(all_of(col_names)) |>
     rename_all(tolower) |>
     mutate(nla = nla, src = src)
-  df 
+  df
 }
 
+#' Function to merge NLA data
+#' @param nla_depth
+#' @param surge_morpho
+#' @param crosswalk
+
 merge_nlas <- function(nla_depth, surge_morpho, crosswalk){
-  
+
   cwl_nla22 <- filter(crosswalk, grepl("nla22_", join_id_name)) |>
     select(lake_id, site_id = join_id) |>
     mutate(lake_id = as.character(lake_id)) |>
@@ -107,7 +112,7 @@ merge_nlas <- function(nla_depth, surge_morpho, crosswalk){
     select(lake_id, site_id = join_id) |>
     mutate(lake_id = as.character(lake_id)) |>
     unique()
-  
+
   nla22_depths <- nla_depth |>
     filter(nla == "nla2022") |>
     select(site_id, nla2022_index_depth = value)
@@ -120,32 +125,176 @@ merge_nlas <- function(nla_depth, surge_morpho, crosswalk){
   nla07_depths <- nla_depth |>
     filter(nla == "nla2007") |>
     select(site_id, nla2007_index_depth = value)
-  
-  nla22_surge <- left_join(surge_res_morpho, cwl_nla22, by = "lake_id") |>
-    left_join(nla22_depths, by = "site_id", relationship = "many-to-many") |>
-    select(-site_id) |>
+
+  nla22_surge <- left_join(nla22_depths, cwl_nla22, by = "site_id") |>
+    right_join(surge_morpho, by = "lake_id") |>
+    mutate(source = "NLA 2022") |>
+    relocate(lake_id, lake_name, join_id = site_id, source, index_depth = nla2022_index_depth) |>
+    select(lake_id:index_depth) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
     unique()
-  nla17_surge <- left_join(surge_res_morpho, cwl_nla17, by = "lake_id") |>
-    left_join(nla17_depths, by = "site_id", relationship = "many-to-many") |>
-    select(-site_id) |>
+  nla17_surge <- left_join(nla17_depths, cwl_nla17, by = "site_id") |>
+    right_join(surge_morpho, by = "lake_id") |>
+    mutate(source = "NLA 2017") |>
+    relocate(lake_id, lake_name, join_id = site_id, source, index_depth = nla2017_index_depth) |>
+    select(lake_id:index_depth) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
     unique()
-  nla12_surge <- left_join(surge_res_morpho, cwl_nla12, by = "lake_id") |>
-    left_join(nla12_depths, by = "site_id", relationship = "many-to-many") |>
-    select(-site_id) |>
+  nla12_surge <- left_join(nla12_depths, cwl_nla12, by = "site_id") |>
+    right_join(surge_morpho, by = "lake_id") |>
+    mutate(source = "NLA 2012") |>
+    relocate(lake_id, lake_name, join_id = site_id, source, index_depth = nla2012_index_depth) |>
+    select(lake_id:index_depth) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
     unique()
-  nla07_surge <- left_join(surge_res_morpho, cwl_nla07, by = "lake_id") |>
-    left_join(nla07_depths, by = "site_id", relationship = "many-to-many") |>
-    select(-site_id) |>
-    unique() 
-  
-  nla_surge <- full_join(nla07_surge, nla12_surge, relationship = "many-to-many") |>
-    full_join(nla17_surge, relationship = "many-to-many") |>
-    full_join(nla22_surge, relationship = "many-to-many")|>
-    pivot_longer(surfaceArea:nla2022_index_depth, names_to = "variable", 
-                 values_to = "value") |>
-    unique() |>
-    pivot_wider(id_cols = lake_id:lake_name, names_from = "variable", 
-                values_from = "value", values_fn = max)
+  nla07_surge <- left_join(nla07_depths, cwl_nla07, by = "site_id") |>
+    right_join(surge_morpho, by = "lake_id") |>
+    mutate(source = "NLA 2007") |>
+    relocate(lake_id, lake_name, join_id = site_id, source, index_depth = nla2007_index_depth) |>
+    select(lake_id:index_depth) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique()
+
+  nla_surge <- bind_rows(nla07_surge, nla12_surge, nla17_surge, nla22_surge) |>
+    pivot_longer(cols = index_depth, names_to = "variables", values_to = "values") |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "site_id")
+
+
+
   nla_surge
 }
+
+#' Function to merge in the original lake morpho runs
+#'
+#' @param orig
+#' @param surge
+#' @param crosswalk
+#'
+merge_orig <- function(orig, surge, crosswalk){
+
+  cw_lm <- filter(crosswalk, join_id_name == "lmorpho_comid") |>
+    select(lmorpho_comid = join_id, lake_id)
+  orig_join <- left_join(orig, cw_lm, by = "lmorpho_comid")
+  surge_orig <- left_join(surge, orig_join, by = "lake_id") |>
+    mutate(source = "nlmd") |>
+    relocate(lake_id, lake_name, join_id = lmorpho_comid, source) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique() |>
+    pivot_longer(cols = surfaceArea:origmorpho_volume_c, names_to = "variables",
+                 values_to = "values") |>
+    filter(grepl("origmorpho", variables)) |>
+    mutate(variables = str_replace(variables, "origmorpho_", "")) |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "lmorpho_comid")
+
+
+  surge_orig
+}
+
+#' Function to merge in the original lake morpho runs
+#'
+#' @param nhdplus
+#' @param surge
+#' @param crosswalk
+#'
+merge_nhdplus <- function(nhdplus, surge, crosswalk){
+
+  cw_nhd <- filter(crosswalk, join_id_name == "nhdplus_comid") |>
+    select(nhdplus_comid = join_id, lake_id)
+  nhdplus_join <- left_join(nhdplus, cw_nhd, by = "nhdplus_comid")
+  surge_nhdplus <- left_join(surge, nhdplus_join, by = "lake_id")  |>
+    mutate(source = "nhdplus") |>
+    relocate(lake_id, lake_name, join_id = nhdplus_comid, source) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique() |>
+    pivot_longer(cols = surfaceArea:nhdplus_lakearea, names_to = "variables",
+                 values_to = "values") |>
+    filter(grepl("nhdplus_", variables)) |>
+    mutate(variables = str_replace(variables, "nhdplus_", "")) |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "nhdplus_comid")
+  surge_nhdplus
+}
+
+#' Function to merge in the original lake morpho runs
+#'
+#' @param lagos
+#' @param surge
+#' @param crosswalk
+#'
+merge_lagos <- function(lagos, surge, crosswalk){
+
+  cw_lagos <- filter(crosswalk, join_id_name == "lagoslakeid") |>
+    select(lagoslakeid = join_id, lake_id)
+  lagos_join <- left_join(lagos, cw_lagos, by = "lagoslakeid")
+  surge_lagos <- left_join(surge, lagos_join, by = "lake_id") |>
+    mutate(source = "lagos") |>
+    relocate(lake_id, lake_name, join_id = lagoslakeid, source) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique() |>
+    pivot_longer(cols = surfaceArea:lagos_lakearea, names_to = "variables",
+                 values_to = "values") |>
+    filter(grepl("lagos_", variables)) |>
+    mutate(variables = str_replace(variables, "lagos_", "")) |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "lagoslakeid")
+  surge_lagos
+
+}
+
+#' Function to merge in the original lake morpho runs
+#'
+#' @param globathy
+#' @param surge
+#' @param crosswalk
+#'
+merge_globathy_max <- function(globathy, surge, crosswalk){
+
+  cw_globathy <- filter(crosswalk, join_id_name == "hylak_id") |>
+    select(globathy_hylak_id = join_id, lake_id)
+  globathy_join <- left_join(globathy, cw_globathy, by = "globathy_hylak_id")
+  surge_globathy <- left_join(surge, globathy_join, by = "lake_id") |>
+    mutate(source = "globathy") |>
+    relocate(lake_id, lake_name, join_id = globathy_hylak_id, source) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique() |>
+    pivot_longer(cols = surfaceArea:globathy_dmax_use, names_to = "variables",
+                 values_to = "values") |>
+    filter(grepl("globathy_", variables)) |>
+    mutate(variables = str_replace(variables, "globathy_", "")) |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "hylak_id")
+  surge_globathy
+
+}
+
+#' Function to capture point density and max lake length
+#'
+#' @param lake
+#' @param sequence
+#' @param ncore
+#'
+max_lake_length_var <- function(lake, sequence, ncore = 7){
+  lake_lm <- lakeSurroundTopo(lake)
+  get_max_length <- function(lake, dens){
+    max_length <- lakeMaxLength(lake_lm, dens)
+    data.frame(dens, max_length)
+  }
+  plan(multisession, workers = ncore)
+  max_lengths <- future_lapply(sequence,
+                        function(x) get_max_length(lake_lm, x),
+                                  future.seed=TRUE)
+  plan(sequential)
+  bind_rows(max_lengths)
+}
+
 
