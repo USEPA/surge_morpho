@@ -289,11 +289,12 @@ max_lake_length_var <- function(lake, sequence, ncore = 7){
     max_length <- lakeMaxLength(lake_lm, dens)
     data.frame(dens, max_length)
   }
-  plan(multisession, workers = ncore)
-  max_lengths <- future_lapply(sequence,
-                        function(x) get_max_length(lake_lm, x),
-                                  future.seed=TRUE)
-  plan(sequential)
+  #plan(multisession, workers = ncore)
+  #max_lengths <- future_lapply(sequence,
+  #                      function(x) get_max_length(lake_lm, x),
+  #                                future.seed=TRUE)
+  #plan(sequential)
+  max_lengths <- lapply(sequence, function(x) get_max_length(lake_lm, x))
   bind_rows(max_lengths)
 }
 

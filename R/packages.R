@@ -19,5 +19,6 @@ library(nngeo)
 library(progressr)
 library(tidyr)
 library(tictoc)
+library(ggplot2)
 
 
