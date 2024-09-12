@@ -11,13 +11,15 @@ surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"),
 #tic(); test_lake_lengths <- max_lake_length_var(test_lake, sequence, ncore = 4); toc()
 
 
-plan(multisession, workers = 6)
-tll2 <-future_lapply(sample(nrow(surge_reservoirs), 30, replace = FALSE), function(x) {
-  test_lake <- surge_reservoirs[,]
-  sequence <- c(10,20,40,80,100,250,500,750,1000,1500,2000,2500)
-  tll <- max_lake_length_var(test_lake, sequence, ncore = 1)
-  mutate(tll, lake_id = test_lake$lake_id)
-}, future.seed = TRUE)
+plan(multisession, workers = 3)
+tll2 <-future_lapply(sample(nrow(surge_reservoirs), 30, replace = FALSE),
+                     function(x) {
+                       test_lake <- surge_reservoirs[x,]
+                       sequence <- c(10,20,40,80,100,250,500,750,1000,1500,2000, 2500)
+                       tll <- max_lake_length_var(test_lake, sequence, ncore = 1)
+                       mutate(tll, lake_id = test_lake$lake_id)
+                       },
+                     future.seed = TRUE)
 plan(sequential)
 test_lake_lengths <- bind_rows(tll2)
 ggplot(test_lake_lengths, aes(x = dens, y = max_length)) +
