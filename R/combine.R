@@ -65,3 +65,4 @@ surge_res_morpho_all <- bind_rows(surge_orig, surge_lagos, surge_nhd, surge_nla,
   relocate(lake_id, lake_name, join_id, join_id_name) |>
   arrange(as.numeric(lake_id))
 
+write_csv(surge_res_morpho_all, "data/surge_res_morpho_all.csv")
