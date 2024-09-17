@@ -284,7 +284,7 @@ merge_globathy_max <- function(globathy, surge, crosswalk){
 #' @param ncore
 #'
 max_lake_length_var <- function(lake, sequence, ncore = 7){
-  lake_lm <- lakeSurroundTopo(lake)
+  lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
     max_length <- lakeMaxLength(lake_lm, dens)
     data.frame(dens, max_length)
