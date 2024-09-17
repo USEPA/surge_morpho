@@ -11,7 +11,7 @@ test_lake <- filter(surge_reservoirs, lake_id == "069")
 #max <- round(lakeShorelineLength(lakeSurroundTopo(test_lake))/30,0)
 #sequence <- c(seq(10,90, by = 10), seq(100, 900, by = 100), seq(1000, 10000, by=1000))
 sequence <- c(10, 50, 100, 200, 300, 400, 500, 750, 1000)#seq(10, 90, by = 10), seq(100,500, by = 100), seq(1000, round(max,-3), 1000))
-tic(); test_lake_lengths <- max_lake_length_var(test_lake, sequence[1:2], ncore = 10); toc()
+tic(); test_lake_lengths <- max_lake_length_var(test_lake, sequence[1:6], ncore = 3); toc()
 
 
 plan(multisession, workers = 10)
