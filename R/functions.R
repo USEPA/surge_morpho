@@ -283,17 +283,16 @@ merge_globathy_max <- function(globathy, surge, crosswalk){
 #' @param sequence
 #' @param ncore
 #'
-max_lake_length_var <- function(lake, sequence, ncore = 7){
+max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   #lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
     max_length <- surge_lake_length(lake, dens)
+    gc()
     data.frame(dens, max_length)
   }
-  plan(multisession, workers = ncore)
-  max_lengths <- future_lapply(sequence,
-                        function(x) get_max_length(lake, x),
-                                  future.seed=TRUE)
-  plan(sequential)
+  #plan(multisession, workers = ncore)
+  max_lengths <- lapply(sequence, function(x) get_max_length(lake, x))
+  #plan(sequential)
   #max_lengths <- lapply(sequence, function(x) get_max_length(lake_lm, x))
   bind_rows(max_lengths)
 }
