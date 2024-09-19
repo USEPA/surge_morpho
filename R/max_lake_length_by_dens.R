@@ -20,9 +20,11 @@ tll2 <-future_lapply(sample(nrow(surge_reservoirs), 10, replace = FALSE),
                        test_lake <- surge_reservoirs[x,]
                        sequence <- c(10,20,40,80,100,250,500,750,1000,1500,2000,
                                      2500,3000,3500,4000,5000,6000)
-                       tll <- max_lake_length_var(test_lake, sequence[1:3], ncore = 1)
+                       tll <- max_lake_length_var(test_lake, sequence)
                        tll <- mutate(tll, lake_id = test_lake$lake_id)
-                       write_csv(tll, here(paste0("data/tll_",x,".csv")))
+                       if(!file.exists(here(paste0("data/tll_",x,".csv")))){
+                        write_csv(tll, here(paste0("data/tll_",x,".csv")))
+                       }
                        tll
                        },
                      future.seed = TRUE)
