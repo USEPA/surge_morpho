@@ -286,7 +286,8 @@ merge_globathy_max <- function(globathy, surge, crosswalk){
 max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   #lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
-    filter_length <- surge_lake_length(lake, 100, 30)
+    filter_length <- surge_lake_length(lake, 100, 50)
+    if(is.na(filter_length)) {filter_length <- 30}
     max_length <- surge_lake_length(lake, dens, filter_length)
     gc()
     data.frame(dens, max_length)
@@ -301,7 +302,7 @@ max_lake_length_var <- function(lake, sequence){#, ncore = 7){
 max_lake_length_var_old <- function(lake, sequence){#, ncore = 7){
   #lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
-    #filter_length <- surge_lake_length(lake, 100, 30)
+    filter_length <- surge_lake_length(lake, 100, 0)
     max_length <- surge_lake_length(lake, dens)#, filter_length)
     gc()
     data.frame(dens, max_length)
