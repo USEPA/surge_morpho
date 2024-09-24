@@ -286,7 +286,9 @@ merge_globathy_max <- function(globathy, surge, crosswalk){
 max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   #lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
-    max_length <- surge_lake_length(lake, dens)
+    filter_length <- surge_lake_length(lake, 100, 50)
+    if(is.na(filter_length)) {filter_length <- 30}
+    max_length <- surge_lake_length(lake, dens, filter_length)
     gc()
     data.frame(dens, max_length)
   }
@@ -297,34 +299,27 @@ max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   bind_rows(max_lengths)
 }
 
-surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
+max_lake_length_var_old <- function(lake, sequence){#, ncore = 7){
+  #lake_lm <- lakeSurroundTopo(lake, reso = 300)
+  get_max_length <- function(lake, dens){
+    filter_length <- surge_lake_length(lake, 100, 0)
+    max_length <- surge_lake_length(lake, dens)#, filter_length)
+    gc()
+    data.frame(dens, max_length)
+  }
+  #plan(multisession, workers = ncore)
+  max_lengths <- lapply(sequence, function(x) get_max_length(lake, x))
+  #plan(sequential)
+  #max_lengths <- lapply(sequence, function(x) get_max_length(lake_lm, x))
+  bind_rows(max_lengths)
+}
+
+surge_lake_length <- function(lake, pointDens, addLine = TRUE, dist_filt = 100) {
   #if (!inherits(inLakeMorpho, "lakeMorpho")) {
   #  stop("Input data is not of class 'lakeMorpho'.  Run lakeSurround Topo or lakeMorphoClass first.")
   #}
   result <- NA
-  #lakeShorePoints <- spsample(as(inLakeMorpho$lake, "SpatialLines"), pointDens, "regular")@coords
-  lakeShorePoints <- st_coordinates(sf::st_sample(st_cast(lake,
-                                                          "MULTILINESTRING"),
-                                                  pointDens, type = "regular"))
-  dm <- dist(lakeShorePoints)
-  md <- nrow(lakeShorePoints)
-  x0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
-  y0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
-  x1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
-  y1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
-  xydf <- matrix(c(x0, x1, y0, y1), ncol = 4)
-  #browser()
-  #xylist <- split(xydf, rownames(xydf)) # SLOW!
-  xylist <- split(xydf, 1:length(x0)) #FASTER!
-  #myLines_old <- SpatialLines(lapply(xylist, function(x) Lines(list(Line(matrix(as.numeric(x), 2, 2))), row.names(x))),
-  #    proj4string = CRS(st_crs(inLakeMorpho$lake)$wkt))
-  #browser()
-  myLines <- st_sfc(lapply(xylist,
-                           function(x) st_linestring(matrix(as.numeric(x),2,2))),
-                    crs = sf::st_crs(lake))
-  #myInd_old <- gContains(as(inLakeMorpho$lake, "Spatial"), myLines_old, byid = TRUE)
-
-  #browser()
+  myLines <- build_my_lines(lake, pointDens, dist_filt = dist_filt)
   myInd <- sf::st_contains(lake, myLines, sparse = FALSE)[1,]
   if (sum(myInd) == 0) {
     return(NA)
@@ -345,4 +340,26 @@ surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
   #  assign(myName, inLakeMorpho, envir = parent.frame())
   #}
   return(round(result,4))
+}
+
+#' Function to build myLines for max lake length
+build_my_lines <- function(lake, pointDens=100, dist_filt = 30){
+  lakeShorePoints <- sf::st_sample(st_cast(lake,"MULTILINESTRING"), pointDens,
+                                   type = "regular")
+  lakeShorePoints <- st_cast(lakeShorePoints, "POINT")
+  lakeShorePoints <- st_coordinates(lakeShorePoints)
+  dm <- dist(lakeShorePoints)
+  md <- nrow(lakeShorePoints)
+  x0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
+  y0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
+  x1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
+  y1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
+  xydf <- matrix(c(x0, x1, y0, y1), ncol = 4)
+  dist_idx <-dm[order(dm, decreasing = TRUE)] > dist_filt
+  xydf <- xydf[dist_idx,]
+  xylist <- split(xydf, 1:nrow(xydf))
+  myLines <- st_sfc(lapply(xylist,
+                           function(x) st_linestring(matrix(as.numeric(x),2,2))),
+                    crs = sf::st_crs(lake))
+  myLines
 }
