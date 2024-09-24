@@ -8,64 +8,64 @@ fix_lon_lat <- function(df, lon, lat, site = "site_id") {
   df <- drop_na(df)
   fixed_df <- df |>
     mutate({{lon}} := case_when(str_detect(.data[[lon]], "^w") ~
-                             str_replace(.data[[lon]], "^w", "-"),
-                           str_detect(.data[[lon]], "$?��") ~
-                             str_replace(.data[[lon]], "$?��", ""),
-                           str_detect(.data[[lon]], " '") ~
-                             str_replace(.data[[lon]], " '", ""),
-                           str_detect(.data[[lon]], "'") ~
-                             str_replace(.data[[lon]], "'", ""),
-                           str_detect(.data[[lon]], "/3$") ~
-                             str_replace(.data[[lon]], "/3$", ""),
-                           str_detect(.data[[lon]], "\\?\\?$") ~
-                             str_replace(.data[[lon]], "\\?\\?$", ""),
-                           TRUE ~ .data[[lon]])) |>
+                                  str_replace(.data[[lon]], "^w", "-"),
+                                str_detect(.data[[lon]], "$?��") ~
+                                  str_replace(.data[[lon]], "$?��", ""),
+                                str_detect(.data[[lon]], " '") ~
+                                  str_replace(.data[[lon]], " '", ""),
+                                str_detect(.data[[lon]], "'") ~
+                                  str_replace(.data[[lon]], "'", ""),
+                                str_detect(.data[[lon]], "/3$") ~
+                                  str_replace(.data[[lon]], "/3$", ""),
+                                str_detect(.data[[lon]], "\\?\\?$") ~
+                                  str_replace(.data[[lon]], "\\?\\?$", ""),
+                                TRUE ~ .data[[lon]])) |>
     mutate({{lat}} := case_when(str_detect(.data[[lat]], "^w") ~
-                             str_replace(.data[[lat]], "^w", "-"),
-                           str_detect(.data[[lat]], "$?��") ~
-                             str_replace(.data[[lat]], "$?��", ""),
-                           str_detect(.data[[lat]], " '") ~
-                             str_replace(.data[[lat]], " '", ""),
-                           str_detect(.data[[lat]], "'") ~
-                             str_replace(.data[[lat]], "'", ""),
-                           str_detect(.data[[lat]], "/3$") ~
-                             str_replace(.data[[lat]], "/3$", ""),
-                           str_detect(.data[[lat]], "\\?\\?$") ~
-                             str_replace(.data[[lat]], "\\?\\?$", ""),
-                           TRUE ~ .data[[lat]])) |>
+                                  str_replace(.data[[lat]], "^w", "-"),
+                                str_detect(.data[[lat]], "$?��") ~
+                                  str_replace(.data[[lat]], "$?��", ""),
+                                str_detect(.data[[lat]], " '") ~
+                                  str_replace(.data[[lat]], " '", ""),
+                                str_detect(.data[[lat]], "'") ~
+                                  str_replace(.data[[lat]], "'", ""),
+                                str_detect(.data[[lat]], "/3$") ~
+                                  str_replace(.data[[lat]], "/3$", ""),
+                                str_detect(.data[[lat]], "\\?\\?$") ~
+                                  str_replace(.data[[lat]], "\\?\\?$", ""),
+                                TRUE ~ .data[[lat]])) |>
     mutate({{lon}} := case_when(str_detect(.data[[lon]], "\\?$") ~
-                             str_replace(.data[[lon]], "\\?$", ""),
-                           str_detect(.data[[lon]], "\\?\\?") ~ str_replace(paste(
-                             str_split(.data[[lon]], "\\?\\?", simplify = TRUE)[,1],
-                             round(as.numeric(str_split(.data[[lon]], "\\?\\?",
-                                                        simplify = TRUE)[,2])/60, 5),
-                             sep = "."), ".0.","."),
-                           str_detect(.data[[lon]], "(\\..*?)\\.") ~
-                             str_replace(.data[[lon]], "(\\..*?)\\.", "."),
-                           TRUE ~ .data[[lon]])) |>
+                                  str_replace(.data[[lon]], "\\?$", ""),
+                                str_detect(.data[[lon]], "\\?\\?") ~ str_replace(paste(
+                                  str_split(.data[[lon]], "\\?\\?", simplify = TRUE)[,1],
+                                  round(as.numeric(str_split(.data[[lon]], "\\?\\?",
+                                                             simplify = TRUE)[,2])/60, 5),
+                                  sep = "."), ".0.","."),
+                                str_detect(.data[[lon]], "(\\..*?)\\.") ~
+                                  str_replace(.data[[lon]], "(\\..*?)\\.", "."),
+                                TRUE ~ .data[[lon]])) |>
     mutate({{lon}} := case_when(!str_detect(.data[[lon]], "^-") ~
-                             paste0("-", .data[[lon]]),
-                           TRUE ~ .data[[lon]])) |>
+                                  paste0("-", .data[[lon]]),
+                                TRUE ~ .data[[lon]])) |>
 
     mutate({{lat}} := case_when(str_detect(.data[[lat]], "\\?$") ~
-                             str_replace(.data[[lat]], "\\?$", ""),
-                           str_detect(.data[[lat]], "\\?\\?") ~ str_replace(paste(
-                             str_split(.data[[lat]], "\\?\\?", simplify = TRUE)[,1],
-                             round(as.numeric(str_split(.data[[lat]], "\\?\\?",
-                                                        simplify = TRUE)[,2])/60, 5),
-                             sep = "."), ".0.","."),
-                           .data[[lat]] == "." ~
-                             NA_character_,
-                           str_detect(.data[[lat]], " ") ~
-                             str_replace(.data[[lat]], " ",""),
-                           TRUE ~ .data[[lat]])) |>
+                                  str_replace(.data[[lat]], "\\?$", ""),
+                                str_detect(.data[[lat]], "\\?\\?") ~ str_replace(paste(
+                                  str_split(.data[[lat]], "\\?\\?", simplify = TRUE)[,1],
+                                  round(as.numeric(str_split(.data[[lat]], "\\?\\?",
+                                                             simplify = TRUE)[,2])/60, 5),
+                                  sep = "."), ".0.","."),
+                                .data[[lat]] == "." ~
+                                  NA_character_,
+                                str_detect(.data[[lat]], " ") ~
+                                  str_replace(.data[[lat]], " ",""),
+                                TRUE ~ .data[[lat]])) |>
     filter(!is.na(.data[[lon]])) |>
     filter(!is.na(.data[[lat]])) |>
     filter(!is.na(.data[[site]])) |>
     mutate({{lon}} := str_replace(str_remove(str_replace(.data[[lon]],"\\.", ";"), "\\."),
-                             ";", "."),
+                                  ";", "."),
            {{lat}} := str_replace(str_remove(str_replace(.data[[lat]],"\\.", ";"), "\\."),
-                             ";", ".")) |>
+                                  ";", ".")) |>
     mutate({{lon}} := as.numeric(.data[[lon]]),
            {{lat}} := as.numeric(.data[[lat]]))
   fixed_df
@@ -82,7 +82,7 @@ read_in_nla_depth <- function(path, col_names,
   nla <- match.arg(nla)
   src <- match.arg(src)
   df <- readr::read_csv(here(path),
-                  guess_max = 35000) |>
+                        guess_max = 35000) |>
     select(all_of(col_names)) |>
     rename_all(tolower) |>
     mutate(nla = nla, src = src)
@@ -286,9 +286,7 @@ merge_globathy_max <- function(globathy, surge, crosswalk){
 max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   #lake_lm <- lakeSurroundTopo(lake, reso = 300)
   get_max_length <- function(lake, dens){
-    filter_length <- surge_lake_length(lake, 100, 50)
-    if(is.na(filter_length)) {filter_length <- 30}
-    max_length <- surge_lake_length(lake, dens, filter_length)
+    max_length <- surge_lake_length(lake, dens)
     gc()
     data.frame(dens, max_length)
   }
@@ -299,27 +297,34 @@ max_lake_length_var <- function(lake, sequence){#, ncore = 7){
   bind_rows(max_lengths)
 }
 
-max_lake_length_var_old <- function(lake, sequence){#, ncore = 7){
-  #lake_lm <- lakeSurroundTopo(lake, reso = 300)
-  get_max_length <- function(lake, dens){
-    filter_length <- surge_lake_length(lake, 100, 0)
-    max_length <- surge_lake_length(lake, dens)#, filter_length)
-    gc()
-    data.frame(dens, max_length)
-  }
-  #plan(multisession, workers = ncore)
-  max_lengths <- lapply(sequence, function(x) get_max_length(lake, x))
-  #plan(sequential)
-  #max_lengths <- lapply(sequence, function(x) get_max_length(lake_lm, x))
-  bind_rows(max_lengths)
-}
-
-surge_lake_length <- function(lake, pointDens, addLine = TRUE, dist_filt = 100) {
+surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
   #if (!inherits(inLakeMorpho, "lakeMorpho")) {
   #  stop("Input data is not of class 'lakeMorpho'.  Run lakeSurround Topo or lakeMorphoClass first.")
   #}
   result <- NA
-  myLines <- build_my_lines(lake, pointDens, dist_filt = dist_filt)
+  #lakeShorePoints <- spsample(as(inLakeMorpho$lake, "SpatialLines"), pointDens, "regular")@coords
+  lakeShorePoints <- st_coordinates(sf::st_sample(st_cast(lake,
+                                                          "MULTILINESTRING"),
+                                                  pointDens, type = "regular"))
+  dm <- dist(lakeShorePoints)
+  md <- nrow(lakeShorePoints)
+  x0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
+  y0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
+  x1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
+  y1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
+  xydf <- matrix(c(x0, x1, y0, y1), ncol = 4)
+  #browser()
+  #xylist <- split(xydf, rownames(xydf)) # SLOW!
+  xylist <- split(xydf, 1:length(x0)) #FASTER!
+  #myLines_old <- SpatialLines(lapply(xylist, function(x) Lines(list(Line(matrix(as.numeric(x), 2, 2))), row.names(x))),
+  #    proj4string = CRS(st_crs(inLakeMorpho$lake)$wkt))
+  #browser()
+  myLines <- st_sfc(lapply(xylist,
+                           function(x) st_linestring(matrix(as.numeric(x),2,2))),
+                    crs = sf::st_crs(lake))
+  #myInd_old <- gContains(as(inLakeMorpho$lake, "Spatial"), myLines_old, byid = TRUE)
+
+  #browser()
   myInd <- sf::st_contains(lake, myLines, sparse = FALSE)[1,]
   if (sum(myInd) == 0) {
     return(NA)
@@ -340,26 +345,4 @@ surge_lake_length <- function(lake, pointDens, addLine = TRUE, dist_filt = 100) 
   #  assign(myName, inLakeMorpho, envir = parent.frame())
   #}
   return(round(result,4))
-}
-
-#' Function to build myLines for max lake length
-build_my_lines <- function(lake, pointDens=100, dist_filt = 30){
-  lakeShorePoints <- sf::st_sample(st_cast(lake,"MULTILINESTRING"), pointDens,
-                                   type = "regular")
-  lakeShorePoints <- st_cast(lakeShorePoints, "POINT")
-  lakeShorePoints <- st_coordinates(lakeShorePoints)
-  dm <- dist(lakeShorePoints)
-  md <- nrow(lakeShorePoints)
-  x0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
-  y0 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 1], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
-  x1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 1][order(dm, decreasing = TRUE)]  #[30:md]
-  y1 <- lakeShorePoints[which(lower.tri(matrix(1, md, md)) == 1, arr.ind = TRUE)[, 2], ][, 2][order(dm, decreasing = TRUE)]  #[30:md]
-  xydf <- matrix(c(x0, x1, y0, y1), ncol = 4)
-  dist_idx <-dm[order(dm, decreasing = TRUE)] > dist_filt
-  xydf <- xydf[dist_idx,]
-  xylist <- split(xydf, 1:nrow(xydf))
-  myLines <- st_sfc(lapply(xylist,
-                           function(x) st_linestring(matrix(as.numeric(x),2,2))),
-                    crs = sf::st_crs(lake))
-  myLines
 }
