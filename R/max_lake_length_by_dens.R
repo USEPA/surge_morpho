@@ -14,21 +14,36 @@ test_lake <- filter(surge_reservoirs, lake_id == "069")
 #tic(); test_lake_lengths <- max_lake_length_var(test_lake, sequence[1:6], ncore = 3); toc()
 
 
-#plan(multisession, workers = 12)
-plan(sequential)
-tll2 <-future_lapply(114,#sample(nrow(surge_reservoirs), 147, replace = FALSE),
+#plan(multisession, workers = 1)
+#plan(sequential)
+tll2 <-lapply(114,#sample(nrow(surge_reservoirs), 147, replace = FALSE),
                      function(x) {
-                       if(!file.exists(here(paste0("data/tll_",x,"_big.csv")))){
+                       #if(x %in% 113:114){return(NA)}
+                       if(!file.exists(here(paste0("data/tll_",x,"6k.csv")))){
                          test_lake <- surge_reservoirs[x,]
-                         sequence <- c(5000,6000)#10,20,40,80,100,250,500,750,1000,1500,2000,
-                                       #2500,3000,3500,4000)
+                         sequence <- c(#10,20,40,80,100,250,500,750,1000,1500,2000,
+                           #2500,3000,3500,4000,
+                           6000)#,6000)
                          tll <- max_lake_length_var(test_lake, sequence)
                          tll <- mutate(tll, lake_id = test_lake$lake_id)
-                         write_csv(tll, here(paste0("data/tll_",x,"_big.csv")))
+                         write_csv(tll, here(paste0("data/tll_",x,"6k.csv")))
                          tll
                        } else {NA}
-                     },
-                     future.seed = TRUE)
+                     })
+#tll2 <-future_lapply(114,#sample(nrow(surge_reservoirs), 147, replace = FALSE),
+#                     function(x) {
+#                       #if(x %in% 113:114){return(NA)}
+#                       if(!file.exists(here(paste0("data/tll_",x,"big.csv")))){
+#                         test_lake <- surge_reservoirs[x,]
+#                         sequence <- c(#10,20,40,80,100,250,500,750,1000,1500,2000,
+#                                       #2500,3000,3500,4000,
+#                                       5000,6000)
+#                         tll <- max_lake_length_var(test_lake, sequence)
+#                         tll <- mutate(tll, lake_id = test_lake$lake_id)
+#                         write_csv(tll, here(paste0("data/tll_",x,"big.csv")))
+#                         tll
+#                       } else {NA}
+#                     }, future.seed = TRUE)
 plan(sequential)
 test_lake_lengths <- bind_rows(tll2)
 ggplot(test_lake_lengths, aes(x = dens, y = max_length)) +

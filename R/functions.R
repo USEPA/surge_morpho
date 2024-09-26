@@ -301,6 +301,7 @@ surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
   #if (!inherits(inLakeMorpho, "lakeMorpho")) {
   #  stop("Input data is not of class 'lakeMorpho'.  Run lakeSurround Topo or lakeMorphoClass first.")
   #}
+  browser()
   result <- NA
   #lakeShorePoints <- spsample(as(inLakeMorpho$lake, "SpatialLines"), pointDens, "regular")@coords
   lakeShorePoints <- st_coordinates(sf::st_sample(st_cast(lake,
