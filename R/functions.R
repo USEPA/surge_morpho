@@ -3,9 +3,9 @@
 #' @param lon the column name for longitude
 #' @param lat the column name for latitude
 
-fix_lon_lat <- function(df, lon, lat, site = "site_id") {
+fix_lon_lat <- function(df, lon, lat, site = "site_id", dropna = TRUE) {
 
-  df <- drop_na(df)
+  if(dropna){df <- drop_na(df)}
   fixed_df <- df |>
     mutate({{lon}} := case_when(str_detect(.data[[lon]], "^w") ~
                                   str_replace(.data[[lon]], "^w", "-"),
@@ -301,7 +301,7 @@ surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
   #if (!inherits(inLakeMorpho, "lakeMorpho")) {
   #  stop("Input data is not of class 'lakeMorpho'.  Run lakeSurround Topo or lakeMorphoClass first.")
   #}
-  browser()
+  #browser()
   result <- NA
   #lakeShorePoints <- spsample(as(inLakeMorpho$lake, "SpatialLines"), pointDens, "regular")@coords
   lakeShorePoints <- st_coordinates(sf::st_sample(st_cast(lake,
@@ -346,4 +346,72 @@ surge_lake_length <- function(lake, pointDens, addLine = TRUE) {
   #  assign(myName, inLakeMorpho, envir = parent.frame())
   #}
   return(round(result,4))
+}
+
+#' Function to pull nla phab points and create sf for all
+#'
+#' @param phab12  phab 2012 file path
+#' @param phab17  phab 2017 file path
+#' @param phab22  phab 2022 file path
+nla_phab_pts_to_sf <- function(phab12, phab17, phab22){
+
+  nla12_phab <- read_csv(phab12, guess_max = 30000) |>
+    select(SITE_ID, STATION, LONGITUDE, LATITUDE, DEPTH_AT_STATION) |>
+    rename_all(tolower) |>
+    filter(!is.na(longitude)) |>
+    filter(!is.na(latitude)) |>
+    mutate(longitude = case_when(longitude > 0 ~
+                       longitude * -1,
+                     TRUE ~ longitude),
+           source = "nla 12 phab")
+  nla17_phab <- read_csv(phab17, guess_max = 30000) |>
+    select(SITE_ID, STATION, LONGITUDE, LATITUDE, DEPTH_AT_STATION) |>
+    rename_all(tolower) |>
+    filter(!is.na(longitude)) |>
+    filter(!is.na(latitude)) |>
+    mutate(source = "nla 17 phab")
+  nla22_phab <- read_csv(phab22, guess_max = 30000) |>
+    select(SITE_ID, STATION, LONGITUDE, LATITUDE, DEPTH_AT_STATION) |>
+    rename_all(tolower) |>
+    filter(!is.na(longitude)) |>
+    filter(!is.na(latitude)) |>
+    mutate(source = "nla 22 phab")
+  nla_phab <- bind_rows(nla12_phab, nla17_phab, nla22_phab) |>
+    filter(!is.na(site_id)) |>
+    st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+  nla_phab
+}
+
+#' Function to merge in the NID
+#'
+#' @param nid
+#' @param surge
+#' @param crosswalk
+#'
+merge_nid <- function(nid, surge, crosswalk){
+  browser()
+
+  cw_nid <- filter(crosswalk, join_id_name == "nid_id") |>
+    select(nid_id = join_id, lake_id)
+  nid_join <- rename(nid, nid_id = nidId) |>
+    select(nid_id, damHeight:maxDischarge, nid_surfaceArea = surfaceArea,
+           nid_volume = volume) |>
+    select(-nidHeightId, -yearCompleted, -yearCompletedId, - yearsModified) |>
+    mutate(across(damHeight:maxDischarge, as.numeric)) |>
+    left_join(cw_nid, by = "nid_id")
+  #lake_id not coming in...
+  surge_nid <- left_join(surge, nid_join, by = "lake_id") |>
+    mutate(source = "nid") |>
+    relocate(lake_id, lake_name, join_id = nid_id, source) |>
+    filter(!is.na(lake_id)) |>
+    filter(!is.na(join_id)) |>
+    unique() |>
+    pivot_longer(cols = surfaceArea:nid_volume, names_to = "variables",
+                 values_to = "values") |>
+    filter(grepl("lagos_", variables)) |>
+    mutate(variables = str_replace(variables, "lagos_", "")) |>
+    filter(!is.na(values)) |>
+    mutate(join_id_name = "lagoslakeid")
+  surge_lagos
+
 }
