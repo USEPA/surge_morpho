@@ -7,7 +7,7 @@ surge_reservoirs <- sf::st_read(here::here("data/surge/all_lakes.gpkg"),
 
 surge_res_morpho_all <- read_csv("data/surge_res_morpho_all.csv")
 
-test_lake <- filter(surge_reservoirs, lake_id == "069")
+test_lake <- filter(surge_reservoirs, lake_id == "1010")
 #max <- round(lakeShorelineLength(lakeSurroundTopo(test_lake))/30,0)
 #sequence <- c(seq(10,90, by = 10), seq(100, 900, by = 100), seq(1000, 10000, by=1000))
 #sequence <- c(10, 50, 100, 200, 300, 400, 500, 750, 1000)#seq(10, 90, by = 10), seq(100,500, by = 100), seq(1000, round(max,-3), 1000))
