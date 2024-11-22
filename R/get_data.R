@@ -67,6 +67,19 @@ map(folders[15],
                                        overwrite = TRUE,
                                        recursive = TRUE))
 
+tin_gdbs <- fs::dir_ls(here("data/surge/tin"), recurse = T,
+                       type = "directory", regexp = "\\.gdb$")
+
+create_tif <- function(x){
+  rast_layer <- gsub("RASTER_DATASET=", "",
+                     gdal_metadata(x))
+  rst <- terra::rast(x, rast_layer) |>
+    terra::project("EPSG:5072")
+  tif_file <- here(paste0("data/surge/bathymetry_raster/",rast_layer,".tif"))
+  terra::writeRaster(rst, tif_file, overwrite=TRUE)
+}
+
+lapply(tin_gdbs, create_tif)
 
 # Get Lake morphometry
 fs::dir_create(here::here("data/lakemorpho"))

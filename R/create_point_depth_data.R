@@ -70,23 +70,54 @@ surge_nla22_index_pts <- read_csv(here("data/nla/nla22_siteinfo.csv")) |>
   mutate(lake_id = as.numeric(lake_id))
 
 # Add TIN depths
-tin_gdbs <- fs::dir_ls(here("data/surge/tin"), recurse = T,
-                          type = "directory", regexp = "\\.gdb$")
+bath_tif <- fs::dir_ls(here("data/surge/bathymetry_raster/"), type = "file",
+                       glob = "*.tif")
 
-create_tif <- function(x){
-  rast_layer <- gsub("RASTER_DATASET=", "",
-                     gdal_metadata(x))
-  rst <- terra::rast(x, rast_layer)
-  tif_file <- here(paste0("data/surge/bathymetry_raster/",rast_layer,".tif"))
-  terra::writeRaster(rst, tif_file, overwrite=TRUE)
+extract_depth_surge_pts <- function(tif_file){
+  tif <- terra::rast(tif_file)
+  pt_dep <- terra::extract(tif, surge_pts)
+  pt_dep <- drop_na(pt_dep)
+  names(pt_dep) <- c("ID", "depth")
+  pt_dep
 }
 
-lapply(tin_gdbs, create_tif)
+pre_surge_pt_depths <- map_df(bath_tif, extract_depth_surge_pts)
+surge_pts <- mutate(surge_pts, ID = as.numeric(1:nrow(surge_pts)))
+pre_surge_pts <- left_join(pre_surge_pt_depths, select(surge_pts, -depth),"ID")
+pre_surge_pts <- mutate(pre_surge_pts,
+                        source = "pre-SuRGE resevoris sampling loaction - bathymetry",
+                        depth = depth * -1)
+pre_surge_pts <- select(pre_surge_pts, lake_id, lake_name, source, depth)
+
+# mean and max Depth from pre_surge bathymetry
+bathy_mean_max <- function(tif_file){
+  #browser()
+  tif <- terra::rast(tif_file)
+  tif_pts <- st_as_sf(as.points(tif))
+  names(tif_pts)[1] <- "depth"
+  max_depth <- min(tif_pts$depth) # min because of negative depth
+  #mean_depth <- mean(tif_pts$depth)
+  max_depth_pts <- dplyr::filter(tif_pts, depth == max_depth)
+  max_depth_pts
+}
+
+max_depth_pts <- map_df(bath_tif, bathy_mean_max)
+pre_surge_bathy_max_depth <- sf::st_join(max_depth_pts, surge_poly)
+pre_surge_bathy_max_depth <-mutate(pre_surge_bathy_max_depth,
+                                   depth = depth * -1,
+                                   source = "pre-SuRGE reservoir bathymetry max depth",
+                                   lake_id = as.numeric(lake_id)) |>
+  select(lake_id, lake_name, source, depth)
+
+
+# Combine all pts
 
 surge_measured_depths <- bind_rows(surge_pts, surge_phab_pts,
                                    surge_nla07_index_pts, surge_nla17_index_pts,
-                                   surge_nla12_index_pts, surge_nla22_index_pts)
+                                   surge_nla12_index_pts, surge_nla22_index_pts,
+                                   pre_surge_pts, pre_surge_bathy_max_depth)
 
-st_write(surge_measured_depths, here("data/surge_morpho_point_depth.gpkg"))
+st_write(surge_measured_depths, here("data/surge_morpho_point_depth.gpkg"),
+         append = FALSE)
 
 
