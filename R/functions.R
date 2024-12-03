@@ -415,3 +415,53 @@ merge_nid <- function(nid, surge, crosswalk){
   surge_lagos
 
 }
+
+#' Create SuRGE National Map
+#'
+surge_national_map <- function(surge_polys, us_states){
+  #browser()
+  #import_roboto_condensed()
+  loadfonts(device = "win", quiet = TRUE)
+  windowsFonts("Roboto Condensed"=windowsFont("Roboto Condensed"))
+  surge_pts <- st_centroid(surge_polys)
+  #browser()
+  x <- ggplot() +
+    geom_sf(data = us_states) +
+    geom_sf(data = surge_pts, aes(col = study), size = 5) +
+    scale_color_manual(values = c("darkred", "darkblue")) +
+    theme_ipsum_rc() +
+    theme(axis.text.x = element_text(size = 32),
+          axis.text.y = element_text(size = 32),
+          legend.title = element_blank(),
+          legend.position = "inside",
+          legend.position.inside = c(0.9,0.5),
+          legend.text = element_text(size = 28),
+          legend.spacing.y = unit(5.5, 'in'))
+  x
+}
+
+#' create single res map
+single_reservoir_map <- function(res, pts){
+
+  # Aggregate sources
+  pts <- mutate(pts, Sources =
+                  case_when(grepl("phab", source) ~ "NLA Phys. Habitat",
+                            grepl("index", source) ~ "NLA Index Site",
+                            grepl("pre-", source) ~ "Existing Bathymetry",
+                            TRUE ~ "SuRGE Depth Measurements"))
+  x <- ggplot() +
+    geom_sf(data = res) +
+    geom_sf(data = pts, aes (col = Sources), size = 5) +
+    theme_void() +
+    scale_color_manual(values = c("darkblue", "darkred", "darkslategray4",
+                                  "darkslategray")) +
+    theme(legend.title = element_blank(),
+          #legend.position = "inside",
+          #legend.position.inside = c(0.9,0.5),
+          legend.text = element_text(size = 28),
+          legend.spacing.y = unit(5.5, 'in'))
+  x
+
+}
+
+
