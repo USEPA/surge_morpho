@@ -72,6 +72,9 @@ surge_poly <- st_read(here("data/surge/all_lakes.gpkg"), layer = "all_lakes")  |
 surge_poly <- mutate(surge_poly, 
                      study = case_when(as.numeric(lake_id) >= 1000 ~
                                          "2016 Study",
+                                       as.numeric(lake_id) %in%
+                                         c(239,253,263,302,308,323,331,999) ~ 
+                                         "2018 Study",
                                        TRUE ~ "SuRGE"))
 surge_poly <- filter(surge_poly, as.numeric(lake_id) != 1033)
 us <- USAboundaries::us_states() |>
@@ -88,4 +91,23 @@ lake_1013 <- filter(surge_poly, lake_id == 1013)
 lake_pts_1013 <- filter(surge_all_pts, lake_id == 1013)
 res_map <- single_reservoir_map(lake_1013, lake_pts_1013)
 ggsave(here("products/hollister_et_al_agu_present/figures/res_map.jpg"), width = 18, height = 18, units = "in", dpi = 600)
+
+```
+
+```{r, results='asis'}
+x <- read_csv(here("data/surge_res_morpho_all.csv"))
+x <- filter(x, lake_id == 1013, source != "nlmd")
+x <- select(x, source, variables, values)
+x <- filter(x, !is.na(values))
+x <- mutate(x, values = 
+              case_when(values < 10000 ~
+                          format(round(values, 2), scientific = FALSE, big.mark =","), 
+                        values >= 1000 ~
+                          format(round(values, 0), scientific = FALSE, big.mark =",")))
+x <- mutate(x, type = case_when(source == "surge_morpho" ~ 
+                                  "calculated",
+                                TRUE ~ "existing"))
+x <- select(x, source, type, variables, values)
+#x <- mutate(x, values = )
+knitr::kable(x)
 ```

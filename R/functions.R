@@ -424,11 +424,13 @@ surge_national_map <- function(surge_polys, us_states){
   loadfonts(device = "win", quiet = TRUE)
   windowsFonts("Roboto Condensed"=windowsFont("Roboto Condensed"))
   surge_pts <- st_centroid(surge_polys)
+
   #browser()
   x <- ggplot() +
     geom_sf(data = us_states) +
-    geom_sf(data = surge_pts, aes(col = study), size = 5) +
-    scale_color_manual(values = c("darkred", "darkblue")) +
+    geom_sf(data = surge_pts, aes(col = study, shape = study), size = 5) +
+
+    scale_color_manual(values = c("darkred", "grey10", "darkblue")) +
     theme_ipsum_rc() +
     theme(axis.text.x = element_text(size = 32),
           axis.text.y = element_text(size = 32),
@@ -442,24 +444,32 @@ surge_national_map <- function(surge_polys, us_states){
 
 #' create single res map
 single_reservoir_map <- function(res, pts){
-
+  #browser()
   # Aggregate sources
-  pts <- mutate(pts, Sources =
+  del_bathy <- terra::rast("data/surge/bathymetry_raster/delaware_ras.tif") |>
+    terra::project("epsg:5072") * -1
+  pts <- pts |>
+    mutate(Sources =
                   case_when(grepl("phab", source) ~ "NLA Phys. Habitat",
                             grepl("index", source) ~ "NLA Index Site",
                             grepl("pre-", source) ~ "Existing Bathymetry",
-                            TRUE ~ "SuRGE Depth Measurements"))
+                            grepl("surge sites", source) ~ "SuRGE Depth Measurements",
+                            TRUE ~ NA_character_)) |>
+    filter(!is.na(depth))
+
   x <- ggplot() +
     geom_sf(data = res) +
     geom_sf(data = pts, aes (col = Sources), size = 5) +
+    tidyterra::geom_spatraster_contour_text(data = del_bathy, size = 7, breaks = c(1, 3, 5, 8)) +
     theme_void() +
-    scale_color_manual(values = c("darkblue", "darkred", "darkslategray4",
-                                  "darkslategray")) +
     theme(legend.title = element_blank(),
           #legend.position = "inside",
           #legend.position.inside = c(0.9,0.5),
           legend.text = element_text(size = 28),
-          legend.spacing.y = unit(5.5, 'in'))
+          legend.key.spacing.y = unit(2.5, "lines")) +
+    scale_color_manual(values = c("darkblue", "darkred", "darkslategray4",
+                                  "darkslategray"))
+
   x
 
 }

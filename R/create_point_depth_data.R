@@ -85,9 +85,9 @@ pre_surge_pt_depths <- map_df(bath_tif, extract_depth_surge_pts)
 surge_pts <- mutate(surge_pts, ID = as.numeric(1:nrow(surge_pts)))
 pre_surge_pts <- left_join(pre_surge_pt_depths, select(surge_pts, -depth),"ID")
 pre_surge_pts <- mutate(pre_surge_pts,
-                        source = "pre-SuRGE resevoris sampling loaction - bathymetry",
+                        source = "pre-SuRGE resevoirs sampling loaction - bathymetry",
                         depth = depth * -1)
-pre_surge_pts <- select(pre_surge_pts, lake_id, lake_name, source, depth)
+pre_surge_pts <- select(pre_surge_pts, lake_id, lake_name, source, depth, geometry)
 
 # mean and max Depth from pre_surge bathymetry
 bathy_mean_max <- function(tif_file){
