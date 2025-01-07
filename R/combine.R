@@ -64,7 +64,6 @@ surge_nhd <- merge_nhdplus(nhdplus_morpho, surge_res_morpho,
 surge_lagos <- merge_lagos(lagos_depth_area, surge_res_morpho,
                                       crosswalk_long)
 
-
 surge_measure <- sf::st_read(here("data/surge_morpho_point_depth.gpkg")) |>
   mutate(lake_id = case_when(lake_id == 69 ~ paste0("0", as.character(lake_id)),
                              lake_id == 70 ~ paste0("0", as.character(lake_id)),

@@ -68,6 +68,7 @@ map(folders[15],
                                        recursive = TRUE))
 
 
+
 tin_gdbs <- fs::dir_ls(here("data/surge/tin"), recurse = T,
                        type = "directory", regexp = "\\.gdb$")
 
@@ -81,6 +82,7 @@ create_tif <- function(x){
 }
 
 lapply(tin_gdbs, create_tif)
+
 
 # Get Lake morphometry
 fs::dir_create(here::here("data/lakemorpho"))
