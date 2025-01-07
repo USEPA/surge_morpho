@@ -416,6 +416,7 @@ merge_nid <- function(nid, surge, crosswalk){
 
 }
 
+
 #' Create SuRGE National Map
 #'
 surge_national_map <- function(surge_polys, us_states){

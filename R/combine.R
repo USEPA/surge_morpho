@@ -64,6 +64,7 @@ surge_nhd <- merge_nhdplus(nhdplus_morpho, surge_res_morpho,
 surge_lagos <- merge_lagos(lagos_depth_area, surge_res_morpho,
                                       crosswalk_long)
 
+
 surge_measure <- sf::st_read(here("data/surge_morpho_point_depth.gpkg")) |>
   mutate(lake_id = case_when(lake_id == 69 ~ paste0("0", as.character(lake_id)),
                              lake_id == 70 ~ paste0("0", as.character(lake_id)),
@@ -79,6 +80,7 @@ surge_measure <- surge_measure |>
   select(lake_id, lake_name, join_id, join_id_name, source, variables,
          value = max_measured_depth) |>
   unique()
+
 
 #sugre_nid <- merge_nid(nid, surge_res_morpho, crosswalk_long)
 
