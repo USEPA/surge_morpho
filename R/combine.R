@@ -81,7 +81,6 @@ surge_measure <- surge_measure |>
          value = max_measured_depth) |>
   unique()
 
-
 #sugre_nid <- merge_nid(nid, surge_res_morpho, crosswalk_long)
 
 surge_res_morpho_long <- surge_res_morpho |>

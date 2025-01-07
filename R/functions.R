@@ -474,4 +474,3 @@ single_reservoir_map <- function(res, pts){
 
 }
 
-
