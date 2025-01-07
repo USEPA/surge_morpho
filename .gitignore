@@ -15,4 +15,5 @@ data/lakemorpho
 data/nhd
 .gitconfig
 ..bfg-report
-data/tin
+data/surge/tin
+data/nid
