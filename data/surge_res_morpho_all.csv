@@ -25,6 +25,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1,French Creek,1,lake_id,surge_morpho,fetch,982.86
 1,French Creek,1,lake_id,surge_morpho,maxlength,1797.0911
 1,French Creek,113618,hylak_id,globathy,dmax_use,16.33397565865467
+1,French Creek,NA,NA,surge sites,maximum measured depth,4.5
 2,Arkabutla,15252778,lmorpho_comid,nlmd,surfacearea,39078410.47
 2,Arkabutla,15252778,lmorpho_comid,nlmd,shorelinelength,102433.4951
 2,Arkabutla,15252778,lmorpho_comid,nlmd,shorelinedev,4.622411599
@@ -56,6 +57,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 2,Arkabutla,2,lake_id,surge_morpho,fetch,7238.97
 2,Arkabutla,2,lake_id,surge_morpho,maxlength,10750.2065
 2,Arkabutla,9378,hylak_id,globathy,dmax_use,22.657383466666673
+2,Arkabutla,NA,NA,nla17 index,maximum measured depth,7
 3,Lake O' the Pines,1010832,lmorpho_comid,nlmd,surfacearea,70624736.18
 3,Lake O' the Pines,1010832,lmorpho_comid,nlmd,shorelinelength,190972.8098
 3,Lake O' the Pines,1010832,lmorpho_comid,nlmd,shorelinedev,6.410445121
@@ -102,6 +104,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 3,Lake O' the Pines,3,lake_id,surge_morpho,fetch,5506.18
 3,Lake O' the Pines,3,lake_id,surge_morpho,maxlength,19813.4895
 3,Lake O' the Pines,9462,hylak_id,globathy,dmax_use,15.27048
+3,Lake O' the Pines,NA,NA,nla07 index,maximum measured depth,10.1
 4,Cotile Lake,19918180,lmorpho_comid,nlmd,surfacearea,6523204.269
 4,Cotile Lake,19918180,lmorpho_comid,nlmd,shorelinelength,36633.99763
 4,Cotile Lake,19918180,lmorpho_comid,nlmd,shorelinedev,4.046214404
@@ -133,6 +136,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 4,Cotile Lake,4,lake_id,surge_morpho,fetch,3749.17
 4,Cotile Lake,4,lake_id,surge_morpho,maxlength,4978.2971
 4,Cotile Lake,113773,hylak_id,globathy,dmax_use,14.889548061393334
+4,Cotile Lake,NA,NA,surge sites,maximum measured depth,6.9
 10,okeheelee,56038,lmorpho_comid,nlmd,surfacearea,49257.79202
 10,okeheelee,56038,lmorpho_comid,nlmd,shorelinelength,860.9937432
 10,okeheelee,56038,lmorpho_comid,nlmd,shorelinedev,1.094353404
@@ -181,6 +185,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 10,okeheelee,10,lake_id,surge_morpho,meanwidth,358.92
 10,okeheelee,10,lake_id,surge_morpho,fetch,218.97
 10,okeheelee,10,lake_id,surge_morpho,maxlength,809.8575
+10,okeheelee,NA,NA,nla22 index,maximum measured depth,7.3
 11,Lake Jacksonville,4452402,lmorpho_comid,nlmd,surfacearea,4814395.854
 11,Lake Jacksonville,4452402,lmorpho_comid,nlmd,shorelinelength,34469.10388
 11,Lake Jacksonville,4452402,lmorpho_comid,nlmd,shorelinedev,4.431534786
@@ -212,6 +217,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 11,Lake Jacksonville,11,lake_id,surge_morpho,fetch,2674.53
 11,Lake Jacksonville,11,lake_id,surge_morpho,maxlength,3960.5965
 11,Lake Jacksonville,113707,hylak_id,globathy,dmax_use,16.764
+11,Lake Jacksonville,NA,NA,surge sites,maximum measured depth,16.3
 13,Concord Pond,8390734,lmorpho_comid,nlmd,surfacearea,272760.2897
 13,Concord Pond,8390734,lmorpho_comid,nlmd,shorelinelength,3777.428942
 13,Concord Pond,8390734,lmorpho_comid,nlmd,shorelinedev,2.040331807
@@ -243,6 +249,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 13,Concord Pond,13,lake_id,surge_morpho,fetch,302.09
 13,Concord Pond,13,lake_id,surge_morpho,maxlength,779.1402
 13,Concord Pond,1057586,hylak_id,globathy,dmax_use,4.549290483078666
+13,Concord Pond,NA,NA,NA,maximum measured depth,1.7
 14,Johnson Family Boating Lake,19139667,lmorpho_comid,nlmd,surfacearea,354987.865
 14,Johnson Family Boating Lake,19139667,lmorpho_comid,nlmd,shorelinelength,3210.312286
 14,Johnson Family Boating Lake,19139667,lmorpho_comid,nlmd,shorelinedev,1.519972026
@@ -272,6 +279,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 14,Johnson Family Boating Lake,14,lake_id,surge_morpho,fetch,615.81
 14,Johnson Family Boating Lake,14,lake_id,surge_morpho,maxlength,924.5186
 14,Johnson Family Boating Lake,1064609,hylak_id,globathy,dmax_use,11.964773241857332
+14,Johnson Family Boating Lake,NA,NA,NA,maximum measured depth,6.2
 16,jolly pond,10062717,lmorpho_comid,nlmd,surfacearea,184328.7614
 16,jolly pond,10062717,lmorpho_comid,nlmd,shorelinelength,3795.35303
 16,jolly pond,10062717,lmorpho_comid,nlmd,shorelinedev,2.493737259
@@ -302,6 +310,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 16,jolly pond,16,lake_id,surge_morpho,meanwidth,157.9
 16,jolly pond,16,lake_id,surge_morpho,fetch,256.67
 16,jolly pond,16,lake_id,surge_morpho,maxlength,726.2479
+16,jolly pond,NA,NA,NA,maximum measured depth,2.3
 17,Blue Lake,71542,lmorpho_comid,nlmd,surfacearea,111905.5766
 17,Blue Lake,71542,lmorpho_comid,nlmd,shorelinelength,1198.628201
 17,Blue Lake,71542,lmorpho_comid,nlmd,shorelinedev,1.010773145
@@ -322,6 +331,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 17,Blue Lake,17,lake_id,surge_morpho,meanwidth,235.73
 17,Blue Lake,17,lake_id,surge_morpho,fetch,315.49
 17,Blue Lake,17,lake_id,surge_morpho,maxlength,338.903
+17,Blue Lake,NA,NA,nla17 index,maximum measured depth,2.3
 18,Crooked Creek Reservoir,15138463,lmorpho_comid,nlmd,surfacearea,1497907.022
 18,Crooked Creek Reservoir,15138463,lmorpho_comid,nlmd,shorelinelength,12497.04097
 18,Crooked Creek Reservoir,15138463,lmorpho_comid,nlmd,shorelinedev,2.880446632
@@ -346,6 +356,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 18,Crooked Creek Reservoir,18,lake_id,surge_morpho,fetch,1589.57
 18,Crooked Creek Reservoir,18,lake_id,surge_morpho,maxlength,2402.1265
 18,Crooked Creek Reservoir,113825,hylak_id,globathy,dmax_use,13.260867361721468
+18,Crooked Creek Reservoir,NA,NA,NA,maximum measured depth,3.4
 44,lake juniper,9164888,lmorpho_comid,nlmd,surfacearea,894444.9803
 44,lake juniper,9164888,lmorpho_comid,nlmd,shorelinelength,8639.557927
 44,lake juniper,9164888,lmorpho_comid,nlmd,shorelinedev,2.576972436
@@ -373,6 +384,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 44,lake juniper,44,lake_id,surge_morpho,fetch,927.36
 44,lake juniper,44,lake_id,surge_morpho,maxlength,1909.0329
 44,lake juniper,1061366,hylak_id,globathy,dmax_use,14.241455818898666
+44,lake juniper,NA,NA,surge sites,maximum measured depth,4.7
 45,Four Prong Lake,478125,lmorpho_comid,nlmd,surfacearea,104559.7034
 45,Four Prong Lake,478125,lmorpho_comid,nlmd,shorelinelength,1430.287394
 45,Four Prong Lake,478125,lmorpho_comid,nlmd,shorelinedev,1.247774792
@@ -394,6 +406,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 45,Four Prong Lake,45,lake_id,surge_morpho,meanwidth,162.57
 45,Four Prong Lake,45,lake_id,surge_morpho,fetch,416.85
 45,Four Prong Lake,45,lake_id,surge_morpho,maxlength,421.3251
+45,Four Prong Lake,NA,NA,nla17 index,maximum measured depth,4.5
 46,Maple Lake,9435755,lmorpho_comid,nlmd,surfacearea,118688.0455
 46,Maple Lake,9435755,lmorpho_comid,nlmd,shorelinelength,1963.898724
 46,Maple Lake,9435755,lmorpho_comid,nlmd,shorelinedev,1.608091169
@@ -425,6 +438,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 46,Maple Lake,46,lake_id,surge_morpho,fetch,292.9
 46,Maple Lake,46,lake_id,surge_morpho,maxlength,600.2816
 46,Maple Lake,1056710,hylak_id,globathy,dmax_use,11.24592259535
+46,Maple Lake,NA,NA,nla 12 phab,maximum measured depth,2
 47,Mirror Lake,4489294,lmorpho_comid,nlmd,surfacearea,371402.5508
 47,Mirror Lake,4489294,lmorpho_comid,nlmd,shorelinelength,8114.326207
 47,Mirror Lake,4489294,lmorpho_comid,nlmd,shorelinedev,3.75599573
@@ -486,6 +500,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 47,Mirror Lake,47,lake_id,surge_morpho,fetch,382.65
 47,Mirror Lake,47,lake_id,surge_morpho,maxlength,1903.6908
 47,Mirror Lake,1056048,hylak_id,globathy,dmax_use,3.833673879168
+47,Mirror Lake,NA,NA,nla17 index,maximum measured depth,3.9
 49,Lake Stockwell,4489532,lmorpho_comid,nlmd,surfacearea,286974.4673
 49,Lake Stockwell,4489532,lmorpho_comid,nlmd,shorelinelength,7553.293079
 49,Lake Stockwell,4489532,lmorpho_comid,nlmd,shorelinedev,3.977496215
@@ -515,6 +530,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 49,Lake Stockwell,49,lake_id,surge_morpho,meanwidth,168.67
 49,Lake Stockwell,49,lake_id,surge_morpho,fetch,257.42
 49,Lake Stockwell,49,lake_id,surge_morpho,maxlength,708.487
+49,Lake Stockwell,NA,NA,NA,maximum measured depth,2.1
 51,Tully Lake,9343025,lmorpho_comid,nlmd,surfacearea,983024.922
 51,Tully Lake,9343025,lmorpho_comid,nlmd,shorelinelength,9643.353793
 51,Tully Lake,9343025,lmorpho_comid,nlmd,shorelinedev,2.743727045
@@ -547,6 +563,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 51,Tully Lake,51,lake_id,surge_morpho,fetch,859.55
 51,Tully Lake,51,lake_id,surge_morpho,maxlength,1417.8245
 51,Tully Lake,1050358,hylak_id,globathy,dmax_use,14.392131449351067
+51,Tully Lake,NA,NA,nla17 index,maximum measured depth,12.6
 52,Lake Zoar,120052268,lmorpho_comid,nlmd,surfacearea,10364202.24
 52,Lake Zoar,120052268,lmorpho_comid,nlmd,shorelinelength,93501.6089
 52,Lake Zoar,120052268,lmorpho_comid,nlmd,shorelinedev,8.193061455
@@ -578,6 +595,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 52,Lake Zoar,52,lake_id,surge_morpho,meanwidth,1104.33
 52,Lake Zoar,52,lake_id,surge_morpho,fetch,1255.65
 52,Lake Zoar,52,lake_id,surge_morpho,maxlength,3238.7272
+52,Lake Zoar,NA,NA,nla22 index,maximum measured depth,21.4
 53,Morris Reservoir,7711476,lmorpho_comid,nlmd,surfacearea,561996.6922
 53,Morris Reservoir,7711476,lmorpho_comid,nlmd,shorelinelength,5996.870093
 53,Morris Reservoir,7711476,lmorpho_comid,nlmd,shorelinedev,2.256590884
@@ -610,6 +628,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 53,Morris Reservoir,53,lake_id,surge_morpho,fetch,1555.21
 53,Morris Reservoir,53,lake_id,surge_morpho,maxlength,2066.8876
 53,Morris Reservoir,1053336,hylak_id,globathy,dmax_use,11.064579915150269
+53,Morris Reservoir,NA,NA,nla07 index,maximum measured depth,25.3
 54,Spencer Lake,15595957,lmorpho_comid,nlmd,surfacearea,210213.7266
 54,Spencer Lake,15595957,lmorpho_comid,nlmd,shorelinelength,3064.572301
 54,Spencer Lake,15595957,lmorpho_comid,nlmd,shorelinedev,1.885534158
@@ -640,6 +659,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 54,Spencer Lake,54,lake_id,surge_morpho,fetch,614.75
 54,Spencer Lake,54,lake_id,surge_morpho,maxlength,849.1574
 54,Spencer Lake,1054666,hylak_id,globathy,dmax_use,5.209461044637199
+54,Spencer Lake,NA,NA,nla 12 phab,maximum measured depth,3.5
 55,Zepernick Lake,19386918,lmorpho_comid,nlmd,surfacearea,162257.2638
 55,Zepernick Lake,19386918,lmorpho_comid,nlmd,shorelinelength,1726.523346
 55,Zepernick Lake,19386918,lmorpho_comid,nlmd,shorelinedev,1.209108987
@@ -667,6 +687,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 55,Zepernick Lake,55,lake_id,surge_morpho,meanwidth,281.21
 55,Zepernick Lake,55,lake_id,surge_morpho,fetch,277.99
 55,Zepernick Lake,55,lake_id,surge_morpho,maxlength,515.6782
+55,Zepernick Lake,NA,NA,nla22 index,maximum measured depth,3.2
 57,Slatersville Reservoir,6117396,lmorpho_comid,nlmd,surfacearea,243418.1919
 57,Slatersville Reservoir,6117396,lmorpho_comid,nlmd,shorelinelength,2465.56346
 57,Slatersville Reservoir,6117396,lmorpho_comid,nlmd,shorelinedev,1.409726089
@@ -715,6 +736,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 57,Slatersville Reservoir,57,lake_id,surge_morpho,fetch,830.29
 57,Slatersville Reservoir,57,lake_id,surge_morpho,maxlength,1828.3671
 57,Slatersville Reservoir,1052360,hylak_id,globathy,dmax_use,6.613662352630667
+57,Slatersville Reservoir,NA,NA,nla07 index,maximum measured depth,5.3
 64,Halls pond,6161203,lmorpho_comid,nlmd,surfacearea,339185.838
 64,Halls pond,6161203,lmorpho_comid,nlmd,shorelinelength,3174.429487
 64,Halls pond,6161203,lmorpho_comid,nlmd,shorelinedev,1.537594784
@@ -746,6 +768,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 64,Halls pond,64,lake_id,surge_morpho,fetch,829.77
 64,Halls pond,64,lake_id,surge_morpho,maxlength,1008.5016
 64,Halls pond,1052823,hylak_id,globathy,dmax_use,12.202053357291996
+64,Halls pond,NA,NA,NA,maximum measured depth,3.9
 65,Weatherhead Hollow,6777539,lmorpho_comid,nlmd,surfacearea,127387.7055
 65,Weatherhead Hollow,6777539,lmorpho_comid,nlmd,shorelinelength,2963.384898
 65,Weatherhead Hollow,6777539,lmorpho_comid,nlmd,shorelinedev,2.342175176
@@ -776,6 +799,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 65,Weatherhead Hollow,65,lake_id,surge_morpho,meanwidth,115.87
 65,Weatherhead Hollow,65,lake_id,surge_morpho,fetch,299.69
 65,Weatherhead Hollow,65,lake_id,surge_morpho,maxlength,1248.9424
+65,Weatherhead Hollow,NA,NA,nla 17 phab,maximum measured depth,2.2
 66,Norton Reservoir,6126713,lmorpho_comid,nlmd,surfacearea,2024299.205
 66,Norton Reservoir,6126713,lmorpho_comid,nlmd,shorelinelength,12590.19072
 66,Norton Reservoir,6126713,lmorpho_comid,nlmd,shorelinedev,2.496261189
@@ -805,6 +829,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 66,Norton Reservoir,66,lake_id,surge_morpho,meanwidth,815.27
 66,Norton Reservoir,66,lake_id,surge_morpho,fetch,1791.26
 66,Norton Reservoir,66,lake_id,surge_morpho,maxlength,2214.8225
+66,Norton Reservoir,NA,NA,surge sites,maximum measured depth,2.4
 67,Fort Peck Trout pond,12461540,lmorpho_comid,nlmd,surfacearea,214492.1215
 67,Fort Peck Trout pond,12461540,lmorpho_comid,nlmd,shorelinelength,2248.504384
 67,Fort Peck Trout pond,12461540,lmorpho_comid,nlmd,shorelinedev,1.369566531
@@ -829,6 +854,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 67,Fort Peck Trout pond,67,lake_id,surge_morpho,fetch,543.34
 67,Fort Peck Trout pond,67,lake_id,surge_morpho,maxlength,939.8159
 67,Fort Peck Trout pond,104407,hylak_id,globathy,dmax_use,5.0438750038125315
+67,Fort Peck Trout pond,NA,NA,surge sites,maximum measured depth,7.6
 68,Tschida Lake,16237597,lmorpho_comid,nlmd,surfacearea,13282293.99
 68,Tschida Lake,16237597,lmorpho_comid,nlmd,shorelinelength,53044.60389
 68,Tschida Lake,16237597,lmorpho_comid,nlmd,shorelinedev,4.105818379
@@ -859,6 +885,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 68,Tschida Lake,68,lake_id,surge_morpho,fetch,1842.89
 68,Tschida Lake,68,lake_id,surge_morpho,maxlength,4632.9068
 68,Tschida Lake,8643,hylak_id,globathy,dmax_use,24.231458910173338
+68,Tschida Lake,NA,NA,surge sites,maximum measured depth,26
 069,Lake Oahe,14489102,lmorpho_comid,nlmd,surfacearea,1255913069
 069,Lake Oahe,14489102,lmorpho_comid,nlmd,shorelinelength,3550355.321
 069,Lake Oahe,14489102,lmorpho_comid,nlmd,shorelinedev,28.26097219
@@ -940,6 +967,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 069,Lake Oahe,069,lake_id,surge_morpho,meanwidth,73551.6
 069,Lake Oahe,069,lake_id,surge_morpho,fetch,23101.42
 069,Lake Oahe,069,lake_id,surge_morpho,maxlength,33969.9816
+069,Lake Oahe,NA,NA,surge sites,maximum measured depth,113.3
 070,Lake Francis Case,11546104,lmorpho_comid,nlmd,surfacearea,343089388
 070,Lake Francis Case,11546104,lmorpho_comid,nlmd,shorelinelength,689376.5467
 070,Lake Francis Case,11546104,lmorpho_comid,nlmd,shorelinedev,10.49899985
@@ -981,6 +1009,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 070,Lake Francis Case,070,lake_id,surge_morpho,meanwidth,18093.09
 070,Lake Francis Case,070,lake_id,surge_morpho,fetch,12371.13
 070,Lake Francis Case,070,lake_id,surge_morpho,maxlength,27581.4164
+070,Lake Francis Case,NA,NA,surge sites,maximum measured depth,23.5
 71,willow creek,12394688,lmorpho_comid,nlmd,surfacearea,5322072.958
 71,willow creek,12394688,lmorpho_comid,nlmd,shorelinelength,16324.90485
 71,willow creek,12394688,lmorpho_comid,nlmd,shorelinedev,1.996205807
@@ -1012,6 +1041,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 71,willow creek,71,lake_id,surge_morpho,fetch,1773.13
 71,willow creek,71,lake_id,surge_morpho,maxlength,2580.7102
 71,willow creek,105301,hylak_id,globathy,dmax_use,22.189068984374668
+71,willow creek,NA,NA,nla07 index,maximum measured depth,15.9
 72,Nelson,167204935,lmorpho_comid,nlmd,surfacearea,16659894.64
 72,Nelson,167204935,lmorpho_comid,nlmd,shorelinelength,51555.72434
 72,Nelson,167204935,lmorpho_comid,nlmd,shorelinedev,3.563164196
@@ -1043,6 +1073,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 72,Nelson,72,lake_id,surge_morpho,fetch,3858.55
 72,Nelson,72,lake_id,surge_morpho,maxlength,6725.4467
 72,Nelson,8297,hylak_id,globathy,dmax_use,28.43195150067867
+72,Nelson,NA,NA,nla17 index,maximum measured depth,10.5
 75,freeman lake,16131367,lmorpho_comid,nlmd,surfacearea,220956.2804
 75,freeman lake,16131367,lmorpho_comid,nlmd,shorelinelength,3089.435354
 75,freeman lake,16131367,lmorpho_comid,nlmd,shorelinedev,1.854048134
@@ -1072,6 +1103,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 75,freeman lake,75,lake_id,surge_morpho,meanwidth,187.52
 75,freeman lake,75,lake_id,surge_morpho,fetch,359.84
 75,freeman lake,75,lake_id,surge_morpho,maxlength,1171.8677
+75,freeman lake,NA,NA,surge sites,maximum measured depth,5.1
 76,Eureka Reservoir,12744019,lmorpho_comid,nlmd,surfacearea,1482741.389
 76,Eureka Reservoir,12744019,lmorpho_comid,nlmd,shorelinelength,7035.988566
 76,Eureka Reservoir,12744019,lmorpho_comid,nlmd,shorelinedev,1.629999562
@@ -1101,6 +1133,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 76,Eureka Reservoir,76,lake_id,surge_morpho,fetch,388.69
 76,Eureka Reservoir,76,lake_id,surge_morpho,maxlength,1129.6937
 76,Eureka Reservoir,104709,hylak_id,globathy,dmax_use,4.991731967948533
+76,Eureka Reservoir,NA,NA,surge sites,maximum measured depth,10.6
 77,Cottonwood Reservoir,4061192,lmorpho_comid,nlmd,surfacearea,966656.737
 77,Cottonwood Reservoir,4061192,lmorpho_comid,nlmd,shorelinelength,6656.10656
 77,Cottonwood Reservoir,4061192,lmorpho_comid,nlmd,shorelinedev,1.90976176
@@ -1130,6 +1163,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 77,Cottonwood Reservoir,77,lake_id,surge_morpho,fetch,452.94
 77,Cottonwood Reservoir,77,lake_id,surge_morpho,maxlength,1091.7447
 77,Cottonwood Reservoir,1031968,hylak_id,globathy,dmax_use,3.787014816446399
+77,Cottonwood Reservoir,NA,NA,surge sites,maximum measured depth,5.3
 78,owens lake,11251122,lmorpho_comid,nlmd,surfacearea,550062.0765
 78,owens lake,11251122,lmorpho_comid,nlmd,shorelinelength,7562.89948
 78,owens lake,11251122,lmorpho_comid,nlmd,shorelinedev,2.876587203
@@ -1160,6 +1194,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 78,owens lake,78,lake_id,surge_morpho,fetch,798.63
 78,owens lake,78,lake_id,surge_morpho,maxlength,1676.1201
 78,owens lake,1037404,hylak_id,globathy,dmax_use,2.300230209777866
+78,owens lake,NA,NA,NA,maximum measured depth,4.8
 79,Roosevelt Lake,11666754,lmorpho_comid,nlmd,surfacearea,378215.0184
 79,Roosevelt Lake,11666754,lmorpho_comid,nlmd,shorelinelength,5346.065377
 79,Roosevelt Lake,11666754,lmorpho_comid,nlmd,shorelinedev,2.452222926
@@ -1190,6 +1225,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 79,Roosevelt Lake,79,lake_id,surge_morpho,fetch,604.14
 79,Roosevelt Lake,79,lake_id,surge_morpho,maxlength,896.9599
 79,Roosevelt Lake,1048970,hylak_id,globathy,dmax_use,3.352571114032533
+79,Roosevelt Lake,NA,NA,nla17 index,maximum measured depth,5.1
 82,lake montclair,4528811,lmorpho_comid,nlmd,surfacearea,396893.7526
 82,lake montclair,4528811,lmorpho_comid,nlmd,shorelinelength,7124.522853
 82,lake montclair,4528811,lmorpho_comid,nlmd,shorelinedev,3.19016922
@@ -1220,6 +1256,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 82,lake montclair,82,lake_id,surge_morpho,fetch,463.07
 82,lake montclair,82,lake_id,surge_morpho,maxlength,902.5316
 82,lake montclair,1057607,hylak_id,globathy,dmax_use,5.918342556294667
+82,lake montclair,NA,NA,surge sites,maximum measured depth,14.5
 83,Monroe,166899251,lmorpho_comid,nlmd,surfacearea,27617951.61
 83,Monroe,166899251,lmorpho_comid,nlmd,shorelinelength,91671.6762
 83,Monroe,166899251,lmorpho_comid,nlmd,shorelinedev,4.920786338
@@ -1267,6 +1304,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 83,Monroe,83,lake_id,surge_morpho,fetch,5181.57
 83,Monroe,83,lake_id,surge_morpho,maxlength,8078.7623
 83,Monroe,9229,hylak_id,globathy,dmax_use,22.87485360389334
+83,Monroe,NA,NA,surge sites,maximum measured depth,9.8
 84,Marrowbone Lake,18407394,lmorpho_comid,nlmd,surfacearea,251163.0646
 84,Marrowbone Lake,18407394,lmorpho_comid,nlmd,shorelinelength,5964.894207
 84,Marrowbone Lake,18407394,lmorpho_comid,nlmd,shorelinedev,3.357530192
@@ -1296,6 +1334,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 84,Marrowbone Lake,84,lake_id,surge_morpho,meanwidth,273.31
 84,Marrowbone Lake,84,lake_id,surge_morpho,fetch,217.31
 84,Marrowbone Lake,84,lake_id,surge_morpho,maxlength,877.814
+84,Marrowbone Lake,NA,NA,NA,maximum measured depth,10.8
 98,Hickory Nut Upper Lake_Big Mirror Lake,12036081,lmorpho_comid,nlmd,surfacearea,186139.7929
 98,Hickory Nut Upper Lake_Big Mirror Lake,12036081,lmorpho_comid,nlmd,shorelinelength,3725.359553
 98,Hickory Nut Upper Lake_Big Mirror Lake,12036081,lmorpho_comid,nlmd,shorelinedev,2.43581135
@@ -1323,6 +1362,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 98,Hickory Nut Upper Lake_Big Mirror Lake,98,lake_id,surge_morpho,fetch,470.06
 98,Hickory Nut Upper Lake_Big Mirror Lake,98,lake_id,surge_morpho,maxlength,645.3933
 98,Hickory Nut Upper Lake_Big Mirror Lake,112928,hylak_id,globathy,dmax_use,20.75188742197093
+98,Hickory Nut Upper Lake_Big Mirror Lake,NA,NA,surge sites,maximum measured depth,8.5
 99,Lake Hamilton,15232080,lmorpho_comid,nlmd,surfacearea,25085947.96
 99,Lake Hamilton,15232080,lmorpho_comid,nlmd,shorelinelength,184911.8868
 99,Lake Hamilton,15232080,lmorpho_comid,nlmd,shorelinedev,10.41464904
@@ -1353,6 +1393,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 99,Lake Hamilton,99,lake_id,surge_morpho,fetch,1706.65
 99,Lake Hamilton,99,lake_id,surge_morpho,maxlength,4809.0295
 99,Lake Hamilton,9387,hylak_id,globathy,dmax_use,21.070016910005332
+99,Lake Hamilton,NA,NA,nla07 index,maximum measured depth,30
 100,Lake Hanna,729879,lmorpho_comid,nlmd,surfacearea,706473.0995
 100,Lake Hanna,729879,lmorpho_comid,nlmd,shorelinelength,6070.176217
 100,Lake Hanna,729879,lmorpho_comid,nlmd,shorelinedev,2.037269822
@@ -1383,6 +1424,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 100,Lake Hanna,100,lake_id,surge_morpho,fetch,902.6
 100,Lake Hanna,100,lake_id,surge_morpho,maxlength,993.237
 100,Lake Hanna,1058745,hylak_id,globathy,dmax_use,8.865896194209467
+100,Lake Hanna,NA,NA,nla07 index,maximum measured depth,8.6
 101,Hammertown Lake,3484673,lmorpho_comid,nlmd,surfacearea,650867.3609
 101,Hammertown Lake,3484673,lmorpho_comid,nlmd,shorelinelength,9824.550071
 101,Hammertown Lake,3484673,lmorpho_comid,nlmd,shorelinedev,3.435274864
@@ -1408,6 +1450,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 101,Hammertown Lake,101,lake_id,surge_morpho,fetch,1257.49
 101,Hammertown Lake,101,lake_id,surge_morpho,maxlength,1505.1047
 101,Hammertown Lake,1057141,hylak_id,globathy,dmax_use,9.30404147821333
+101,Hammertown Lake,NA,NA,surge sites,maximum measured depth,15.2
 102,Atagahi,22163154,lmorpho_comid,nlmd,surfacearea,338570.8683
 102,Atagahi,22163154,lmorpho_comid,nlmd,shorelinelength,5154.316125
 102,Atagahi,22163154,lmorpho_comid,nlmd,shorelinedev,2.49885655
@@ -1433,6 +1476,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 102,Atagahi,102,lake_id,surge_morpho,fetch,784.43
 102,Atagahi,102,lake_id,surge_morpho,maxlength,1190.4423
 102,Atagahi,1060692,hylak_id,globathy,dmax_use,4.647293012927199
+102,Atagahi,NA,NA,surge sites,maximum measured depth,12.2
 103,Piney Run Lake,125914857,lmorpho_comid,nlmd,surfacearea,1138823.297
 103,Piney Run Lake,125914857,lmorpho_comid,nlmd,shorelinelength,12126.77779
 103,Piney Run Lake,125914857,lmorpho_comid,nlmd,shorelinedev,3.205622047
@@ -1464,6 +1508,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 103,Piney Run Lake,103,lake_id,surge_morpho,fetch,1089.29
 103,Piney Run Lake,103,lake_id,surge_morpho,maxlength,2656.3107
 103,Piney Run Lake,1056731,hylak_id,globathy,dmax_use,14.224994207730669
+103,Piney Run Lake,NA,NA,surge sites,maximum measured depth,12
 116,Krodel Park,19314376,lmorpho_comid,nlmd,surfacearea,57233.61333
 116,Krodel Park,19314376,lmorpho_comid,nlmd,shorelinelength,1214.360199
 116,Krodel Park,19314376,lmorpho_comid,nlmd,shorelinedev,1.431914247
@@ -1488,6 +1533,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 116,Krodel Park,116,lake_id,surge_morpho,meanwidth,360.52
 116,Krodel Park,116,lake_id,surge_morpho,fetch,203.43
 116,Krodel Park,116,lake_id,surge_morpho,maxlength,573.0863
+116,Krodel Park,NA,NA,surge sites,maximum measured depth,2.8
 117,acworth lake,6495242,lmorpho_comid,nlmd,surfacearea,1199628.008
 117,acworth lake,6495242,lmorpho_comid,nlmd,shorelinelength,8611.288328
 117,acworth lake,6495242,lmorpho_comid,nlmd,shorelinedev,2.217889477
@@ -1516,6 +1562,8 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 117,acworth lake,117,lake_id,surge_morpho,fetch,832.06
 117,acworth lake,117,lake_id,surge_morpho,maxlength,2134.9981
 117,acworth lake,9403,hylak_id,globathy,dmax_use,21.784142429333333
+117,acworth lake,NA,NA,nla17 index,maximum measured depth,5
+117,acworth lake,NA,NA,nla22 index,maximum measured depth,5
 119,Beaver Pond,8606221,lmorpho_comid,nlmd,surfacearea,288381.1358
 119,Beaver Pond,8606221,lmorpho_comid,nlmd,shorelinelength,4079.000803
 119,Beaver Pond,8606221,lmorpho_comid,nlmd,shorelinedev,2.142720057
@@ -1546,6 +1594,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 119,Beaver Pond,119,lake_id,surge_morpho,meanwidth,311.88
 119,Beaver Pond,119,lake_id,surge_morpho,fetch,237.28
 119,Beaver Pond,119,lake_id,surge_morpho,maxlength,473.4869
+119,Beaver Pond,NA,NA,surge sites,maximum measured depth,2.9
 136,Arrow Head Lake,7557711,lmorpho_comid,nlmd,surfacearea,212723.5821
 136,Arrow Head Lake,7557711,lmorpho_comid,nlmd,shorelinelength,2376.247001
 136,Arrow Head Lake,7557711,lmorpho_comid,nlmd,shorelinedev,1.453378834
@@ -1578,6 +1627,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 136,Arrow Head Lake,136,lake_id,surge_morpho,fetch,668.19
 136,Arrow Head Lake,136,lake_id,surge_morpho,maxlength,848.1143
 136,Arrow Head Lake,1059628,hylak_id,globathy,dmax_use,11.762053316911995
+136,Arrow Head Lake,NA,NA,nla 12 phab,maximum measured depth,6.1
 137,Burnsville Lake,76669453,lmorpho_comid,nlmd,surfacearea,3343315.616
 137,Burnsville Lake,76669453,lmorpho_comid,nlmd,shorelinelength,52032.89914
 137,Burnsville Lake,76669453,lmorpho_comid,nlmd,shorelinedev,8.027575594
@@ -1609,6 +1659,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 137,Burnsville Lake,137,lake_id,surge_morpho,fetch,1809.25
 137,Burnsville Lake,137,lake_id,surge_morpho,maxlength,2941.145
 137,Burnsville Lake,112416,hylak_id,globathy,dmax_use,20.067442055685333
+137,Burnsville Lake,NA,NA,surge sites,maximum measured depth,10
 138,Suck cr,8874182,lmorpho_comid,nlmd,surfacearea,237366.8388
 138,Suck cr,8874182,lmorpho_comid,nlmd,shorelinelength,4092.375372
 138,Suck cr,8874182,lmorpho_comid,nlmd,shorelinedev,2.369520702
@@ -1637,6 +1688,8 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 138,Suck cr,138,lake_id,surge_morpho,fetch,333.72
 138,Suck cr,138,lake_id,surge_morpho,maxlength,934.4537
 138,Suck cr,1060479,hylak_id,globathy,dmax_use,11.67190539654
+138,Suck cr,NA,NA,nla17 index,maximum measured depth,5.5
+138,Suck cr,NA,NA,nla22 index,maximum measured depth,5.5
 146,Canton Lake,389774,lmorpho_comid,nlmd,surfacearea,32547862.52
 146,Canton Lake,389774,lmorpho_comid,nlmd,shorelinelength,57122.4783
 146,Canton Lake,389774,lmorpho_comid,nlmd,shorelinedev,2.824495408
@@ -1668,6 +1721,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 146,Canton Lake,146,lake_id,surge_morpho,fetch,7326.41
 146,Canton Lake,146,lake_id,surge_morpho,maxlength,9654.346
 146,Canton Lake,9331,hylak_id,globathy,dmax_use,23.071847154117332
+146,Canton Lake,NA,NA,surge sites,maximum measured depth,8.3
 147,Lake Jean Neustadt,19959244,lmorpho_comid,nlmd,surfacearea,1607371.29
 147,Lake Jean Neustadt,19959244,lmorpho_comid,nlmd,shorelinelength,13408.63439
 147,Lake Jean Neustadt,19959244,lmorpho_comid,nlmd,shorelinedev,2.98346889
@@ -1700,6 +1754,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 147,Lake Jean Neustadt,147,lake_id,surge_morpho,fetch,1934.1
 147,Lake Jean Neustadt,147,lake_id,surge_morpho,maxlength,2328.4406
 147,Lake Jean Neustadt,113170,hylak_id,globathy,dmax_use,9.736229432549466
+147,Lake Jean Neustadt,NA,NA,nla07 index,maximum measured depth,9.3
 148,Keystone,368417,lmorpho_comid,nlmd,surfacearea,102515718.7
 148,Keystone,368417,lmorpho_comid,nlmd,shorelinelength,469226.9469
 148,Keystone,368417,lmorpho_comid,nlmd,shorelinedev,13.07322641
@@ -1734,6 +1789,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 148,Keystone,148,lake_id,surge_morpho,fetch,5789.95
 148,Keystone,148,lake_id,surge_morpho,maxlength,12268.5417
 148,Keystone,9328,hylak_id,globathy,dmax_use,30.09908266666667
+148,Keystone,NA,NA,nla07 index,maximum measured depth,20.6
 149,Sherman Reservoir,17373390,lmorpho_comid,nlmd,surfacearea,11178544.56
 149,Sherman Reservoir,17373390,lmorpho_comid,nlmd,shorelinelength,77319.09567
 149,Sherman Reservoir,17373390,lmorpho_comid,nlmd,shorelinedev,6.523628219
@@ -1775,6 +1831,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 149,Sherman Reservoir,149,lake_id,surge_morpho,fetch,3449.75
 149,Sherman Reservoir,149,lake_id,surge_morpho,maxlength,6684.3038
 149,Sherman Reservoir,111804,hylak_id,globathy,dmax_use,19.20240021
+149,Sherman Reservoir,NA,NA,nla22 index,maximum measured depth,14.7
 155,Lake Minatare,17508468,lmorpho_comid,nlmd,surfacearea,7850606.237
 155,Lake Minatare,17508468,lmorpho_comid,nlmd,shorelinelength,17187.36037
 155,Lake Minatare,17508468,lmorpho_comid,nlmd,shorelinedev,1.730424493
@@ -1800,6 +1857,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 155,Lake Minatare,155,lake_id,surge_morpho,fetch,3228.39
 155,Lake Minatare,155,lake_id,surge_morpho,maxlength,3316.7104
 155,Lake Minatare,111553,hylak_id,globathy,dmax_use,14.6303997
+155,Lake Minatare,NA,NA,surge sites,maximum measured depth,13.8
 157,Storrie Lake,20814160,lmorpho_comid,nlmd,surfacearea,4374938.716
 157,Storrie Lake,20814160,lmorpho_comid,nlmd,shorelinelength,9377.987731
 157,Storrie Lake,20814160,lmorpho_comid,nlmd,shorelinedev,1.264790926
@@ -1831,6 +1889,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 157,Storrie Lake,157,lake_id,surge_morpho,fetch,1377.72
 157,Storrie Lake,157,lake_id,surge_morpho,maxlength,1803.4044
 157,Storrie Lake,112888,hylak_id,globathy,dmax_use,19.201679623716
+157,Storrie Lake,NA,NA,nla17 index,maximum measured depth,7.5
 159,Eaglewatch Lake,188011,lmorpho_comid,nlmd,surfacearea,129346.048
 159,Eaglewatch Lake,188011,lmorpho_comid,nlmd,shorelinelength,2281.553707
 159,Eaglewatch Lake,188011,lmorpho_comid,nlmd,shorelinedev,1.789572026
@@ -1853,6 +1912,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 159,Eaglewatch Lake,159,lake_id,surge_morpho,fetch,803.66
 159,Eaglewatch Lake,159,lake_id,surge_morpho,maxlength,886.1549
 159,Eaglewatch Lake,1056529,hylak_id,globathy,dmax_use,5.092776446774668
+159,Eaglewatch Lake,NA,NA,surge sites,maximum measured depth,10.8
 165,Beaver pond,167246042,lmorpho_comid,nlmd,surfacearea,158394.1771
 165,Beaver pond,167246042,lmorpho_comid,nlmd,shorelinelength,1859.431911
 165,Beaver pond,167246042,lmorpho_comid,nlmd,shorelinedev,1.317970659
@@ -1875,6 +1935,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 165,Beaver pond,165,lake_id,surge_morpho,fetch,540.22
 165,Beaver pond,165,lake_id,surge_morpho,maxlength,750.9093
 165,Beaver pond,1055507,hylak_id,globathy,dmax_use,4.219404467409865
+165,Beaver pond,NA,NA,surge sites,maximum measured depth,4
 166,Cloud Southern Plains,5925122,lmorpho_comid,nlmd,surfacearea,102347.6585
 166,Cloud Southern Plains,5925122,lmorpho_comid,nlmd,shorelinelength,1519.348882
 166,Cloud Southern Plains,5925122,lmorpho_comid,nlmd,shorelinedev,1.339718711
@@ -1900,6 +1961,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 166,Cloud Southern Plains,166,lake_id,surge_morpho,meanwidth,130.96
 166,Cloud Southern Plains,166,lake_id,surge_morpho,fetch,166.38
 166,Cloud Southern Plains,166,lake_id,surge_morpho,maxlength,278.6899
+166,Cloud Southern Plains,NA,NA,surge sites,maximum measured depth,3.3
 167,Lake Overholser,167300171,lmorpho_comid,nlmd,surfacearea,6371498.963
 167,Lake Overholser,167300171,lmorpho_comid,nlmd,shorelinelength,11462.24919
 167,Lake Overholser,167300171,lmorpho_comid,nlmd,shorelinedev,1.28098518
@@ -1931,6 +1993,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 167,Lake Overholser,167,lake_id,surge_morpho,fetch,3152.51
 167,Lake Overholser,167,lake_id,surge_morpho,maxlength,3667.6555
 167,Lake Overholser,112917,hylak_id,globathy,dmax_use,23.74357701537734
+167,Lake Overholser,NA,NA,surge sites,maximum measured depth,4.1
 184,Rush Cr. Site 17 Reservoir,19956504,lmorpho_comid,nlmd,surfacearea,144919.6228
 184,Rush Cr. Site 17 Reservoir,19956504,lmorpho_comid,nlmd,shorelinelength,3097.195994
 184,Rush Cr. Site 17 Reservoir,19956504,lmorpho_comid,nlmd,shorelinedev,2.295092318
@@ -1961,6 +2024,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 184,Rush Cr. Site 17 Reservoir,184,lake_id,surge_morpho,meanwidth,130.87
 184,Rush Cr. Site 17 Reservoir,184,lake_id,surge_morpho,fetch,302.69
 184,Rush Cr. Site 17 Reservoir,184,lake_id,surge_morpho,maxlength,428.018
+184,Rush Cr. Site 17 Reservoir,NA,NA,surge sites,maximum measured depth,5.1
 186,Boulder Reservoir,2888348,lmorpho_comid,nlmd,surfacearea,2174880.71
 186,Boulder Reservoir,2888348,lmorpho_comid,nlmd,shorelinelength,6633.823949
 186,Boulder Reservoir,2888348,lmorpho_comid,nlmd,shorelinedev,1.268940589
@@ -1992,6 +2056,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 186,Boulder Reservoir,186,lake_id,surge_morpho,fetch,1603.92
 186,Boulder Reservoir,186,lake_id,surge_morpho,maxlength,2126.873
 186,Boulder Reservoir,112156,hylak_id,globathy,dmax_use,7.0048582581567995
+186,Boulder Reservoir,NA,NA,surge sites,maximum measured depth,7.7
 188,Stubblefield,20064419,lmorpho_comid,nlmd,surfacearea,3674419.552
 188,Stubblefield,20064419,lmorpho_comid,nlmd,shorelinelength,10897.63778
 188,Stubblefield,20064419,lmorpho_comid,nlmd,shorelinedev,1.603736689
@@ -2024,6 +2089,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 188,Stubblefield,188,lake_id,surge_morpho,fetch,859.77
 188,Stubblefield,188,lake_id,surge_morpho,maxlength,2247.5458
 188,Stubblefield,112776,hylak_id,globathy,dmax_use,7.6726089203307986
+188,Stubblefield,NA,NA,nla07 index,maximum measured depth,7.1
 190,Bluestem Lake,846154,lmorpho_comid,nlmd,surfacearea,3253718.061
 190,Bluestem Lake,846154,lmorpho_comid,nlmd,shorelinelength,25724.16223
 190,Bluestem Lake,846154,lmorpho_comid,nlmd,shorelinedev,4.022965876
@@ -2055,6 +2121,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 190,Bluestem Lake,190,lake_id,surge_morpho,fetch,1860.67
 190,Bluestem Lake,190,lake_id,surge_morpho,maxlength,4624.4828
 190,Bluestem Lake,112769,hylak_id,globathy,dmax_use,13.940615644274668
+190,Bluestem Lake,NA,NA,surge sites,maximum measured depth,15.2
 191,Lake Fisher,5798096,lmorpho_comid,nlmd,surfacearea,288264.1918
 191,Lake Fisher,5798096,lmorpho_comid,nlmd,shorelinelength,3659.292717
 191,Lake Fisher,5798096,lmorpho_comid,nlmd,shorelinedev,1.922635117
@@ -2085,6 +2152,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 191,Lake Fisher,191,lake_id,surge_morpho,fetch,816.26
 191,Lake Fisher,191,lake_id,surge_morpho,maxlength,1074.8283
 191,Lake Fisher,1055205,hylak_id,globathy,dmax_use,8.51737836016627
+191,Lake Fisher,NA,NA,NA,maximum measured depth,6.6
 195,Monee Reservoir,13435489,lmorpho_comid,nlmd,surfacearea,166907.8772
 195,Monee Reservoir,13435489,lmorpho_comid,nlmd,shorelinelength,2924.539793
 195,Monee Reservoir,13435489,lmorpho_comid,nlmd,shorelinedev,2.019362031
@@ -2115,6 +2183,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 195,Monee Reservoir,195,lake_id,surge_morpho,meanwidth,194.72
 195,Monee Reservoir,195,lake_id,surge_morpho,fetch,516.56
 195,Monee Reservoir,195,lake_id,surge_morpho,maxlength,753.2855
+195,Monee Reservoir,NA,NA,nla17 index,maximum measured depth,6.5
 204,Beaver Creek Upground,15610820,lmorpho_comid,nlmd,surfacearea,466216.8412
 204,Beaver Creek Upground,15610820,lmorpho_comid,nlmd,shorelinelength,2678.377724
 204,Beaver Creek Upground,15610820,lmorpho_comid,nlmd,shorelinedev,1.106554767
@@ -2139,6 +2208,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 204,Beaver Creek Upground,204,lake_id,surge_morpho,fetch,656.46
 204,Beaver Creek Upground,204,lake_id,surge_morpho,maxlength,904.618
 204,Beaver Creek Upground,1054453,hylak_id,globathy,dmax_use,14.941287327017337
+204,Beaver Creek Upground,NA,NA,nla17 index,maximum measured depth,9.7
 205,Lake Station,3397968,lmorpho_comid,nlmd,surfacearea,86358.68725
 205,Lake Station,3397968,lmorpho_comid,nlmd,shorelinelength,1625.786128
 205,Lake Station,3397968,lmorpho_comid,nlmd,shorelinedev,1.560649817
@@ -2160,6 +2230,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 205,Lake Station,205,lake_id,surge_morpho,fetch,373.81
 205,Lake Station,205,lake_id,surge_morpho,maxlength,634.7302
 205,Lake Station,1053681,hylak_id,globathy,dmax_use,14.74160082842947
+205,Lake Station,NA,NA,surge sites,maximum measured depth,9.1
 206,Wyandotte County Lake,2254441,lmorpho_comid,nlmd,surfacearea,1245710.078
 206,Wyandotte County Lake,2254441,lmorpho_comid,nlmd,shorelinelength,11190.8479
 206,Wyandotte County Lake,2254441,lmorpho_comid,nlmd,shorelinedev,2.828456945
@@ -2190,6 +2261,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 206,Wyandotte County Lake,206,lake_id,surge_morpho,fetch,1221.39
 206,Wyandotte County Lake,206,lake_id,surge_morpho,maxlength,2211.0009
 206,Wyandotte County Lake,112363,hylak_id,globathy,dmax_use,20.104731902007195
+206,Wyandotte County Lake,NA,NA,surge sites,maximum measured depth,16.4
 207,Old Mans Lake,13583718,lmorpho_comid,nlmd,surfacearea,729032.4191
 207,Old Mans Lake,13583718,lmorpho_comid,nlmd,shorelinelength,27102.42426
 207,Old Mans Lake,13583718,lmorpho_comid,nlmd,shorelinedev,8.954261777
@@ -2216,6 +2288,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 207,Old Mans Lake,207,lake_id,surge_morpho,fetch,700.23
 207,Old Mans Lake,207,lake_id,surge_morpho,maxlength,4489.3854
 207,Old Mans Lake,1055540,hylak_id,globathy,dmax_use,11.132383468838931
+207,Old Mans Lake,NA,NA,NA,maximum measured depth,15
 208,Lake Lancelot,13604166,lmorpho_comid,nlmd,surfacearea,190986.4265
 208,Lake Lancelot,13604166,lmorpho_comid,nlmd,shorelinelength,3756.452462
 208,Lake Lancelot,13604166,lmorpho_comid,nlmd,shorelinedev,2.424776496
@@ -2245,6 +2318,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 208,Lake Lancelot,208,lake_id,surge_morpho,meanwidth,225.3
 208,Lake Lancelot,208,lake_id,surge_morpho,fetch,318.04
 208,Lake Lancelot,208,lake_id,surge_morpho,maxlength,855.5673
+208,Lake Lancelot,NA,NA,nla07 index,maximum measured depth,9.5
 209,Otter Lake,11895232,lmorpho_comid,nlmd,surfacearea,114832.2471
 209,Otter Lake,11895232,lmorpho_comid,nlmd,shorelinelength,2406.049986
 209,Otter Lake,11895232,lmorpho_comid,nlmd,shorelinedev,2.002939272
@@ -2272,6 +2346,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 209,Otter Lake,209,lake_id,surge_morpho,fetch,231.25
 209,Otter Lake,209,lake_id,surge_morpho,maxlength,667.3333
 209,Otter Lake,1058994,hylak_id,globathy,dmax_use,13.701969311147868
+209,Otter Lake,NA,NA,surge sites,maximum measured depth,7.1
 210,Lake Dalercarlia,13435569,lmorpho_comid,nlmd,surfacearea,599098.1777
 210,Lake Dalercarlia,13435569,lmorpho_comid,nlmd,shorelinelength,8477.602552
 210,Lake Dalercarlia,13435569,lmorpho_comid,nlmd,shorelinedev,3.089719976
@@ -2299,6 +2374,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 210,Lake Dalercarlia,210,lake_id,surge_morpho,fetch,812.19
 210,Lake Dalercarlia,210,lake_id,surge_morpho,maxlength,1489.5258
 210,Lake Dalercarlia,1054250,hylak_id,globathy,dmax_use,9.208704676962666
+210,Lake Dalercarlia,NA,NA,surge sites,maximum measured depth,1.9
 211,Madison Lake,3483393,lmorpho_comid,nlmd,surfacearea,388058.4021
 211,Madison Lake,3483393,lmorpho_comid,nlmd,shorelinelength,4855.976285
 211,Madison Lake,3483393,lmorpho_comid,nlmd,shorelinedev,2.198989115
@@ -2330,6 +2406,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 211,Madison Lake,211,lake_id,surge_morpho,fetch,820.16
 211,Madison Lake,211,lake_id,surge_morpho,maxlength,1443.079
 211,Madison Lake,1056158,hylak_id,globathy,dmax_use,16.156141879027736
+211,Madison Lake,NA,NA,nla22 index,maximum measured depth,2.1
 214,Lake of the Woods,13570445,lmorpho_comid,nlmd,surfacearea,114835.5294
 214,Lake of the Woods,13570445,lmorpho_comid,nlmd,shorelinelength,2606.554911
 214,Lake of the Woods,13570445,lmorpho_comid,nlmd,shorelinedev,2.1698205
@@ -2360,6 +2437,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 214,Lake of the Woods,214,lake_id,surge_morpho,meanwidth,170.07
 214,Lake of the Woods,214,lake_id,surge_morpho,fetch,284.71
 214,Lake of the Woods,214,lake_id,surge_morpho,maxlength,642.7002
+214,Lake of the Woods,NA,NA,surge sites,maximum measured depth,4.8
 230,Yellow Banks Lake,10107773,lmorpho_comid,nlmd,surfacearea,109151.4484
 230,Yellow Banks Lake,10107773,lmorpho_comid,nlmd,shorelinelength,1963.36404
 230,Yellow Banks Lake,10107773,lmorpho_comid,nlmd,shorelinedev,1.676413498
@@ -2391,6 +2469,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 230,Yellow Banks Lake,230,lake_id,surge_morpho,fetch,395.5
 230,Yellow Banks Lake,230,lake_id,surge_morpho,maxlength,581.2975
 230,Yellow Banks Lake,1058041,hylak_id,globathy,dmax_use,14.160529463252264
+230,Yellow Banks Lake,NA,NA,NA,maximum measured depth,7
 231,mina lake,12554996,lmorpho_comid,nlmd,surfacearea,938465.091
 231,mina lake,12554996,lmorpho_comid,nlmd,shorelinelength,8708.281987
 231,mina lake,12554996,lmorpho_comid,nlmd,shorelinedev,2.535820395
@@ -2451,6 +2530,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 231,mina lake,231,lake_id,surge_morpho,fetch,2199.51
 231,mina lake,231,lake_id,surge_morpho,maxlength,3071.2128
 231,mina lake,108901,hylak_id,globathy,dmax_use,15.438120844673335
+231,mina lake,NA,NA,surge sites,maximum measured depth,6.3
 232,harvey dam,14278116,lmorpho_comid,nlmd,surfacearea,268031.477
 232,harvey dam,14278116,lmorpho_comid,nlmd,shorelinelength,3619.36474
 232,harvey dam,14278116,lmorpho_comid,nlmd,shorelinedev,1.972125367
@@ -2512,6 +2592,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 232,harvey dam,232,lake_id,surge_morpho,fetch,1984.29
 232,harvey dam,232,lake_id,surge_morpho,maxlength,2566.1713
 232,harvey dam,104950,hylak_id,globathy,dmax_use,14.236667588789334
+232,harvey dam,NA,NA,surge sites,maximum measured depth,4.7
 233,Redstone Lake,13652598,lmorpho_comid,nlmd,surfacearea,2425287.633
 233,Redstone Lake,13652598,lmorpho_comid,nlmd,shorelinelength,22802.83209
 233,Redstone Lake,13652598,lmorpho_comid,nlmd,shorelinedev,4.13049624
@@ -2543,6 +2624,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 233,Redstone Lake,233,lake_id,surge_morpho,fetch,2115.91
 233,Redstone Lake,233,lake_id,surge_morpho,maxlength,3380.8049
 233,Redstone Lake,110902,hylak_id,globathy,dmax_use,10.66800022
+233,Redstone Lake,NA,NA,nla17 index,maximum measured depth,11
 234,Palmer Lake,15677567,lmorpho_comid,nlmd,surfacearea,2917304.183
 234,Palmer Lake,15677567,lmorpho_comid,nlmd,shorelinelength,19501.20558
 234,Palmer Lake,15677567,lmorpho_comid,nlmd,shorelinedev,3.220814193
@@ -2574,6 +2656,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 234,Palmer Lake,234,lake_id,surge_morpho,fetch,1649.24
 234,Palmer Lake,234,lake_id,surge_morpho,maxlength,2519.6411
 234,Palmer Lake,111537,hylak_id,globathy,dmax_use,10.833193252964
+234,Palmer Lake,NA,NA,surge sites,maximum measured depth,13.5
 235,Sylvan Lake,167552428,lmorpho_comid,nlmd,surfacearea,2547476.939
 235,Sylvan Lake,167552428,lmorpho_comid,nlmd,shorelinelength,19915.3301
 235,Sylvan Lake,167552428,lmorpho_comid,nlmd,shorelinedev,3.519876668
@@ -2606,6 +2689,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 235,Sylvan Lake,235,lake_id,surge_morpho,fetch,1014.65
 235,Sylvan Lake,235,lake_id,surge_morpho,maxlength,2240.1581
 235,Sylvan Lake,111733,hylak_id,globathy,dmax_use,15.712859349933336
+235,Sylvan Lake,NA,NA,surge sites,maximum measured depth,9.9
 236,Meyer Lake,13308673,lmorpho_comid,nlmd,surfacearea,121753.3807
 236,Meyer Lake,13308673,lmorpho_comid,nlmd,shorelinelength,2357.754675
 236,Meyer Lake,13308673,lmorpho_comid,nlmd,shorelinedev,1.90613286
@@ -2636,6 +2720,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 236,Meyer Lake,236,lake_id,surge_morpho,fetch,233.28
 236,Meyer Lake,236,lake_id,surge_morpho,maxlength,728.0719
 236,Meyer Lake,1049046,hylak_id,globathy,dmax_use,7.109324074757065
+236,Meyer Lake,NA,NA,surge sites,maximum measured depth,7.5
 237,Sidie Hollow Lake,13205684,lmorpho_comid,nlmd,surfacearea,148293.5567
 237,Sidie Hollow Lake,13205684,lmorpho_comid,nlmd,shorelinelength,2933.672868
 237,Sidie Hollow Lake,13205684,lmorpho_comid,nlmd,shorelinedev,2.149045505
@@ -2667,6 +2752,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 237,Sidie Hollow Lake,237,lake_id,surge_morpho,fetch,416.39
 237,Sidie Hollow Lake,237,lake_id,surge_morpho,maxlength,766.9629
 237,Sidie Hollow Lake,1048247,hylak_id,globathy,dmax_use,6.013627494082665
+237,Sidie Hollow Lake,NA,NA,surge sites,maximum measured depth,6.3
 238,beulah,23422703,lmorpho_comid,nlmd,surfacearea,7167880.872
 238,beulah,23422703,lmorpho_comid,nlmd,shorelinelength,14967.171
 238,beulah,23422703,lmorpho_comid,nlmd,shorelinedev,1.577027982
@@ -2698,6 +2784,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 238,beulah,238,lake_id,surge_morpho,fetch,3357.78
 238,beulah,238,lake_id,surge_morpho,maxlength,3383.294
 238,beulah,110691,hylak_id,globathy,dmax_use,20.574994189242663
+238,beulah,NA,NA,surge sites,maximum measured depth,15.8
 239,Philips,24215523,lmorpho_comid,nlmd,surfacearea,9118180.203
 239,Philips,24215523,lmorpho_comid,nlmd,shorelinelength,25104.27924
 239,Philips,24215523,lmorpho_comid,nlmd,shorelinedev,2.345247813
@@ -2726,6 +2813,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 239,Philips,239,lake_id,surge_morpho,fetch,863.51
 239,Philips,239,lake_id,surge_morpho,maxlength,3119.0358
 239,Philips,109970,hylak_id,globathy,dmax_use,22.421177767989334
+239,Philips,NA,NA,surge sites,maximum measured depth,27.2
 240,stockade lake,14395602,lmorpho_comid,nlmd,surfacearea,459591.3938
 240,stockade lake,14395602,lmorpho_comid,nlmd,shorelinelength,5369.260621
 240,stockade lake,14395602,lmorpho_comid,nlmd,shorelinedev,2.234208034
@@ -2757,6 +2845,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 240,stockade lake,240,lake_id,surge_morpho,fetch,648.52
 240,stockade lake,240,lake_id,surge_morpho,maxlength,1360.8788
 240,stockade lake,1047730,hylak_id,globathy,dmax_use,4.130800291071199
+240,stockade lake,NA,NA,surge sites,maximum measured depth,11.7
 247,Heron Reservoir,17843236,lmorpho_comid,nlmd,surfacearea,19189815.4
 247,Heron Reservoir,17843236,lmorpho_comid,nlmd,shorelinelength,56519.65657
 247,Heron Reservoir,17843236,lmorpho_comid,nlmd,shorelinedev,3.639646323
@@ -2783,6 +2872,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 247,Heron Reservoir,247,lake_id,surge_morpho,fetch,1493.78
 247,Heron Reservoir,247,lake_id,surge_morpho,maxlength,4622.936
 247,Heron Reservoir,9301,hylak_id,globathy,dmax_use,51.18139330428935
+247,Heron Reservoir,NA,NA,nla07 index,maximum measured depth,45
 249,Emigrant,23934034,lmorpho_comid,nlmd,surfacearea,2564946.833
 249,Emigrant,23934034,lmorpho_comid,nlmd,shorelinelength,17021.88188
 249,Emigrant,23934034,lmorpho_comid,nlmd,shorelinedev,2.998219724
@@ -2813,6 +2903,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 249,Emigrant,249,lake_id,surge_morpho,fetch,1619.37
 249,Emigrant,249,lake_id,surge_morpho,maxlength,2856.4608
 249,Emigrant,111445,hylak_id,globathy,dmax_use,25.131825231172005
+249,Emigrant,NA,NA,nla17 index,maximum measured depth,33
 250,East Fork Reservoir,24315765,lmorpho_comid,nlmd,surfacearea,1523346.05
 250,East Fork Reservoir,24315765,lmorpho_comid,nlmd,shorelinelength,7322.763357
 250,East Fork Reservoir,24315765,lmorpho_comid,nlmd,shorelinedev,1.673673663
@@ -2843,6 +2934,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 250,East Fork Reservoir,250,lake_id,surge_morpho,fetch,1572.31
 250,East Fork Reservoir,250,lake_id,surge_morpho,maxlength,2958.9459
 250,East Fork Reservoir,107881,hylak_id,globathy,dmax_use,6.833122517794133
+250,East Fork Reservoir,NA,NA,surge sites,maximum measured depth,20.1
 253,Lost_Valley,24189308,lmorpho_comid,nlmd,surfacearea,2114298.242
 253,Lost_Valley,24189308,lmorpho_comid,nlmd,shorelinelength,7541.834774
 253,Lost_Valley,24189308,lmorpho_comid,nlmd,shorelinedev,1.463150356
@@ -2876,6 +2968,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 253,Lost_Valley,253,lake_id,surge_morpho,fetch,1584.08
 253,Lost_Valley,253,lake_id,surge_morpho,maxlength,3201.929
 253,Lost_Valley,109578,hylak_id,globathy,dmax_use,19.214451842896004
+253,Lost_Valley,NA,NA,NA,maximum measured depth,6.5
 263,Swofford,24252344,lmorpho_comid,nlmd,surfacearea,840329.6968
 263,Swofford,24252344,lmorpho_comid,nlmd,shorelinelength,4650.037037
 263,Swofford,24252344,lmorpho_comid,nlmd,shorelinedev,1.430957134
@@ -2907,6 +3000,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 263,Swofford,263,lake_id,surge_morpho,fetch,536.52
 263,Swofford,263,lake_id,surge_morpho,maxlength,1687.9897
 263,Swofford,1026592,hylak_id,globathy,dmax_use,19.364900584509336
+263,Swofford,NA,NA,surge sites,maximum measured depth,4.8
 264,Troutvale Reservoir #1,17905661,lmorpho_comid,nlmd,surfacearea,238821.3026
 264,Troutvale Reservoir #1,17905661,lmorpho_comid,nlmd,shorelinelength,2182.25414
 264,Troutvale Reservoir #1,17905661,lmorpho_comid,nlmd,shorelinedev,1.259690524
@@ -2935,6 +3029,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 264,Troutvale Reservoir #1,264,lake_id,surge_morpho,fetch,481.05
 264,Troutvale Reservoir #1,264,lake_id,surge_morpho,maxlength,742.2809
 264,Troutvale Reservoir #1,1058547,hylak_id,globathy,dmax_use,3.70592937832
+264,Troutvale Reservoir #1,NA,NA,surge sites,maximum measured depth,1.8
 265,elk cr,23634788,lmorpho_comid,nlmd,surfacearea,306239.0364
 265,elk cr,23634788,lmorpho_comid,nlmd,shorelinelength,3633.584719
 265,elk cr,23634788,lmorpho_comid,nlmd,shorelinedev,1.852252048
@@ -2962,6 +3057,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 265,elk cr,265,lake_id,surge_morpho,fetch,457.66
 265,elk cr,265,lake_id,surge_morpho,maxlength,867.0441
 265,elk cr,1023145,hylak_id,globathy,dmax_use,2.9974161708837337
+265,elk cr,NA,NA,surge sites,maximum measured depth,4.5
 275,Willow Lake,20451100,lmorpho_comid,nlmd,surfacearea,1191798.207
 275,Willow Lake,20451100,lmorpho_comid,nlmd,shorelinelength,9101.808341
 275,Willow Lake,20451100,lmorpho_comid,nlmd,shorelinedev,2.351913746
@@ -2993,6 +3089,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 275,Willow Lake,275,lake_id,surge_morpho,fetch,716.86
 275,Willow Lake,275,lake_id,surge_morpho,maxlength,1524.362
 275,Willow Lake,1061426,hylak_id,globathy,dmax_use,3.0818027977138667
+275,Willow Lake,NA,NA,nla 12 phab,maximum measured depth,4.8
 276,gooseberry reservoir,3906261,lmorpho_comid,nlmd,surfacearea,314510.9594
 276,gooseberry reservoir,3906261,lmorpho_comid,nlmd,shorelinelength,3654.513057
 276,gooseberry reservoir,3906261,lmorpho_comid,nlmd,shorelinedev,1.838258971
@@ -3024,6 +3121,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 276,gooseberry reservoir,276,lake_id,surge_morpho,fetch,582.57
 276,gooseberry reservoir,276,lake_id,surge_morpho,maxlength,1093.3521
 276,gooseberry reservoir,1056355,hylak_id,globathy,dmax_use,3.665096503974666
+276,gooseberry reservoir,NA,NA,nla17 index,maximum measured depth,4.5
 281,Upper Twin Lake,24331578,lmorpho_comid,nlmd,surfacearea,88945.88334
 281,Upper Twin Lake,24331578,lmorpho_comid,nlmd,shorelinelength,1262.13804
 281,Upper Twin Lake,24331578,lmorpho_comid,nlmd,shorelinedev,1.193820406
@@ -3048,6 +3146,8 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 281,Upper Twin Lake,281,lake_id,surge_morpho,fetch,267.42
 281,Upper Twin Lake,281,lake_id,surge_morpho,maxlength,588.5286
 281,Upper Twin Lake,1030644,hylak_id,globathy,dmax_use,6.863194988691201
+281,Upper Twin Lake,NA,NA,surge sites,maximum measured depth,7.6
+281,Upper Twin Lake,NA,NA,nla22 index,maximum measured depth,7.6
 287,owyhee,120052938,lmorpho_comid,nlmd,surfacearea,46572175.31
 287,owyhee,120052938,lmorpho_comid,nlmd,shorelinelength,212030.6693
 287,owyhee,120052938,lmorpho_comid,nlmd,shorelinedev,8.764567505
@@ -3076,6 +3176,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 287,owyhee,287,lake_id,surge_morpho,fetch,4088.7
 287,owyhee,287,lake_id,surge_morpho,maxlength,5646.1842
 287,owyhee,9050,hylak_id,globathy,dmax_use,36
+287,owyhee,NA,NA,surge sites,maximum measured depth,75.3
 288,Saguaro,20476542,lmorpho_comid,nlmd,surfacearea,3734884.146
 288,Saguaro,20476542,lmorpho_comid,nlmd,shorelinelength,24130.74086
 288,Saguaro,20476542,lmorpho_comid,nlmd,shorelinedev,3.522306599
@@ -3109,6 +3210,8 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 288,Saguaro,288,lake_id,surge_morpho,fetch,1706.16
 288,Saguaro,288,lake_id,surge_morpho,maxlength,3678.317
 288,Saguaro,113313,hylak_id,globathy,dmax_use,22.37475542054801
+288,Saguaro,NA,NA,surge sites,maximum measured depth,25.2
+288,Saguaro,NA,NA,nla 17 phab,maximum measured depth,25.2
 291,Upper San Leandro Reservoir,2803209,lmorpho_comid,nlmd,surfacearea,3097251.737
 291,Upper San Leandro Reservoir,2803209,lmorpho_comid,nlmd,shorelinelength,35218.05318
 291,Upper San Leandro Reservoir,2803209,lmorpho_comid,nlmd,shorelinedev,5.645106768
@@ -3137,6 +3240,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 291,Upper San Leandro Reservoir,291,lake_id,surge_morpho,fetch,1553.89
 291,Upper San Leandro Reservoir,291,lake_id,surge_morpho,maxlength,2494.6265
 291,Upper San Leandro Reservoir,112601,hylak_id,globathy,dmax_use,20.77308263504
+291,Upper San Leandro Reservoir,NA,NA,NA,maximum measured depth,29
 296,Shadow Cliffs Lake,2806007,lmorpho_comid,nlmd,surfacearea,269817.3092
 296,Shadow Cliffs Lake,2806007,lmorpho_comid,nlmd,shorelinelength,2703.049783
 296,Shadow Cliffs Lake,2806007,lmorpho_comid,nlmd,shorelinedev,1.467959956
@@ -3161,6 +3265,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 296,Shadow Cliffs Lake,296,lake_id,surge_morpho,fetch,640.29
 296,Shadow Cliffs Lake,296,lake_id,surge_morpho,maxlength,1236.9676
 296,Shadow Cliffs Lake,1058713,hylak_id,globathy,dmax_use,5.356137423591198
+296,Shadow Cliffs Lake,NA,NA,nla17 index,maximum measured depth,16
 297,New Melones,120051899,lmorpho_comid,nlmd,surfacearea,7257791.356
 297,New Melones,120051899,lmorpho_comid,nlmd,shorelinelength,66084.68434
 297,New Melones,120051899,lmorpho_comid,nlmd,shorelinedev,6.919801687
@@ -3221,6 +3326,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 297,New Melones,297,lake_id,surge_morpho,fetch,5381.02
 297,New Melones,297,lake_id,surge_morpho,maxlength,12224.9752
 297,New Melones,9267,hylak_id,globathy,dmax_use,65.81429333333332
+297,New Melones,NA,NA,NA,maximum measured depth,33
 298,Wild Horse Reservoir,23326906,lmorpho_comid,nlmd,surfacearea,8978273.922
 298,Wild Horse Reservoir,23326906,lmorpho_comid,nlmd,shorelinelength,32163.58342
 298,Wild Horse Reservoir,23326906,lmorpho_comid,nlmd,shorelinedev,3.0280502
@@ -3252,6 +3358,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 298,Wild Horse Reservoir,298,lake_id,surge_morpho,fetch,3093.2
 298,Wild Horse Reservoir,298,lake_id,surge_morpho,maxlength,5626.8382
 298,Wild Horse Reservoir,9147,hylak_id,globathy,dmax_use,49.171564155907866
+298,Wild Horse Reservoir,NA,NA,nla17 index,maximum measured depth,16
 302,Lower Goose,23192245,lmorpho_comid,nlmd,surfacearea,4073951.268
 302,Lower Goose,23192245,lmorpho_comid,nlmd,shorelinelength,22166.26023
 302,Lower Goose,23192245,lmorpho_comid,nlmd,shorelinedev,3.097986926
@@ -3282,6 +3389,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 302,Lower Goose,302,lake_id,surge_morpho,fetch,2511.3
 302,Lower Goose,302,lake_id,surge_morpho,maxlength,3813.9116
 302,Lower Goose,111430,hylak_id,globathy,dmax_use,16.186346050511997
+302,Lower Goose,NA,NA,surge sites,maximum measured depth,18.7
 308,Wapato Lake,23078085,lmorpho_comid,nlmd,surfacearea,766528.7943
 308,Wapato Lake,23078085,lmorpho_comid,nlmd,shorelinelength,4364.200975
 308,Wapato Lake,23078085,lmorpho_comid,nlmd,shorelinedev,1.406162699
@@ -3313,6 +3421,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 308,Wapato Lake,308,lake_id,surge_morpho,fetch,713.48
 308,Wapato Lake,308,lake_id,surge_morpho,maxlength,1939.061
 308,Wapato Lake,1003151,hylak_id,globathy,dmax_use,14.602147559054268
+308,Wapato Lake,NA,NA,nla17 index,maximum measured depth,19.3
 316,Mitry,21411459,lmorpho_comid,nlmd,surfacearea,1551764.485
 316,Mitry,21411459,lmorpho_comid,nlmd,shorelinelength,13838.99689
 316,Mitry,21411459,lmorpho_comid,nlmd,shorelinedev,3.133911844
@@ -3341,6 +3450,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 316,Mitry,316,lake_id,surge_morpho,fetch,822.31
 316,Mitry,316,lake_id,surge_morpho,maxlength,1683.5385
 316,Mitry,1063576,hylak_id,globathy,dmax_use,15.694284808232
+316,Mitry,NA,NA,nla 22 phab,maximum measured depth,3.8
 317,Lake Greenhaven,15033533,lmorpho_comid,nlmd,surfacearea,213692.5524
 317,Lake Greenhaven,15033533,lmorpho_comid,nlmd,shorelinelength,3728.716684
 317,Lake Greenhaven,15033533,lmorpho_comid,nlmd,shorelinedev,2.275410515
@@ -3365,6 +3475,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 317,Lake Greenhaven,317,lake_id,surge_morpho,meanwidth,349.57
 317,Lake Greenhaven,317,lake_id,surge_morpho,fetch,441.65
 317,Lake Greenhaven,317,lake_id,surge_morpho,maxlength,717.8801
+317,Lake Greenhaven,NA,NA,NA,maximum measured depth,4.3
 323,Mormon Lake,23265324,lmorpho_comid,nlmd,surfacearea,6414050.687
 323,Mormon Lake,23265324,lmorpho_comid,nlmd,shorelinelength,28859.10925
 323,Mormon Lake,23265324,lmorpho_comid,nlmd,shorelinedev,3.214487908
@@ -3391,6 +3502,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 323,Mormon Lake,323,lake_id,surge_morpho,fetch,945.04
 323,Mormon Lake,323,lake_id,surge_morpho,maxlength,1121.5197
 323,Mormon Lake,111024,hylak_id,globathy,dmax_use,18.373881793217063
+323,Mormon Lake,NA,NA,surge sites,maximum measured depth,4.9
 326,Comins Lake,11337343,lmorpho_comid,nlmd,surfacearea,115503.1789
 326,Comins Lake,11337343,lmorpho_comid,nlmd,shorelinelength,1685.851516
 326,Comins Lake,11337343,lmorpho_comid,nlmd,shorelinedev,1.399321221
@@ -3436,6 +3548,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 326,Comins Lake,326,lake_id,surge_morpho,fetch,896.12
 326,Comins Lake,326,lake_id,surge_morpho,maxlength,2030.1749
 326,Comins Lake,1057010,hylak_id,globathy,dmax_use,8.533302676097868
+326,Comins Lake,NA,NA,surge sites,maximum measured depth,3.1
 327,Dacey Reservoir,20637202,lmorpho_comid,nlmd,surfacearea,722842.2736
 327,Dacey Reservoir,20637202,lmorpho_comid,nlmd,shorelinelength,5951.443175
 327,Dacey Reservoir,20637202,lmorpho_comid,nlmd,shorelinedev,1.974674817
@@ -3467,6 +3580,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 327,Dacey Reservoir,327,lake_id,surge_morpho,fetch,1320.89
 327,Dacey Reservoir,327,lake_id,surge_morpho,maxlength,1510.9784
 327,Dacey Reservoir,1057841,hylak_id,globathy,dmax_use,4.404495562573467
+327,Dacey Reservoir,NA,NA,nla07 index,maximum measured depth,2.4
 328,Kemmerer Reservoir,3192814,lmorpho_comid,nlmd,surfacearea,761989.5077
 328,Kemmerer Reservoir,3192814,lmorpho_comid,nlmd,shorelinelength,5215.025723
 328,Kemmerer Reservoir,3192814,lmorpho_comid,nlmd,shorelinedev,1.685299249
@@ -3497,6 +3611,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 328,Kemmerer Reservoir,328,lake_id,surge_morpho,fetch,954.39
 328,Kemmerer Reservoir,328,lake_id,surge_morpho,maxlength,1671.2711
 328,Kemmerer Reservoir,1052513,hylak_id,globathy,dmax_use,6.444837651971465
+328,Kemmerer Reservoir,NA,NA,surge sites,maximum measured depth,6.7
 331,Springfield,24566893,lmorpho_comid,nlmd,surfacearea,212585.4503
 331,Springfield,24566893,lmorpho_comid,nlmd,shorelinelength,3971.957798
 331,Springfield,24566893,lmorpho_comid,nlmd,shorelinedev,2.430149125
@@ -3527,6 +3642,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 331,Springfield,331,lake_id,surge_morpho,fetch,299.08
 331,Springfield,331,lake_id,surge_morpho,maxlength,968.0336
 331,Springfield,1049284,hylak_id,globathy,dmax_use,4.074304886096
+331,Springfield,NA,NA,NA,maximum measured depth,3.6
 999,Baker Lake,24260671,lmorpho_comid,nlmd,surfacearea,19417526.6
 999,Baker Lake,24260671,lmorpho_comid,nlmd,shorelinelength,44806.89154
 999,Baker Lake,24260671,lmorpho_comid,nlmd,shorelinedev,2.868421239
@@ -3557,6 +3673,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 999,Baker Lake,999,lake_id,surge_morpho,fetch,6191.88
 999,Baker Lake,999,lake_id,surge_morpho,maxlength,9714.9116
 999,Baker Lake,8279,hylak_id,globathy,dmax_use,20.955304109333333
+999,Baker Lake,NA,NA,surge sites,maximum measured depth,61.1
 1000,Las Curias,1000,lake_id,surge_morpho,surfacearea,150452.62
 1000,Las Curias,1000,lake_id,surge_morpho,shorelinelength,4341.74
 1000,Las Curias,1000,lake_id,surge_morpho,shorelinedevelopment,3.16
@@ -3568,6 +3685,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1000,Las Curias,1000,lake_id,surge_morpho,fetch,311.62
 1000,Las Curias,1000,lake_id,surge_morpho,maxlength,1034.3856
 1000,Las Curias,1072637,hylak_id,globathy,dmax_use,11.889450678376932
+1000,Las Curias,NA,NA,surge sites,maximum measured depth,13.6
 1001,Acton Lake,3881594,lmorpho_comid,nlmd,surfacearea,2439162.789
 1001,Acton Lake,3881594,lmorpho_comid,nlmd,shorelinelength,12117.02495
 1001,Acton Lake,3881594,lmorpho_comid,nlmd,shorelinedev,2.18862158
@@ -3596,6 +3714,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1001,Acton Lake,1001,lake_id,surge_morpho,fetch,1484.69
 1001,Acton Lake,1001,lake_id,surge_morpho,maxlength,3717.6632
 1001,Acton Lake,112264,hylak_id,globathy,dmax_use,15.40342651059587
+1001,Acton Lake,NA,NA,surge sites,maximum measured depth,8.23
 1002,Alum Creek Lake,5212313,lmorpho_comid,nlmd,surfacearea,12277019.98
 1002,Alum Creek Lake,5212313,lmorpho_comid,nlmd,shorelinelength,71403.74723
 1002,Alum Creek Lake,5212313,lmorpho_comid,nlmd,shorelinedev,5.748699277
@@ -3650,6 +3769,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1003,Apple Valley Lake,1003,lake_id,surge_morpho,fetch,2767.98
 1003,Apple Valley Lake,1003,lake_id,surge_morpho,maxlength,4554.6726
 1003,Apple Valley Lake,112083,hylak_id,globathy,dmax_use,13.697642266784268
+1003,Apple Valley Lake,NA,NA,surge sites,maximum measured depth,15.728
 1004,Atwood Lake,19387446,lmorpho_comid,nlmd,surfacearea,67830.23062
 1004,Atwood Lake,19387446,lmorpho_comid,nlmd,shorelinelength,1513.239185
 1004,Atwood Lake,19387446,lmorpho_comid,nlmd,shorelinedev,1.639045463
@@ -3725,6 +3845,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1004,Atwood Lake,1004,lake_id,surge_morpho,fetch,2014.55
 1004,Atwood Lake,1004,lake_id,surge_morpho,maxlength,5064.9608
 1004,Atwood Lake,112055,hylak_id,globathy,dmax_use,15.143073801304268
+1004,Atwood Lake,NA,NA,surge sites,maximum measured depth,6.34
 1005,Brookville Lake,166899200,lmorpho_comid,nlmd,surfacearea,20888212.5
 1005,Brookville Lake,166899200,lmorpho_comid,nlmd,shorelinelength,84667.76895
 1005,Brookville Lake,166899200,lmorpho_comid,nlmd,shorelinedev,5.225917454
@@ -3751,6 +3872,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1005,Brookville Lake,1005,lake_id,surge_morpho,fetch,7177.1
 1005,Brookville Lake,1005,lake_id,surge_morpho,maxlength,10395.1056
 1005,Brookville Lake,9216,hylak_id,globathy,dmax_use,22.16388802113334
+1005,Brookville Lake,NA,NA,surge sites,maximum measured depth,25.908
 1006,Buckhorn Lake,486928,lmorpho_comid,nlmd,surfacearea,2073837.239
 1006,Buckhorn Lake,486928,lmorpho_comid,nlmd,shorelinelength,50048.09075
 1006,Buckhorn Lake,486928,lmorpho_comid,nlmd,shorelinedev,9.803818178
@@ -3779,6 +3901,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1006,Buckhorn Lake,1006,lake_id,surge_morpho,fetch,1126.41
 1006,Buckhorn Lake,1006,lake_id,surge_morpho,maxlength,2425.2643
 1006,Buckhorn Lake,112676,hylak_id,globathy,dmax_use,21.61397166350933
+1006,Buckhorn Lake,NA,NA,surge sites,maximum measured depth,10.058
 1007,Burr Oak Reservoir,15417757,lmorpho_comid,nlmd,surfacearea,2564620.553
 1007,Burr Oak Reservoir,15417757,lmorpho_comid,nlmd,shorelinelength,25612.30951
 1007,Burr Oak Reservoir,15417757,lmorpho_comid,nlmd,shorelinedev,4.511617267
@@ -3807,6 +3930,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1007,Burr Oak Reservoir,1007,lake_id,surge_morpho,fetch,1459.24
 1007,Burr Oak Reservoir,1007,lake_id,surge_morpho,maxlength,1743.7465
 1007,Burr Oak Reservoir,112267,hylak_id,globathy,dmax_use,13.695566166185332
+1007,Burr Oak Reservoir,NA,NA,surge sites,maximum measured depth,8.839
 1008,Caesar Creek Lake,166899204,lmorpho_comid,nlmd,surfacearea,10757743.45
 1008,Caesar Creek Lake,166899204,lmorpho_comid,nlmd,shorelinelength,49803.32186
 1008,Caesar Creek Lake,166899204,lmorpho_comid,nlmd,shorelinedev,4.283440981
@@ -3835,6 +3959,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1008,Caesar Creek Lake,1008,lake_id,surge_morpho,fetch,3640.79
 1008,Caesar Creek Lake,1008,lake_id,surge_morpho,maxlength,5178.7413
 1008,Caesar Creek Lake,9211,hylak_id,globathy,dmax_use,20.057151089636
+1008,Caesar Creek Lake,NA,NA,surge sites,maximum measured depth,23.348
 1009,Carr Fork Lake,1009,lake_id,surge_morpho,surfacearea,2092337.78
 1009,Carr Fork Lake,1009,lake_id,surge_morpho,shorelinelength,34281.88
 1009,Carr Fork Lake,1009,lake_id,surge_morpho,shorelinedevelopment,6.69
@@ -3846,6 +3971,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1009,Carr Fork Lake,1009,lake_id,surge_morpho,fetch,584.88
 1009,Carr Fork Lake,1009,lake_id,surge_morpho,maxlength,1759.8747
 1009,Carr Fork Lake,112696,hylak_id,globathy,dmax_use,20.56532094194933
+1009,Carr Fork Lake,NA,NA,surge sites,maximum measured depth,12.649
 1010,Cave Run Lake,166830448,lmorpho_comid,nlmd,surfacearea,33683474.32
 1010,Cave Run Lake,166830448,lmorpho_comid,nlmd,shorelinelength,225921.5358
 1010,Cave Run Lake,166830448,lmorpho_comid,nlmd,shorelinedev,10.98105986
@@ -3872,6 +3998,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1010,Cave Run Lake,1010,lake_id,surge_morpho,fetch,4548.45
 1010,Cave Run Lake,1010,lake_id,surge_morpho,maxlength,6491.6493
 1010,Cave Run Lake,9260,hylak_id,globathy,dmax_use,24.141578845946675
+1010,Cave Run Lake,NA,NA,surge sites,maximum measured depth,17.983
 1011,Charles Mill Lake,15408897,lmorpho_comid,nlmd,surfacearea,5403695.919
 1011,Charles Mill Lake,15408897,lmorpho_comid,nlmd,shorelinelength,41012.89507
 1011,Charles Mill Lake,15408897,lmorpho_comid,nlmd,shorelinedev,4.97702754
@@ -3900,6 +4027,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1011,Charles Mill Lake,1011,lake_id,surge_morpho,fetch,2810.63
 1011,Charles Mill Lake,1011,lake_id,surge_morpho,maxlength,3738.6045
 1011,Charles Mill Lake,111992,hylak_id,globathy,dmax_use,10.586646502186673
+1011,Charles Mill Lake,NA,NA,surge sites,maximum measured depth,1.615
 1012,Cowan Lake,3932186,lmorpho_comid,nlmd,surfacearea,2622280.593
 1012,Cowan Lake,3932186,lmorpho_comid,nlmd,shorelinelength,15456.66734
 1012,Cowan Lake,3932186,lmorpho_comid,nlmd,shorelinedev,2.692596938
@@ -3959,6 +4087,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1013,Delaware Reservoir,1013,lake_id,surge_morpho,fetch,2157.67
 1013,Delaware Reservoir,1013,lake_id,surge_morpho,maxlength,4464.3306
 1013,Delaware Reservoir,112096,hylak_id,globathy,dmax_use,20.217119666144
+1013,Delaware Reservoir,NA,NA,nla07 index,maximum measured depth,5.4
 1014,Dillon Lake,166899180,lmorpho_comid,nlmd,surfacearea,5264565.295
 1014,Dillon Lake,166899180,lmorpho_comid,nlmd,shorelinelength,30733.26682
 1014,Dillon Lake,166899180,lmorpho_comid,nlmd,shorelinedev,3.778527055
@@ -3987,6 +4116,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1014,Dillon Lake,1014,lake_id,surge_morpho,fetch,2125.21
 1014,Dillon Lake,1014,lake_id,surge_morpho,maxlength,3428.0883
 1014,Dillon Lake,112177,hylak_id,globathy,dmax_use,15.282057253616
+1014,Dillon Lake,NA,NA,surge sites,maximum measured depth,5.88264
 1015,Hocking County Lake,15417761,lmorpho_comid,nlmd,surfacearea,1197854.626
 1015,Hocking County Lake,15417761,lmorpho_comid,nlmd,shorelinelength,11238.71653
 1015,Hocking County Lake,15417761,lmorpho_comid,nlmd,shorelinedev,2.896741411
@@ -4015,6 +4145,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1015,Hocking County Lake,1015,lake_id,surge_morpho,fetch,945.02
 1015,Hocking County Lake,1015,lake_id,surge_morpho,maxlength,2551.9252
 1015,Hocking County Lake,112268,hylak_id,globathy,dmax_use,16.11273560883467
+1015,Hocking County Lake,NA,NA,surge sites,maximum measured depth,4.785
 1016,Kiser Lake,3980812,lmorpho_comid,nlmd,surfacearea,1526620.571
 1016,Kiser Lake,3980812,lmorpho_comid,nlmd,shorelinelength,7599.41677
 1016,Kiser Lake,3980812,lmorpho_comid,nlmd,shorelinedev,1.735041136
@@ -4044,6 +4175,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1016,Kiser Lake,1016,lake_id,surge_morpho,fetch,714.88
 1016,Kiser Lake,1016,lake_id,surge_morpho,maxlength,3307.4917
 1016,Kiser Lake,112129,hylak_id,globathy,dmax_use,12.48025669021573
+1016,Kiser Lake,NA,NA,nla07 index,maximum measured depth,4
 1017,Knox Lake,167484602,lmorpho_comid,nlmd,surfacearea,1953117.807
 1017,Knox Lake,167484602,lmorpho_comid,nlmd,shorelinelength,14321.55321
 1017,Knox Lake,167484602,lmorpho_comid,nlmd,shorelinedev,2.890819457
@@ -4116,6 +4248,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1018,La Due Reservoir,1018,lake_id,surge_morpho,fetch,2659.38
 1018,La Due Reservoir,1018,lake_id,surge_morpho,maxlength,3386.6187
 1018,La Due Reservoir,111756,hylak_id,globathy,dmax_use,20.716405461014674
+1018,La Due Reservoir,NA,NA,nla07 index,maximum measured depth,6.4
 1019,Lake Loramie,3982320,lmorpho_comid,nlmd,surfacearea,3271193.605
 1019,Lake Loramie,3982320,lmorpho_comid,nlmd,shorelinelength,38102.13852
 1019,Lake Loramie,3982320,lmorpho_comid,nlmd,shorelinedev,5.942802471
@@ -4147,6 +4280,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1019,Lake Loramie,1019,lake_id,surge_morpho,fetch,1343.37
 1019,Lake Loramie,1019,lake_id,surge_morpho,maxlength,4977.41
 1019,Lake Loramie,112094,hylak_id,globathy,dmax_use,8.195533586018799
+1019,Lake Loramie,NA,NA,surge sites,maximum measured depth,1.859
 1020,Lake Milton,13152651,lmorpho_comid,nlmd,surfacearea,6899748.27
 1020,Lake Milton,13152651,lmorpho_comid,nlmd,shorelinelength,34889.19576
 1020,Lake Milton,13152651,lmorpho_comid,nlmd,shorelinedev,3.746876713
@@ -4175,6 +4309,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1020,Lake Milton,1020,lake_id,surge_morpho,fetch,4289.88
 1020,Lake Milton,1020,lake_id,surge_morpho,maxlength,4617.7267
 1020,Lake Milton,111867,hylak_id,globathy,dmax_use,14.447387579393869
+1020,Lake Milton,NA,NA,surge sites,maximum measured depth,8.443
 1021,Lake Mohawk,19387410,lmorpho_comid,nlmd,surfacearea,2090785.175
 1021,Lake Mohawk,19387410,lmorpho_comid,nlmd,shorelinelength,13578.36072
 1021,Lake Mohawk,19387410,lmorpho_comid,nlmd,shorelinedev,2.649035046
@@ -4201,6 +4336,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1021,Lake Mohawk,1021,lake_id,surge_morpho,fetch,1591.93
 1021,Lake Mohawk,1021,lake_id,surge_morpho,maxlength,3095.5515
 1021,Lake Mohawk,112019,hylak_id,globathy,dmax_use,15.991485112592931
+1021,Lake Mohawk,NA,NA,surge sites,maximum measured depth,6.096
 1022,Lake Roaming Rock,9846027,lmorpho_comid,nlmd,surfacearea,1842469.734
 1022,Lake Roaming Rock,9846027,lmorpho_comid,nlmd,shorelinelength,23076.57036
 1022,Lake Roaming Rock,9846027,lmorpho_comid,nlmd,shorelinedev,4.795856184
@@ -4227,6 +4363,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1022,Lake Roaming Rock,1022,lake_id,surge_morpho,fetch,1902.41
 1022,Lake Roaming Rock,1022,lake_id,surge_morpho,maxlength,2497.4872
 1022,Lake Roaming Rock,111665,hylak_id,globathy,dmax_use,13.858276341078804
+1022,Lake Roaming Rock,NA,NA,surge sites,maximum measured depth,7.62
 1023,Lake Waynoka,1918274,lmorpho_comid,nlmd,surfacearea,1265762.363
 1023,Lake Waynoka,1918274,lmorpho_comid,nlmd,shorelinelength,24946.11711
 1023,Lake Waynoka,1918274,lmorpho_comid,nlmd,shorelinedev,6.254922542
@@ -4256,6 +4393,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1023,Lake Waynoka,1023,lake_id,surge_morpho,fetch,675.02
 1023,Lake Waynoka,1023,lake_id,surge_morpho,maxlength,2555.4301
 1023,Lake Waynoka,1057294,hylak_id,globathy,dmax_use,13.587620545231069
+1023,Lake Waynoka,NA,NA,surge sites,maximum measured depth,9.144
 1024,Michael J Kirwan Reservoir,13155459,lmorpho_comid,nlmd,surfacearea,10646465.48
 1024,Michael J Kirwan Reservoir,13155459,lmorpho_comid,nlmd,shorelinelength,64841.7111
 1024,Michael J Kirwan Reservoir,13155459,lmorpho_comid,nlmd,shorelinedev,5.605918888
@@ -4285,6 +4423,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1024,Michael J Kirwan Reservoir,1024,lake_id,surge_morpho,fetch,2087.08
 1024,Michael J Kirwan Reservoir,1024,lake_id,surge_morpho,maxlength,4782.3439
 1024,Michael J Kirwan Reservoir,111863,hylak_id,globathy,dmax_use,18.054001954283205
+1024,Michael J Kirwan Reservoir,NA,NA,nla07 index,maximum measured depth,12.8
 1025,Paint Creek Lake,5231436,lmorpho_comid,nlmd,surfacearea,4705068.294
 1025,Paint Creek Lake,5231436,lmorpho_comid,nlmd,shorelinelength,35574.42294
 1025,Paint Creek Lake,5231436,lmorpho_comid,nlmd,shorelinedev,4.626472299
@@ -4313,6 +4452,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1025,Paint Creek Lake,1025,lake_id,surge_morpho,fetch,1573.9
 1025,Paint Creek Lake,1025,lake_id,surge_morpho,maxlength,4514.2486
 1025,Paint Creek Lake,112343,hylak_id,globathy,dmax_use,15.981257998453332
+1025,Paint Creek Lake,NA,NA,surge sites,maximum measured depth,7.041
 1026,Piedmont Lake,19390850,lmorpho_comid,nlmd,surfacearea,8571202.419
 1026,Piedmont Lake,19390850,lmorpho_comid,nlmd,shorelinelength,53651.33843
 1026,Piedmont Lake,19390850,lmorpho_comid,nlmd,shorelinedev,5.169573958
@@ -4341,6 +4481,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1026,Piedmont Lake,1026,lake_id,surge_morpho,fetch,2912.24
 1026,Piedmont Lake,1026,lake_id,surge_morpho,maxlength,3338.6867
 1026,Piedmont Lake,112131,hylak_id,globathy,dmax_use,20.160875766865335
+1026,Piedmont Lake,NA,NA,surge sites,maximum measured depth,7.772
 1027,Pleasant Hill Lake,15408959,lmorpho_comid,nlmd,surfacearea,3112744.517
 1027,Pleasant Hill Lake,15408959,lmorpho_comid,nlmd,shorelinelength,15776.7317
 1027,Pleasant Hill Lake,15408959,lmorpho_comid,nlmd,shorelinedev,2.522553406
@@ -4369,6 +4510,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1027,Pleasant Hill Lake,1027,lake_id,surge_morpho,fetch,1281
 1027,Pleasant Hill Lake,1027,lake_id,surge_morpho,maxlength,3531.627
 1027,Pleasant Hill Lake,112033,hylak_id,globathy,dmax_use,18.308289150766665
+1027,Pleasant Hill Lake,NA,NA,surge sites,maximum measured depth,9.205
 1028,Rocky Fork Lake,5231452,lmorpho_comid,nlmd,surfacearea,7982194.23
 1028,Rocky Fork Lake,5231452,lmorpho_comid,nlmd,shorelinelength,36440.58286
 1028,Rocky Fork Lake,5231452,lmorpho_comid,nlmd,shorelinedev,3.638473676
@@ -4397,6 +4539,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1028,Rocky Fork Lake,1028,lake_id,surge_morpho,fetch,1472.84
 1028,Rocky Fork Lake,1028,lake_id,surge_morpho,maxlength,6762.0442
 1028,Rocky Fork Lake,112357,hylak_id,globathy,dmax_use,16.174380186414663
+1028,Rocky Fork Lake,NA,NA,surge sites,maximum measured depth,9.784
 1029,Senecaville Lake,15372030,lmorpho_comid,nlmd,surfacearea,13806660.76
 1029,Senecaville Lake,15372030,lmorpho_comid,nlmd,shorelinelength,61011.46178
 1029,Senecaville Lake,15372030,lmorpho_comid,nlmd,shorelinedev,4.631931962
@@ -4425,6 +4568,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1029,Senecaville Lake,1029,lake_id,surge_morpho,fetch,3350.02
 1029,Senecaville Lake,1029,lake_id,surge_morpho,maxlength,5277.062
 1029,Senecaville Lake,9199,hylak_id,globathy,dmax_use,18.236673824892
+1029,Senecaville Lake,NA,NA,surge sites,maximum measured depth,6.15696
 1030,Tappan Lake,19390686,lmorpho_comid,nlmd,surfacearea,8076857.703
 1030,Tappan Lake,19390686,lmorpho_comid,nlmd,shorelinelength,47840.50833
 1030,Tappan Lake,19390686,lmorpho_comid,nlmd,shorelinedev,4.748644279
@@ -4453,6 +4597,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1030,Tappan Lake,1030,lake_id,surge_morpho,fetch,2136.1
 1030,Tappan Lake,1030,lake_id,surge_morpho,maxlength,4260.1584
 1030,Tappan Lake,112099,hylak_id,globathy,dmax_use,18.593717556337335
+1030,Tappan Lake,NA,NA,surge sites,maximum measured depth,7.071
 1031,William H Harsha Lake,166899203,lmorpho_comid,nlmd,surfacearea,8261704.405
 1031,William H Harsha Lake,166899203,lmorpho_comid,nlmd,shorelinelength,48775.36338
 1031,William H Harsha Lake,166899203,lmorpho_comid,nlmd,shorelinedev,4.786970547
@@ -4481,6 +4626,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1031,William H Harsha Lake,1031,lake_id,surge_morpho,fetch,2350.42
 1031,William H Harsha Lake,1031,lake_id,surge_morpho,maxlength,3448.5572
 1031,William H Harsha Lake,112388,hylak_id,globathy,dmax_use,17.028081631100005
+1031,William H Harsha Lake,NA,NA,surge sites,maximum measured depth,25.756
 1032,Wingfoot Lake,15586832,lmorpho_comid,nlmd,surfacearea,1514799.43
 1032,Wingfoot Lake,15586832,lmorpho_comid,nlmd,shorelinelength,12306.0006
 1032,Wingfoot Lake,15586832,lmorpho_comid,nlmd,shorelinedev,2.820554095
@@ -4507,6 +4653,7 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1032,Wingfoot Lake,1032,lake_id,surge_morpho,fetch,1339.37
 1032,Wingfoot Lake,1032,lake_id,surge_morpho,maxlength,2078.8558
 1032,Wingfoot Lake,111904,hylak_id,globathy,dmax_use,8.926975932467998
+1032,Wingfoot Lake,NA,NA,surge sites,maximum measured depth,3.597
 1033,Falls Lake,166737717,lmorpho_comid,nlmd,surfacearea,53458711.28
 1033,Falls Lake,166737717,lmorpho_comid,nlmd,shorelinelength,321823.2903
 1033,Falls Lake,166737717,lmorpho_comid,nlmd,shorelinedev,12.41661731
@@ -4538,3 +4685,4 @@ lake_id,lake_name,join_id,join_id_name,source,variables,values
 1033,Falls Lake,1033,lake_id,surge_morpho,fetch,6263.99
 1033,Falls Lake,1033,lake_id,surge_morpho,maxlength,7642.4229
 1033,Falls Lake,9333,hylak_id,globathy,dmax_use,17.133316800000003
+1033,Falls Lake,NA,NA,surge sites,maximum measured depth,25

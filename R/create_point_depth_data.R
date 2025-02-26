@@ -70,8 +70,6 @@ surge_nla22_index_pts <- read_csv(here("data/nla/nla22_siteinfo.csv")) |>
   mutate(lake_id = as.numeric(lake_id))
 
 # Add TIN depths
-<<<<<<< HEAD
-
 bath_tif <- fs::dir_ls(here("data/surge/bathymetry_raster/"), type = "file",
                        glob = "*.tif")
 
@@ -122,8 +120,7 @@ surge_measured_depths <- bind_rows(surge_pts, surge_phab_pts,
 st_write(surge_measured_depths, here("data/surge_morpho_point_depth.gpkg"),
          append = FALSE)
 
-=======
->>>>>>> a586761b878021e73359d266fba19ae5e1dcf84b
+
 tin_gdbs <- fs::dir_ls(here("data/surge/tin"), recurse = T,
                           type = "directory", regexp = "\\.gdb$")
 
@@ -143,7 +140,3 @@ surge_measured_depths <- bind_rows(surge_pts, surge_phab_pts,
 
 st_write(surge_measured_depths, here("data/surge_morpho_point_depth.gpkg"))
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a586761b878021e73359d266fba19ae5e1dcf84b

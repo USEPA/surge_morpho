@@ -34,7 +34,7 @@ if(!dir.exists(here::here("data/surge"))){
   surge_sp$download_file("surgeDsn/SuRGE_design_20191206_eval_status.xlsx",
                          dest = "data/surge/SuRGE_design_20191206_eval_status.xlsx",
                          overwrite = TRUE)
-  surge_sp$download_file("lakeDsn/all_lakes_2024-10-18.gpkg",
+  surge_sp$download_file("lakeDsn/all_lakes_2025-01-10.gpkg",
                          dest = "data/surge/all_lakes.gpkg",
                          overwrite = TRUE)
 }

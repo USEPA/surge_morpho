@@ -71,6 +71,7 @@ surge_measure <- sf::st_read(here("data/surge_morpho_point_depth.gpkg")) |>
                              TRUE ~ as.character(lake_id)))
 st_geometry(surge_measure) <- NULL
 surge_measure <- surge_measure |>
+  filter(!is.na(depth)) |>
   group_by(lake_id) |>
   mutate(max_measured_depth = max(depth, na.rm = TRUE)) |>
   ungroup() |>
@@ -78,7 +79,7 @@ surge_measure <- surge_measure |>
   mutate(join_id = NA_character_, join_id_name = NA_character_,
          variables = "maximum measured depth") |>
   select(lake_id, lake_name, join_id, join_id_name, source, variables,
-         value = max_measured_depth) |>
+         values = max_measured_depth) |>
   unique()
 
 
