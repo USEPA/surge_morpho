@@ -102,7 +102,22 @@ surge_res_morpho_all <- bind_rows(surge_orig, surge_lagos, surge_nhd, surge_nla,
                                   surge_res_morpho_long, surge_globathy_max,
                                   surge_measure) |>
   relocate(lake_id, lake_name, join_id, join_id_name) |>
-  arrange(as.numeric(lake_id))
+  arrange(as.numeric(lake_id)) |>
+  mutate(lake_id = as.numeric(lake_id))
+
+lake_names <- surge_res_morpho_all |>
+  select(lake_id, lake_name) |>
+  unique()
+
+source("R/calc_max_mean_volume.R")
+
+surge_pts_max_mean_volume <- surge_pts_max_mean |>
+  pivot_longer(max_depth:volume, names_to = "variables", values_to = "values") |>
+  mutate(join_id = NA, join_id_name = NA, source = "surge sites") |>
+  left_join(lake_names)
+
+surge_res_morpho_all <- bind_rows(surge_res_morpho_all, surge_pts_max_mean_volume) |>
+  arrange(lake_id)
 
 write_csv(surge_res_morpho_all, "data/surge_res_morpho_all.csv")
 
