@@ -119,6 +119,9 @@ surge_pts_max_mean_volume <- surge_pts_max_mean |>
 surge_res_morpho_all <- bind_rows(surge_res_morpho_all, surge_pts_max_mean_volume) |>
   arrange(lake_id)
 
+
+
+
 write_csv(surge_res_morpho_all, "data/surge_res_morpho_all.csv")
 
 
