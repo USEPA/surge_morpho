@@ -475,3 +475,55 @@ single_reservoir_map <- function(res, pts){
 
 }
 
+nearest_100s <- function(num){
+  num_int <- as.integer(num)
+  boundary_check <- substr(as.character(num_int), nchar(num_int) - 4, nchar(num_int))
+  if(grepl("^0+$", boundary_check)){
+    num <- num - 1
+  }
+  padded <- sprintf("%07d", as.integer(num))
+  num2 <- substr(as.character(padded), 1, 2)
+  num2 <- as.integer(paste0(num2, "00"))
+  if(num2 == 0L){
+    nums <- c(1, 100)
+  } else {
+    nums <- c(num2, num2+100)
+  }
+  nums
+}
+
+nearest_1000s <- function(num){
+  num_int1 <- round(as.integer(num), -3)
+  if(num_int1 >= as.integer(num)){
+    num_int2 <- num_int1 - 999
+    nums <- c(num_int2, num_int1)
+  } else if(num_int1 < as.integer(num)){
+    num_int2 <- num_int1 + 1000
+    nums <- c(num_int1 + 1, num_int2)
+  } 
+  nums
+}
+
+# 1 to 100k/1 to 1000
+# 100K to 200k/100001 to 101000
+min <- 1000
+max <- 1427688
+mid <- 713844
+build_path <- function(id){
+  base_path <- "data/globathy/globathy_rast/Bathymetry_Rasters/"
+  hund <- nearest_100s(id)
+  
+  if(id <= 100000){
+    base_path2 <- paste0(base_path, hund[1], "_", hund[2], "K/")
+  } else if(hund[1] == 1400){
+    hund[2] <- 1427688
+    base_path2 <- paste0(base_path, hund[1], "K_", hund[2], "/")
+  } else {
+    base_path2 <- paste0(base_path, hund[1], "K_", hund[2], "K/")
+  } 
+  thous <- nearest_1000s(id)
+  path <- paste0(base_path2,
+                 thous[1], "_", thous[2], "/",
+                 id, "_bathymetry.tif")
+  path
+  }
