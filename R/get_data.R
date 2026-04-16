@@ -179,7 +179,15 @@ download.file("https://portal.edirepository.org/nis/dataviewer?packageid=edi.854
               here("data/lagos/gis_locus_v1.0_gpkg.zip"))
 
 
-
+# Download HydroLakes polys
+if(!dir.exists(here::here("data/hydrolakes"))){
+  fs::dir_create("data/hydrolakes")
+  hydrolakes_resp <- httr::GET("https://data.hydrosheds.org/file/hydrolakes/HydroLAKES_polys_v10.gdb.zip",
+                                 httr::write_disk(here::here("data/hydrolakes/HydroLAKES_polys_v10.gdb.zip"),
+                                                  overwrite = FALSE))
+  unzip(here::here("data/hydrolakes/HydroLAKES_polys_v10.gdb.zip"),
+        exdir = here::here("data/hydrolakes/"))                                                
+}
 
 # Download GLOBathy datasets from figshare
 # The raster is big... 15GB +
