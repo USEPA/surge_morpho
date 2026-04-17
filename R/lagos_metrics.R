@@ -11,4 +11,10 @@ surge_lagos <- read_csv(here("data/lagos/lagos_depth.csv")) |>
   left_join(surge_lagos_ids) |>
   select(lake_id, lagoslakeid, lagos_max_depth = lake_maxdepth_m, lagos_mean_depth = lake_meandepth_m, lagos_lake_area = lake_waterarea_ha)
 
+surge_lagos <- surge_lagos |>
+  group_by(lake_id) |>
+  summarize(lagos_lake_area = sum(lagos_lake_area, na.rm = TRUE), 
+            lagos_max_depth = max(lagos_max_depth, na.rm = TRUE),
+            lagos_mean_depth = mean(lagos_mean_depth, na.rm = TRUE)) 
+
 write_csv(surge_lagos, here("data/surge_lagos_metrics.csv"))

@@ -1,0 +1,1759 @@
+lake_id,source,units,variable,value
+1,globathy,m,max_depth,16.333974838256836
+1,globathy,m,mean_depth,6.004054490126903
+1,hydrolakes,km2,surface_area,1.2000000476837158
+1,hydrolakes,m,shoreline_length,8.699999809265137
+1,hydrolakes,mcm,volume,2.309999942779541
+1,hydrolakes,m,mean_depth,1.899999976158142
+1,nhdplus,km2,surface_area,47.315
+1,nhdplus,m,max_depth,0
+1,nhdplus,m,mean_depth,0.206910638
+2,globathy,m,max_depth,22.65738296508789
+2,globathy,m,mean_depth,7.243597531143775
+2,hydrolakes,km2,surface_area,39.41999816894531
+2,hydrolakes,m,shoreline_length,79.88999938964844
+2,hydrolakes,mcm,volume,1706.9000244140625
+2,hydrolakes,m,mean_depth,43.29999923706055
+2,nhdplus,km2,surface_area,39.078
+2,nhdplus,m,max_depth,5.470326621
+2,nhdplus,m,mean_depth,1.602612224
+2,nhdplus,m3,volume,62627538.33
+2,lagos,m,max_depth,5.2
+2,lagos,ha,surface_area,4609.147
+2,nla index and nla phab,m,mean_depth,1.8642857142857143
+2,nla17 index,m,max_depth,7
+3,globathy,m,max_depth,15.270480155944824
+3,globathy,m,mean_depth,4.59405080418744
+3,hydrolakes,km2,surface_area,69.88999938964844
+3,hydrolakes,m,shoreline_length,148.60000610351565
+3,hydrolakes,mcm,volume,2465.39990234375
+3,hydrolakes,m,mean_depth,35.29999923706055
+3,nhdplus,km2,surface_area,71.874
+3,nhdplus,m,max_depth,19.18470984
+3,nhdplus,m,mean_depth,3.3335197565
+3,nhdplus,m3,volume,394189427.359
+3,lagos,m,max_depth,5.1
+3,lagos,ha,surface_area,7345.959
+3,nla index and nla phab,m,mean_depth,2.473307692307692
+3,nla07 index,m,max_depth,10.1
+4,globathy,m,max_depth,14.889548301696776
+4,globathy,m,mean_depth,4.1504533788975095
+4,hydrolakes,km2,surface_area,6.670000076293945
+4,hydrolakes,m,shoreline_length,25.510000228881836
+4,hydrolakes,mcm,volume,60.70000076293945
+4,hydrolakes,m,mean_depth,9.100000381469728
+4,nhdplus,km2,surface_area,6.523
+4,nhdplus,m,max_depth,7.490698613
+4,nhdplus,m,mean_depth,2.111195903
+4,nhdplus,m3,volume,13771762.13
+4,lagos,m,max_depth,2
+4,lagos,ha,surface_area,649.2414
+4,nla index and nla phab,m,mean_depth,2.43
+4,nla07 index,m,max_depth,6.5
+10,nhdplus,km2,surface_area,0.27
+10,nla index and nla phab,m,mean_depth,3.203846153846154
+10,nla22 index,m,max_depth,7.3
+11,globathy,m,max_depth,16.763999938964844
+11,globathy,m,mean_depth,4.77498978905064
+11,hydrolakes,km2,surface_area,4.119999885559082
+11,hydrolakes,m,shoreline_length,24.850000381469727
+11,hydrolakes,mcm,volume,69.19999694824219
+11,hydrolakes,m,mean_depth,16.799999237060547
+11,nhdplus,km2,surface_area,4.814
+11,nhdplus,m,max_depth,8.943008986
+11,nhdplus,m,mean_depth,2.342867695
+11,nhdplus,m3,volume,11279492.52
+11,lagos,m,max_depth,12.8
+11,lagos,ha,surface_area,485.7555
+11,nla index and nla phab,m,mean_depth,3.1794444444444445
+11,nla17 index,m,max_depth,13.23
+13,globathy,m,max_depth,4.549290657043457
+13,globathy,m,mean_depth,2.1020667088813467
+13,hydrolakes,km2,surface_area,0.18000000715255737
+13,hydrolakes,m,shoreline_length,2.619999885559082
+13,hydrolakes,mcm,volume,0.3799999952316284
+13,hydrolakes,m,mean_depth,2.0999999046325684
+13,nhdplus,km2,surface_area,0.624
+13,lagos,m,max_depth,1.7
+13,lagos,ha,surface_area,31.4431599
+13,nla index and nla phab,m,mean_depth,1.1222222222222222
+13,nla12 index,m,max_depth,1.7
+14,globathy,m,max_depth,11.964773178100586
+14,globathy,m,mean_depth,4.899847087665246
+14,hydrolakes,km2,surface_area,0.3400000035762787
+14,hydrolakes,m,shoreline_length,2.75
+14,hydrolakes,mcm,volume,1.4299999475479126
+14,hydrolakes,m,mean_depth,4.199999809265137
+14,nhdplus,km2,surface_area,0.355
+14,nhdplus,m,max_depth,1.379880486
+14,nhdplus,m,mean_depth,0.547885132
+14,nhdplus,m3,volume,194492.5732
+14,nla index and nla phab,m,mean_depth,2.525
+14,nla12 index,m,max_depth,6.2
+16,nhdplus,km2,surface_area,0.184
+16,lagos,m,max_depth,2.3
+16,lagos,ha,surface_area,16.45983905
+16,nla index and nla phab,m,mean_depth,1.657142857142857
+16,nla12 index,m,max_depth,2.3
+17,nhdplus,km2,surface_area,0.112
+17,nla index and nla phab,m,mean_depth,1.758
+17,nla17 index,m,max_depth,2.3
+18,globathy,m,max_depth,13.26086711883545
+18,globathy,m,mean_depth,4.5338341055665525
+18,hydrolakes,km2,surface_area,1.309999942779541
+18,hydrolakes,m,shoreline_length,9.220000267028809
+18,hydrolakes,mcm,volume,5.199999809265137
+18,hydrolakes,m,mean_depth,4
+18,nhdplus,km2,surface_area,1.498
+18,lagos,m,max_depth,3.4
+18,lagos,ha,surface_area,160.4585
+18,nla index and nla phab,m,mean_depth,1.0285714285714285
+18,nla12 index,m,max_depth,3.4
+44,globathy,m,max_depth,14.241456031799316
+44,globathy,m,mean_depth,5.670192121328871
+44,hydrolakes,km2,surface_area,0.7400000095367432
+44,hydrolakes,m,shoreline_length,5.690000057220459
+44,hydrolakes,mcm,volume,3.569999933242798
+44,hydrolakes,m,mean_depth,4.800000190734863
+44,nhdplus,km2,surface_area,0.894
+44,nhdplus,m,max_depth,1.804623692
+44,nhdplus,m,mean_depth,0.643100622
+44,nhdplus,m3,volume,575218.1232
+44,nla index and nla phab,m,mean_depth,1.88
+44,nla17 index,m,max_depth,4.2
+45,nhdplus,km2,surface_area,0.105
+45,nla index and nla phab,m,mean_depth,2.4435714285714285
+45,nla17 index,m,max_depth,4.5
+46,globathy,m,max_depth,11.245923042297363
+46,globathy,m,mean_depth,5.271216667059696
+46,hydrolakes,km2,surface_area,0.10000000149011612
+46,hydrolakes,m,shoreline_length,1.7200000286102295
+46,hydrolakes,mcm,volume,0.18000000715255737
+46,hydrolakes,m,mean_depth,1.899999976158142
+46,nhdplus,km2,surface_area,0.119
+46,nhdplus,m,max_depth,1.085809121
+46,nhdplus,m,mean_depth,0.592046699
+46,nhdplus,m3,volume,70268.86555
+46,lagos,m,max_depth,1.8
+46,lagos,ha,surface_area,12.5399809
+46,nla index and nla phab,m,mean_depth,1.305
+46,nla 12 phab,m,max_depth,2
+47,globathy,m,max_depth,3.8336739540100098
+47,globathy,m,mean_depth,1.5629878537335866
+47,hydrolakes,km2,surface_area,0.20999999344348907
+47,hydrolakes,m,shoreline_length,2.740000009536743
+47,hydrolakes,mcm,volume,0.5400000214576721
+47,hydrolakes,m,mean_depth,2.5999999046325684
+47,nhdplus,km2,surface_area,0.423
+47,nhdplus,m,max_depth,1.675681662
+47,nhdplus,m,mean_depth,0.424486986
+47,nhdplus,m3,volume,242058.236418
+47,lagos,m,max_depth,2.3
+47,lagos,ha,surface_area,49.61646877
+47,nla index and nla phab,m,mean_depth,1.49375
+47,nla17 index,m,max_depth,3.9
+49,nhdplus,km2,surface_area,0.287
+49,nhdplus,m,max_depth,1.21575065
+49,nhdplus,m,mean_depth,0.499627122
+49,nhdplus,m3,volume,143380.2271
+49,lagos,m,max_depth,4
+49,lagos,ha,surface_area,11.06126095
+49,nla index and nla phab,m,mean_depth,1.2125
+49,nla12 index,m,max_depth,2.1
+51,globathy,m,max_depth,14.392131805419922
+51,globathy,m,mean_depth,5.382883205548139
+51,hydrolakes,km2,surface_area,0.7400000095367432
+51,hydrolakes,m,shoreline_length,3.9800000190734863
+51,hydrolakes,mcm,volume,4.079999923706055
+51,hydrolakes,m,mean_depth,5.5
+51,nhdplus,km2,surface_area,0.983
+51,nhdplus,m,max_depth,12.18652936
+51,nhdplus,m,mean_depth,3.89593397
+51,nhdplus,m3,volume,3829800.187
+51,lagos,m,max_depth,7
+51,lagos,ha,surface_area,86.4757102
+51,nla index and nla phab,m,mean_depth,2.3133333333333335
+51,nla17 index,m,max_depth,12.6
+52,nhdplus,km2,surface_area,10.364
+52,nhdplus,m,max_depth,23.76951603
+52,nhdplus,m,mean_depth,6.976293192
+52,nhdplus,m3,volume,72303713.54
+52,lagos,m,max_depth,21.94452911
+52,lagos,ha,surface_area,302.5661288
+52,nla index and nla phab,m,mean_depth,5.141666666666667
+52,nla22 index,m,max_depth,21.4
+53,globathy,m,max_depth,11.064579963684082
+53,globathy,m,mean_depth,4.229877015448505
+53,hydrolakes,km2,surface_area,0.4600000083446502
+53,hydrolakes,m,shoreline_length,4.300000190734863
+53,hydrolakes,mcm,volume,3.680000066757202
+53,hydrolakes,m,mean_depth,8.100000381469727
+53,nhdplus,km2,surface_area,0.562
+53,nhdplus,m,max_depth,15.40653313
+53,nhdplus,m,mean_depth,5.606132579
+53,nhdplus,m3,volume,3150627.966
+53,lagos,m,max_depth,25.3
+53,lagos,ha,surface_area,52.90486431
+53,nla index and nla phab,m,mean_depth,7.480555555555556
+53,nla07 index,m,max_depth,25.3
+54,globathy,m,max_depth,5.209461212158203
+54,globathy,m,mean_depth,2.3334044828712277
+54,hydrolakes,km2,surface_area,0.3199999928474426
+54,hydrolakes,m,shoreline_length,2.700000047683716
+54,hydrolakes,mcm,volume,1.1799999475479126
+54,hydrolakes,m,mean_depth,3.700000047683716
+54,nhdplus,km2,surface_area,0.21
+54,nhdplus,m,max_depth,2.875041957
+54,nhdplus,m,mean_depth,1.090861267
+54,nhdplus,m3,volume,229314.012
+54,lagos,m,max_depth,2.3
+54,lagos,ha,surface_area,36.09098375
+54,nla index and nla phab,m,mean_depth,1.1388888888888888
+54,nla 12 phab,m,max_depth,3.5
+55,nhdplus,km2,surface_area,0.162
+55,nhdplus,m,max_depth,3.849877597
+55,nhdplus,m,mean_depth,1.526724704
+55,nhdplus,m3,volume,247722.1729
+55,nla index and nla phab,m,mean_depth,2.85
+55,nla22 index,m,max_depth,3.2
+57,globathy,m,max_depth,6.613662242889404
+57,globathy,m,mean_depth,2.825561298445223
+57,hydrolakes,km2,surface_area,0.20999999344348907
+57,hydrolakes,m,shoreline_length,2.259999990463257
+57,hydrolakes,mcm,volume,0.7699999809265137
+57,hydrolakes,m,mean_depth,3.700000047683716
+57,nhdplus,km2,surface_area,0.5640000000000001
+57,nhdplus,m,max_depth,6.819418843
+57,nhdplus,m,mean_depth,2.6765761225
+57,nhdplus,m3,volume,1483099.2128
+57,lagos,m,max_depth,5.5
+57,lagos,ha,surface_area,58.1437019
+57,nla index and nla phab,m,mean_depth,2.833333333333333
+57,nla07 index,m,max_depth,5.3
+64,globathy,m,max_depth,12.202052116394045
+64,globathy,m,mean_depth,4.804798188147607
+64,hydrolakes,km2,surface_area,0.27000001072883606
+64,hydrolakes,m,shoreline_length,2.7300000190734863
+64,hydrolakes,mcm,volume,1.4500000476837158
+64,hydrolakes,m,mean_depth,5.300000190734863
+64,nhdplus,km2,surface_area,0.339
+64,nhdplus,m,max_depth,9.120976017
+64,nhdplus,m,mean_depth,3.932373564
+64,nhdplus,m3,volume,1333805.423
+64,lagos,m,max_depth,4.266991771
+64,lagos,ha,surface_area,32.83974265
+64,nla index and nla phab,m,mean_depth,1.840625
+64,nla12 index,m,max_depth,3.9
+65,nhdplus,km2,surface_area,0.127
+65,nhdplus,m,max_depth,8.584014594
+65,nhdplus,m,mean_depth,5.335367069
+65,nhdplus,m3,volume,679660.1688
+65,lagos,m,max_depth,3.048
+65,lagos,m,mean_depth,1.524
+65,lagos,ha,surface_area,12.47534565
+65,nla index and nla phab,m,mean_depth,1.2880952380952382
+65,nla 17 phab,m,max_depth,2.2
+66,nhdplus,km2,surface_area,2.024
+66,nhdplus,m,max_depth,2.427013638
+66,nhdplus,m,mean_depth,0.768615088
+66,nhdplus,m3,volume,1555906.912
+66,lagos,m,max_depth,2
+66,lagos,ha,surface_area,192.0301459
+66,nla index and nla phab,m,mean_depth,1.2666666666666666
+66,nla07 index,m,max_depth,2.2
+67,globathy,m,max_depth,5.043875217437744
+67,globathy,m,mean_depth,1.5310490482959735
+67,hydrolakes,km2,surface_area,2.0399999618530273
+67,hydrolakes,m,shoreline_length,11.720000267028809
+67,hydrolakes,mcm,volume,5.610000133514404
+67,hydrolakes,m,mean_depth,2.799999952316284
+67,nhdplus,km2,surface_area,0.214
+67,lagos,m,max_depth,6.8
+67,lagos,ha,surface_area,23.61632
+67,nla index and nla phab,m,mean_depth,3.9
+67,nla17 index,m,max_depth,7
+67,nla17 index,m,max_depth,7
+68,globathy,m,max_depth,24.23145866394043
+68,globathy,m,mean_depth,7.001906796524917
+68,hydrolakes,km2,surface_area,10.40999984741211
+68,hydrolakes,m,shoreline_length,35.79999923706055
+68,hydrolakes,mcm,volume,530.4000244140625
+68,hydrolakes,m,mean_depth,50.900001525878906
+68,nhdplus,km2,surface_area,13.282
+68,nhdplus,m,max_depth,15.45335861
+68,nhdplus,m,mean_depth,4.159415365
+68,nhdplus,m3,volume,55246577.69
+68,lagos,m,max_depth,15
+68,lagos,ha,surface_area,1349.507
+68,nla index and nla phab,m,mean_depth,1.9333333333333331
+68,nla12 index,m,max_depth,15
+69,nhdplus,km2,surface_area,1258.755
+69,nhdplus,m,max_depth,0
+69,nhdplus,m,mean_depth,5.033333333333333
+69,lagos,m,max_depth,62.484
+69,lagos,ha,surface_area,125417.17
+69,nla index and nla phab,m,mean_depth,9.04625
+69,nla17 index,m,max_depth,28.9
+70,nhdplus,km2,surface_area,342.198
+70,nhdplus,m,max_depth,56.23031642
+70,nhdplus,m,mean_depth,16.65269975
+70,nhdplus,m3,volume,5713364564
+70,lagos,m,max_depth,7
+70,lagos,ha,surface_area,33251.77
+70,nla index and nla phab,m,mean_depth,9.4
+70,nla17 index,m,max_depth,19.2
+71,globathy,m,max_depth,22.189069747924805
+71,globathy,m,mean_depth,7.335717015683075
+71,hydrolakes,km2,surface_area,5.46999979019165
+71,hydrolakes,m,shoreline_length,15
+71,hydrolakes,mcm,volume,49.099998474121094
+71,hydrolakes,m,mean_depth,9
+71,nhdplus,km2,surface_area,5.322
+71,nhdplus,m,max_depth,12.62497683
+71,nhdplus,m,mean_depth,4.08080772
+71,nhdplus,m3,volume,21718356.41
+71,lagos,m,max_depth,8.9
+71,lagos,ha,surface_area,535.5346
+71,nla index and nla phab,m,mean_depth,10.7
+71,nla07 index,m,max_depth,15.9
+72,globathy,m,max_depth,28.43195152282715
+72,globathy,m,mean_depth,7.6306622418318675
+72,hydrolakes,km2,surface_area,14.010000228881836
+72,hydrolakes,m,shoreline_length,36.65999984741211
+72,hydrolakes,mcm,volume,97.6999969482422
+72,hydrolakes,m,mean_depth,7
+72,nhdplus,km2,surface_area,16.66
+72,nhdplus,m,max_depth,9.182638454
+72,nhdplus,m,mean_depth,2.492580963
+72,nhdplus,m3,volume,41526136.22
+72,lagos,m,max_depth,7.8
+72,lagos,ha,surface_area,1664.272
+72,nla index and nla phab,m,mean_depth,9.5
+72,nla17 index,m,max_depth,10.5
+75,nhdplus,km2,surface_area,0.221
+75,nhdplus,m,max_depth,0.774814709
+75,nhdplus,m,mean_depth,0.35669296
+75,nhdplus,m3,volume,78813.54956
+75,lagos,m,max_depth,2.8
+75,lagos,ha,surface_area,20.23486
+75,nla index and nla phab,m,mean_depth,1.725
+75,nla17 index,m,max_depth,3.3
+76,globathy,m,max_depth,4.991732120513916
+76,globathy,m,mean_depth,1.6770899933147758
+76,hydrolakes,km2,surface_area,1.6799999475479126
+76,hydrolakes,m,shoreline_length,7.489999771118164
+76,hydrolakes,mcm,volume,5.679999828338623
+76,hydrolakes,m,mean_depth,3.4000000953674316
+76,nhdplus,km2,surface_area,1.483
+76,nhdplus,m,max_depth,3.406753998
+76,nhdplus,m,mean_depth,1.325128643
+76,nhdplus,m3,volume,1964823.084
+76,lagos,m,max_depth,5.8
+76,lagos,ha,surface_area,169.9724
+76,nla index and nla phab,m,mean_depth,7
+76,nla07 index,m,max_depth,8.2
+77,globathy,m,max_depth,3.7870147228240967
+77,globathy,m,mean_depth,1.3409352081129553
+77,hydrolakes,km2,surface_area,0.6800000071525574
+77,hydrolakes,m,shoreline_length,4.139999866485596
+77,hydrolakes,mcm,volume,1.850000023841858
+77,hydrolakes,m,mean_depth,2.700000047683716
+77,nhdplus,km2,surface_area,0.967
+77,nhdplus,m,max_depth,3.341454225
+77,nhdplus,m,mean_depth,1.043227968
+77,nhdplus,m3,volume,1008443.344
+77,lagos,m,max_depth,3.7
+77,lagos,ha,surface_area,86.74805
+77,nla index and nla phab,m,mean_depth,2.3000000000000003
+77,nla12 index,m,max_depth,3.7
+78,globathy,m,max_depth,2.3002302646636963
+78,globathy,m,mean_depth,0.9427868041820182
+78,hydrolakes,km2,surface_area,0.3400000035762787
+78,hydrolakes,m,shoreline_length,3.5
+78,hydrolakes,mcm,volume,0.8999999761581421
+78,hydrolakes,m,mean_depth,2.700000047683716
+78,nhdplus,km2,surface_area,0.55
+78,nhdplus,m,max_depth,1.961556851
+78,nhdplus,m,mean_depth,0.820036336
+78,nhdplus,m3,volume,451070.89
+78,lagos,m,max_depth,4.8
+78,lagos,ha,surface_area,55.22427
+78,nla index and nla phab,m,mean_depth,1.361904761904762
+78,nla12 index,m,max_depth,4.8
+79,globathy,m,max_depth,3.3525710105895996
+79,globathy,m,mean_depth,1.1596997576148322
+79,hydrolakes,km2,surface_area,0.25
+79,hydrolakes,m,shoreline_length,3.430000066757202
+79,hydrolakes,mcm,volume,0.6399999856948853
+79,hydrolakes,m,mean_depth,2.5999999046325684
+79,nhdplus,km2,surface_area,0.378
+79,nhdplus,m,max_depth,2.635051254
+79,nhdplus,m,mean_depth,1.046404052
+79,nhdplus,m3,volume,395765.7279
+79,lagos,m,max_depth,4.7
+79,lagos,ha,surface_area,35.00476
+79,nla index and nla phab,m,mean_depth,1.7736842105263158
+79,nla17 index,m,max_depth,5.1
+82,globathy,m,max_depth,5.918342590332031
+82,globathy,m,mean_depth,2.635087782000921
+82,hydrolakes,km2,surface_area,0.25
+82,hydrolakes,m,shoreline_length,3.140000104904175
+82,hydrolakes,mcm,volume,0.8700000047683716
+82,hydrolakes,m,mean_depth,3.5
+82,nhdplus,km2,surface_area,0.397
+82,nhdplus,m,max_depth,5.549855114
+82,nhdplus,m,mean_depth,2.176619419
+82,nhdplus,m3,volume,863886.6493
+82,lagos,m,max_depth,12
+82,lagos,ha,surface_area,41.92079501
+82,nla index and nla phab,m,mean_depth,5.457142857142857
+82,nla12 index,m,max_depth,12
+83,globathy,m,max_depth,22.874853134155273
+83,globathy,m,mean_depth,4.894712193312239
+83,hydrolakes,km2,surface_area,40.189998626708984
+83,hydrolakes,m,shoreline_length,127.22000122070313
+83,hydrolakes,mcm,volume,544
+83,hydrolakes,m,mean_depth,13.5
+83,nhdplus,km2,surface_area,43.349
+83,nhdplus,m,max_depth,54.97957416
+83,nhdplus,m,mean_depth,12.274287745
+83,nhdplus,m3,volume,558848031.7
+83,lagos,m,max_depth,16.8
+83,lagos,m,mean_depth,4.6
+83,lagos,ha,surface_area,4293.302643
+83,nla index and nla phab,m,mean_depth,3.2933333333333334
+83,nla 12 phab,m,max_depth,7
+83,nla17 index,m,max_depth,7
+84,nhdplus,km2,surface_area,0.251
+84,nhdplus,m,max_depth,8.861340811
+84,nhdplus,m,mean_depth,3.677528135
+84,nhdplus,m3,volume,923659.2364
+84,lagos,m,max_depth,10.8
+84,lagos,ha,surface_area,23.64747
+84,nla index and nla phab,m,mean_depth,4.177777777777778
+84,nla12 index,m,max_depth,10.8
+98,globathy,m,max_depth,20.751888275146484
+98,globathy,m,mean_depth,4.84815947658993
+98,hydrolakes,km2,surface_area,2.7799999713897705
+98,hydrolakes,m,shoreline_length,20.489999771118164
+98,hydrolakes,mcm,volume,55.400001525878906
+98,hydrolakes,m,mean_depth,19.899999618530273
+98,nhdplus,km2,surface_area,0.186
+98,nhdplus,m,max_depth,8.975495595
+98,nhdplus,m,mean_depth,3.835694779
+98,nhdplus,m3,volume,713975.432
+98,nla index and nla phab,m,mean_depth,3.6
+98,nla17 index,m,max_depth,6.8
+99,globathy,m,max_depth,21.07001686096191
+99,globathy,m,mean_depth,4.9354403535241245
+99,hydrolakes,km2,surface_area,21.06999969482422
+99,hydrolakes,m,shoreline_length,126.83999633789064
+99,hydrolakes,mcm,volume,225.8999938964844
+99,hydrolakes,m,mean_depth,10.699999809265137
+99,nhdplus,km2,surface_area,24.289
+99,nhdplus,m,max_depth,0
+99,nhdplus,m,mean_depth,0.925766181
+99,nla index and nla phab,m,mean_depth,9.258
+99,nla07 index,m,max_depth,30
+100,globathy,m,max_depth,8.865896224975586
+100,globathy,m,mean_depth,3.3849140904003514
+100,hydrolakes,km2,surface_area,0.5
+100,hydrolakes,m,shoreline_length,2.740000009536743
+100,hydrolakes,mcm,volume,1.8700000047683716
+100,hydrolakes,m,mean_depth,3.700000047683716
+100,nhdplus,km2,surface_area,0.706
+100,nhdplus,m,max_depth,0.979195406
+100,nhdplus,m,mean_depth,0.374727196
+100,nhdplus,m3,volume,264734.6835
+100,lagos,m,max_depth,8.6
+100,lagos,ha,surface_area,65.97446102
+100,nla index and nla phab,m,mean_depth,2.8625
+100,nla07 index,m,max_depth,8.6
+100,nla07 index,m,max_depth,8.6
+101,globathy,m,max_depth,9.304041862487791
+101,globathy,m,mean_depth,3.430539914265575
+101,hydrolakes,km2,surface_area,0.550000011920929
+101,hydrolakes,m,shoreline_length,6.449999809265137
+101,hydrolakes,mcm,volume,2.8299999237060547
+101,hydrolakes,m,mean_depth,5.199999809265137
+101,nhdplus,km2,surface_area,0.651
+101,lagos,m,max_depth,15
+101,lagos,ha,surface_area,65.82615387
+101,nla index and nla phab,m,mean_depth,4.58
+101,nla17 index,m,max_depth,12.4
+102,globathy,m,max_depth,4.6472930908203125
+102,globathy,m,mean_depth,2.092856697757129
+102,hydrolakes,km2,surface_area,0.3100000023841858
+102,hydrolakes,m,shoreline_length,3.440000057220459
+102,hydrolakes,mcm,volume,1.7000000476837158
+102,hydrolakes,m,mean_depth,5.5
+102,nhdplus,km2,surface_area,0.339
+102,lagos,m,max_depth,8.6
+102,lagos,ha,surface_area,33.6548
+102,nla index and nla phab,m,mean_depth,3.414285714285714
+102,nla12 index,m,max_depth,8.6
+103,globathy,m,max_depth,14.224994659423828
+103,globathy,m,mean_depth,5.3454007873472
+103,hydrolakes,km2,surface_area,0.8999999761581421
+103,hydrolakes,m,shoreline_length,7.5
+103,hydrolakes,mcm,volume,5.03000020980835
+103,hydrolakes,m,mean_depth,5.599999904632568
+103,nhdplus,km2,surface_area,1.139
+103,nhdplus,m,max_depth,3.011720388
+103,nhdplus,m,mean_depth,1.156842132
+103,nhdplus,m3,volume,1317438.77
+103,lagos,m,max_depth,15.24
+103,lagos,ha,surface_area,113.8823289
+103,nla index and nla phab,m,mean_depth,5.414285714285715
+103,nla07 index,m,max_depth,9.1
+103,nla22 index,m,max_depth,9.1
+116,nhdplus,km2,surface_area,0.057
+116,lagos,m,max_depth,2.5
+116,lagos,ha,surface_area,9.411228
+116,nla index and nla phab,m,mean_depth,1.796875
+116,nla12 index,m,max_depth,2.5
+117,globathy,m,max_depth,21.784141540527344
+117,globathy,m,mean_depth,5.09706379127906
+117,hydrolakes,km2,surface_area,36.209999084472656
+117,hydrolakes,m,shoreline_length,187.8000030517578
+117,hydrolakes,mcm,volume,826.5
+117,hydrolakes,m,mean_depth,22.799999237060547
+117,nhdplus,km2,surface_area,1.2
+117,nhdplus,m,max_depth,7.396864267
+117,nhdplus,m,mean_depth,2.784223248
+117,nhdplus,m3,volume,3340032.189
+117,nla index and nla phab,m,mean_depth,1.85
+117,nla17 index,m,max_depth,5
+117,nla22 index,m,max_depth,5
+119,nhdplus,km2,surface_area,0.288
+119,nhdplus,m,max_depth,4.191167956
+119,nhdplus,m,mean_depth,1.590704171
+119,nhdplus,m3,volume,458729.0757
+119,nla index and nla phab,m,mean_depth,1.62
+119,nla07 index,m,max_depth,2.5
+136,globathy,m,max_depth,11.76205348968506
+136,globathy,m,mean_depth,4.622277993564458
+136,hydrolakes,km2,surface_area,0.20000000298023224
+136,hydrolakes,m,shoreline_length,2.1600000858306885
+136,hydrolakes,mcm,volume,0.5899999737739563
+136,hydrolakes,m,mean_depth,3
+136,nhdplus,km2,surface_area,0.213
+136,nhdplus,m,max_depth,2.272193333
+136,nhdplus,m,mean_depth,0.897699714
+136,nhdplus,m3,volume,190961.8988
+136,lagos,m,max_depth,4.8
+136,lagos,ha,surface_area,22.06421428
+136,nla index and nla phab,m,mean_depth,2.3157894736842106
+136,nla 12 phab,m,max_depth,6.1
+137,globathy,m,max_depth,20.067441940307617
+137,globathy,m,mean_depth,5.066401553036608
+137,hydrolakes,km2,surface_area,2.740000009536743
+137,hydrolakes,m,shoreline_length,27.350000381469727
+137,hydrolakes,mcm,volume,81.30000305175781
+137,hydrolakes,m,mean_depth,29.700000762939453
+137,nhdplus,km2,surface_area,3.343
+137,nhdplus,m,max_depth,21.19560118
+137,nhdplus,m,mean_depth,5.985546104
+137,nhdplus,m3,volume,20011569.76
+137,lagos,m,max_depth,9.9
+137,lagos,ha,surface_area,334.3316
+137,nla index and nla phab,m,mean_depth,4.1125
+137,nla12 index,m,max_depth,9.9
+138,globathy,m,max_depth,11.671905517578123
+138,globathy,m,mean_depth,5.003991182299628
+138,hydrolakes,km2,surface_area,0.17000000178813934
+138,hydrolakes,m,shoreline_length,2.1500000953674316
+138,hydrolakes,mcm,volume,0.4900000095367432
+138,hydrolakes,m,mean_depth,2.9000000953674316
+138,nhdplus,km2,surface_area,0.237
+138,nhdplus,m,max_depth,3.177192728
+138,nhdplus,m,mean_depth,1.353242358
+138,nhdplus,m3,volume,321214.8606
+138,nla index and nla phab,m,mean_depth,2.4625
+138,nla17 index,m,max_depth,5.5
+138,nla22 index,m,max_depth,5.5
+146,globathy,m,max_depth,23.071847915649418
+146,globathy,m,mean_depth,7.265216917762239
+146,hydrolakes,km2,surface_area,27.290000915527344
+146,hydrolakes,m,shoreline_length,33.88999938964844
+146,hydrolakes,mcm,volume,473.3999938964844
+146,hydrolakes,m,mean_depth,17.299999237060547
+146,nhdplus,km2,surface_area,32.548
+146,nhdplus,m,max_depth,6.522566075
+146,nhdplus,m,mean_depth,2.08867011
+146,nhdplus,m3,volume,67981747.58
+146,lagos,m,max_depth,3.5
+146,lagos,ha,surface_area,2878.35
+146,nla index and nla phab,m,mean_depth,1.645
+146,nla07 index,m,max_depth,7.5
+146,nla17 index,m,max_depth,7.5
+147,globathy,m,max_depth,9.73622989654541
+147,globathy,m,mean_depth,3.698633752235797
+147,hydrolakes,km2,surface_area,1.4299999475479126
+147,hydrolakes,m,shoreline_length,9.949999809265137
+147,hydrolakes,mcm,volume,2.809999942779541
+147,hydrolakes,m,mean_depth,2
+147,nhdplus,km2,surface_area,1.607
+147,nhdplus,m,max_depth,2.154743312
+147,nhdplus,m,mean_depth,0.836448279
+147,nhdplus,m3,volume,1344482.95
+147,lagos,m,max_depth,7.5
+147,lagos,ha,surface_area,185.834
+147,nla index and nla phab,m,mean_depth,2.8333333333333335
+147,nla07 index,m,max_depth,9.3
+148,globathy,m,max_depth,30.099084854125977
+148,globathy,m,mean_depth,7.504500100274973
+148,hydrolakes,km2,surface_area,79.62999725341797
+148,hydrolakes,m,shoreline_length,247.69000244140625
+148,hydrolakes,mcm,volume,2063.10009765625
+148,hydrolakes,m,mean_depth,25.899999618530273
+148,nhdplus,km2,surface_area,103.515
+148,nhdplus,m,max_depth,0
+148,nhdplus,m,mean_depth,3.922451635
+148,nla index and nla phab,m,mean_depth,6.1461538461538465
+148,nla07 index,m,max_depth,20.6
+149,globathy,m,max_depth,19.20240020751953
+149,globathy,m,mean_depth,6.104595724760225
+149,hydrolakes,km2,surface_area,8.5600004196167
+149,hydrolakes,m,shoreline_length,30.690000534057617
+149,hydrolakes,mcm,volume,114.3000030517578
+149,hydrolakes,m,mean_depth,13.399999618530272
+149,nhdplus,km2,surface_area,11.205
+149,nhdplus,m,max_depth,18.09459568
+149,nhdplus,m,mean_depth,4.744934946
+149,nhdplus,m3,volume,53041466.73
+149,lagos,m,max_depth,19.20146
+149,lagos,ha,surface_area,985.2449
+149,nla index and nla phab,m,mean_depth,3.0710526315789473
+149,nla22 index,m,max_depth,14.7
+155,globathy,m,max_depth,14.630399703979492
+155,globathy,m,mean_depth,4.607774157837252
+155,hydrolakes,km2,surface_area,6.929999828338623
+155,hydrolakes,m,shoreline_length,14.350000381469728
+155,hydrolakes,mcm,volume,76.69999694824219
+155,hydrolakes,m,mean_depth,11.100000381469728
+155,nhdplus,km2,surface_area,7.851
+155,lagos,m,max_depth,14.62969
+155,lagos,ha,surface_area,792.4804
+155,nla index and nla phab,m,mean_depth,2.9226666666666667
+155,nla17 index,m,max_depth,13.34
+157,globathy,m,max_depth,19.201679229736328
+157,globathy,m,mean_depth,7.314442459601682
+157,hydrolakes,km2,surface_area,3.849999904632568
+157,hydrolakes,m,shoreline_length,8.300000190734863
+157,hydrolakes,mcm,volume,29
+157,hydrolakes,m,mean_depth,7.5
+157,nhdplus,km2,surface_area,4.375
+157,nhdplus,m,max_depth,12.43269185
+157,nhdplus,m,mean_depth,4.648449902
+157,nhdplus,m3,volume,20336683.45
+157,lagos,m,max_depth,3.4
+157,lagos,ha,surface_area,203.2185
+157,nla index and nla phab,m,mean_depth,2.4
+157,nla17 index,m,max_depth,7.5
+159,globathy,m,max_depth,5.092776298522949
+159,globathy,m,mean_depth,2.0959345897637216
+159,hydrolakes,km2,surface_area,0.23999999463558197
+159,hydrolakes,m,shoreline_length,2.2799999713897705
+159,hydrolakes,mcm,volume,0.6700000166893005
+159,hydrolakes,m,mean_depth,2.700000047683716
+159,nhdplus,km2,surface_area,0.129
+159,nla index and nla phab,m,mean_depth,2.4555555555555557
+159,nla22 index,m,max_depth,10
+165,globathy,m,max_depth,4.219404697418213
+165,globathy,m,mean_depth,1.732787117883853
+165,hydrolakes,km2,surface_area,0.3700000047683716
+165,hydrolakes,m,shoreline_length,3.799999952316284
+165,hydrolakes,mcm,volume,0.800000011920929
+165,hydrolakes,m,mean_depth,2.200000047683716
+165,nhdplus,km2,surface_area,0.158
+165,nla index and nla phab,m,mean_depth,1.7428571428571429
+165,nla17 index,m,max_depth,3.4
+166,nhdplus,km2,surface_area,0.102
+166,lagos,m,max_depth,1.7
+166,lagos,ha,surface_area,3.998939
+166,nla index and nla phab,m,mean_depth,1.07
+166,nla07 index,m,max_depth,3.1
+166,nla17 index,m,max_depth,3.1
+167,globathy,m,max_depth,23.74357795715332
+167,globathy,m,mean_depth,8.588471274477344
+167,hydrolakes,km2,surface_area,6.059999942779541
+167,hydrolakes,m,shoreline_length,10.199999809265137
+167,hydrolakes,mcm,volume,38.400001525878906
+167,hydrolakes,m,mean_depth,6.300000190734863
+167,nhdplus,km2,surface_area,6.371
+167,nhdplus,m,max_depth,2.060534482
+167,nhdplus,m,mean_depth,0.815915389
+167,nhdplus,m3,volume,5198604.055
+167,lagos,m,max_depth,1.7
+167,lagos,ha,surface_area,640.0566
+167,nla index and nla phab,m,mean_depth,1.4230769230769231
+167,nla 17 phab,m,max_depth,3
+167,nla07 index,m,max_depth,3
+184,nhdplus,km2,surface_area,0.145
+184,nhdplus,m,max_depth,1.743774889
+184,nhdplus,m,mean_depth,0.843011553
+184,nhdplus,m3,volume,122168.9162
+184,lagos,m,max_depth,2.6
+184,lagos,ha,surface_area,10.24463
+184,nla index and nla phab,m,mean_depth,2.54
+184,nla07 index,m,max_depth,4.7
+186,globathy,m,max_depth,7.004858493804932
+186,globathy,m,mean_depth,2.220963144317251
+186,hydrolakes,km2,surface_area,2.9200000762939453
+186,hydrolakes,m,shoreline_length,10.100000381469728
+186,hydrolakes,mcm,volume,21.799999237060547
+186,hydrolakes,m,mean_depth,7.5
+186,nhdplus,km2,surface_area,2.175
+186,nhdplus,m,max_depth,5.233323059
+186,nhdplus,m,mean_depth,1.987568251
+186,nhdplus,m3,volume,4322723.85
+186,lagos,m,max_depth,6
+186,lagos,ha,surface_area,217.1461
+186,nla index and nla phab,m,mean_depth,4.62
+186,nla07 index,m,max_depth,7
+188,globathy,m,max_depth,7.672608852386475
+188,globathy,m,mean_depth,2.852287885555969
+188,hydrolakes,km2,surface_area,2.700000047683716
+188,hydrolakes,m,shoreline_length,10.149999618530272
+188,hydrolakes,mcm,volume,4.699999809265137
+188,hydrolakes,m,mean_depth,1.7000000476837158
+188,nhdplus,km2,surface_area,3.674
+188,nhdplus,m,max_depth,1.722218311
+188,nhdplus,m,mean_depth,0.639104509
+188,nhdplus,m3,volume,2348338.103
+188,lagos,m,max_depth,7.1
+188,lagos,ha,surface_area,148.7982
+188,nla index and nla phab,m,mean_depth,1.4222222222222225
+188,nla07 index,m,max_depth,7.1
+190,globathy,m,max_depth,13.9406156539917
+190,globathy,m,mean_depth,4.2998722226533745
+190,hydrolakes,km2,surface_area,2.9000000953674316
+190,hydrolakes,m,shoreline_length,17.780000686645508
+190,hydrolakes,mcm,volume,44.20000076293945
+190,hydrolakes,m,mean_depth,15.199999809265137
+190,nhdplus,km2,surface_area,3.254
+190,nhdplus,m,max_depth,6.892505596
+190,nhdplus,m,mean_depth,2.079632989
+190,nhdplus,m3,volume,6766539.415
+190,lagos,m,max_depth,4.6
+190,lagos,ha,surface_area,322.2075
+190,nla index and nla phab,m,mean_depth,5.2
+190,nla17 index,m,max_depth,14.9
+191,globathy,m,max_depth,8.517378807067871
+191,globathy,m,mean_depth,3.62441988811698
+191,hydrolakes,km2,surface_area,0.33000001311302185
+191,hydrolakes,m,shoreline_length,4.239999771118164
+191,hydrolakes,mcm,volume,1.2100000381469729
+191,hydrolakes,m,mean_depth,3.5999999046325684
+191,nhdplus,km2,surface_area,0.288
+191,nhdplus,m,max_depth,7.229242374
+191,nhdplus,m,mean_depth,3.244311757
+191,nhdplus,m3,volume,935218.9067
+191,lagos,m,max_depth,6.705272783
+191,lagos,ha,surface_area,29.38319452
+191,nla index and nla phab,m,mean_depth,2.41
+191,nla12 index,m,max_depth,6.6
+195,nhdplus,km2,surface_area,0.167
+195,nhdplus,m,max_depth,1.324848192
+195,nhdplus,m,mean_depth,0.564283843
+195,nhdplus,m3,volume,94183.41837
+195,lagos,m,max_depth,7.3152
+195,lagos,m,mean_depth,3.048
+195,lagos,ha,surface_area,16.79285729
+195,nla index and nla phab,m,mean_depth,2.87
+195,nla17 index,m,max_depth,6.5
+204,globathy,m,max_depth,14.94128704071045
+204,globathy,m,mean_depth,5.981145661643573
+204,hydrolakes,km2,surface_area,0.4000000059604645
+204,hydrolakes,m,shoreline_length,2.4200000762939453
+204,hydrolakes,mcm,volume,0.8799999952316284
+204,hydrolakes,m,mean_depth,2.200000047683716
+204,nhdplus,km2,surface_area,0.466
+204,lagos,m,max_depth,7.9
+204,lagos,ha,surface_area,41.35112058
+204,nla index and nla phab,m,mean_depth,3.125
+204,nla17 index,m,max_depth,9.7
+205,globathy,m,max_depth,14.74160099029541
+205,globathy,m,mean_depth,6.551376003207582
+205,hydrolakes,km2,surface_area,0.119999997317791
+205,hydrolakes,m,shoreline_length,1.8799999952316284
+205,hydrolakes,mcm,volume,0.27000001072883606
+205,hydrolakes,m,mean_depth,2.299999952316284
+205,nhdplus,km2,surface_area,0.086
+205,nla index and nla phab,m,mean_depth,2.825
+205,nla17 index,m,max_depth,9
+206,globathy,m,max_depth,20.104732513427734
+206,globathy,m,mean_depth,7.722422018671215
+206,hydrolakes,km2,surface_area,1.3799999952316284
+206,hydrolakes,m,shoreline_length,10.140000343322754
+206,hydrolakes,mcm,volume,18.100000381469727
+206,hydrolakes,m,mean_depth,13.100000381469728
+206,nhdplus,km2,surface_area,1.246
+206,nhdplus,m,max_depth,13.06935333
+206,nhdplus,m,mean_depth,4.524024826
+206,nhdplus,m3,volume,5635623.317
+206,lagos,m,max_depth,16.76318196
+206,lagos,ha,surface_area,136.8853816
+206,nla index and nla phab,m,mean_depth,4.608333333333333
+206,nla12 index,m,max_depth,15
+207,globathy,m,max_depth,11.132383346557615
+207,globathy,m,mean_depth,5.537311220853523
+207,hydrolakes,km2,surface_area,0.15000000596046448
+207,hydrolakes,m,shoreline_length,2.4600000381469727
+207,hydrolakes,mcm,volume,0.3400000035762787
+207,hydrolakes,m,mean_depth,2.200000047683716
+207,nhdplus,km2,surface_area,0.729
+207,lagos,m,max_depth,12.8016
+207,lagos,m,mean_depth,4.8768
+207,lagos,ha,surface_area,65.29126922
+207,nla index and nla phab,m,mean_depth,5.601428571428571
+207,nla12 index,m,max_depth,15
+208,nhdplus,km2,surface_area,0.191
+208,nhdplus,m,max_depth,8.054878621
+208,nhdplus,m,mean_depth,3.813122358
+208,nhdplus,m3,volume,728254.613
+208,lagos,m,max_depth,9.5
+208,lagos,ha,surface_area,18.21285115
+208,nla index and nla phab,m,mean_depth,3.2027272727272726
+208,nla07 index,m,max_depth,9.5
+209,globathy,m,max_depth,13.701969146728516
+209,globathy,m,mean_depth,6.260724599020822
+209,hydrolakes,km2,surface_area,0.1599999964237213
+209,hydrolakes,m,shoreline_length,2.2899999618530273
+209,hydrolakes,mcm,volume,0.5099999904632568
+209,hydrolakes,m,mean_depth,3.200000047683716
+209,nhdplus,km2,surface_area,0.115
+209,nhdplus,m,max_depth,3.904836736
+209,nhdplus,m,mean_depth,1.818531262
+209,nhdplus,m3,volume,208826.0312
+209,nla index and nla phab,m,mean_depth,1.9785714285714289
+209,nla22 index,m,max_depth,6.5
+210,globathy,m,max_depth,9.208704948425291
+210,globathy,m,mean_depth,3.2363376892080495
+210,hydrolakes,km2,surface_area,0.5899999737739563
+210,hydrolakes,m,shoreline_length,7.409999847412109
+210,hydrolakes,mcm,volume,1.940000057220459
+210,hydrolakes,m,mean_depth,3.299999952316284
+210,nhdplus,km2,surface_area,0.599
+210,nhdplus,m,max_depth,3.760478353
+210,nhdplus,m,mean_depth,1.377579958
+210,nhdplus,m3,volume,825305.6427
+210,nla index and nla phab,m,mean_depth,1.1666666666666667
+210,nla17 index,m,max_depth,1.6
+211,globathy,m,max_depth,16.15614128112793
+211,globathy,m,mean_depth,7.3694586335567
+211,hydrolakes,km2,surface_area,0.33000001311302185
+211,hydrolakes,m,shoreline_length,4.099999904632568
+211,hydrolakes,mcm,volume,0.959999978542328
+211,hydrolakes,m,mean_depth,2.9000000953674316
+211,nhdplus,km2,surface_area,0.388
+211,nhdplus,m,max_depth,2.443923071
+211,nhdplus,m,mean_depth,0.97148
+211,nhdplus,m3,volume,376990.9764
+211,lagos,m,max_depth,1.8288
+211,lagos,ha,surface_area,42.24776103
+211,nla index and nla phab,m,mean_depth,1.0366666666666666
+211,nla22 index,m,max_depth,2.1
+214,nhdplus,km2,surface_area,0.115
+214,nhdplus,m,max_depth,2.298921626
+214,nhdplus,m,mean_depth,1.162260819
+214,nhdplus,m3,volume,133468.8364
+214,lagos,m,max_depth,6.7056
+214,lagos,m,mean_depth,2.9566
+214,lagos,ha,surface_area,11.62580237
+214,nla index and nla phab,m,mean_depth,1.2307692307692308
+214,nla17 index,m,max_depth,3.4
+230,globathy,m,max_depth,14.160529136657717
+230,globathy,m,mean_depth,6.064000770852372
+230,hydrolakes,km2,surface_area,0.10999999940395357
+230,hydrolakes,m,shoreline_length,1.7599999904632568
+230,hydrolakes,mcm,volume,0.3100000023841858
+230,hydrolakes,m,mean_depth,2.700000047683716
+230,nhdplus,km2,surface_area,0.109
+230,nhdplus,m,max_depth,2.21074117
+230,nhdplus,m,mean_depth,0.969870447
+230,nhdplus,m3,volume,105862.7641
+230,lagos,m,max_depth,7
+230,lagos,ha,surface_area,12.20313802
+230,nla index and nla phab,m,mean_depth,2.9
+230,nla12 index,m,max_depth,7
+231,globathy,m,max_depth,15.43812084197998
+231,globathy,m,mean_depth,5.99807137002209
+231,hydrolakes,km2,surface_area,2.440000057220459
+231,hydrolakes,m,shoreline_length,21.260000228881836
+231,hydrolakes,mcm,volume,23.399999618530273
+231,hydrolakes,m,mean_depth,9.600000381469728
+231,nhdplus,km2,surface_area,2.856
+231,nhdplus,m,max_depth,1.239043925
+231,nhdplus,m,mean_depth,0.51446038
+231,nhdplus,m3,volume,1411725.3691
+231,lagos,m,max_depth,8.5344
+231,lagos,ha,surface_area,281.9543
+231,nla index and nla phab,m,mean_depth,1.45
+231,nla17 index,m,max_depth,6
+232,globathy,m,max_depth,14.23666763305664
+232,globathy,m,mean_depth,5.956055103643684
+232,hydrolakes,km2,surface_area,1.090000033378601
+232,hydrolakes,m,shoreline_length,12.770000457763672
+232,hydrolakes,mcm,volume,4.730000019073486
+232,hydrolakes,m,mean_depth,4.300000190734863
+232,nhdplus,km2,surface_area,0.558
+232,nhdplus,m,max_depth,6.298293235
+232,nhdplus,m,mean_depth,2.3860599733333334
+232,nhdplus,m3,volume,1394405.20544
+232,lagos,m,max_depth,6.97992
+232,lagos,m,mean_depth,2.40792
+232,lagos,ha,surface_area,109.4255
+232,nla index and nla phab,m,mean_depth,2.9285714285714284
+232,nla22 index,m,max_depth,4.5
+233,globathy,m,max_depth,10.66800022125244
+233,globathy,m,mean_depth,3.336880117429756
+233,hydrolakes,km2,surface_area,1.909999966621399
+233,hydrolakes,m,shoreline_length,17.100000381469727
+233,hydrolakes,mcm,volume,18.700000762939453
+233,hydrolakes,m,mean_depth,9.800000190734863
+233,nhdplus,km2,surface_area,2.425
+233,nhdplus,m,max_depth,26.25502323
+233,nhdplus,m,mean_depth,7.110371867
+233,nhdplus,m3,volume,17244696.95
+233,lagos,m,max_depth,10.9728
+233,lagos,m,mean_depth,4.2672
+233,lagos,ha,surface_area,244.8460668
+233,nla index and nla phab,m,mean_depth,2.4794117647058824
+233,nla17 index,m,max_depth,11
+234,globathy,m,max_depth,10.833192825317385
+234,globathy,m,mean_depth,3.4794102897278116
+234,hydrolakes,km2,surface_area,1.7999999523162842
+234,hydrolakes,m,shoreline_length,9.970000267028809
+234,hydrolakes,mcm,volume,5.21999979019165
+234,hydrolakes,m,mean_depth,2.9000000953674316
+234,nhdplus,km2,surface_area,2.917
+234,nhdplus,m,max_depth,2.816903779
+234,nhdplus,m,mean_depth,0.871909422
+234,nhdplus,m3,volume,2543625.005
+234,lagos,m,max_depth,12.19140506
+234,lagos,ha,surface_area,294.5937822
+234,nla index and nla phab,m,mean_depth,3.533333333333333
+234,nla17 index,m,max_depth,13.1
+234,nla12 index,m,max_depth,13.1
+235,globathy,m,max_depth,15.712860107421877
+235,globathy,m,mean_depth,5.177728926958666
+235,hydrolakes,km2,surface_area,2.2799999713897705
+235,hydrolakes,m,shoreline_length,16.25
+235,hydrolakes,mcm,volume,10.300000190734863
+235,hydrolakes,m,mean_depth,4.5
+235,nhdplus,km2,surface_area,2.547
+235,nhdplus,m,max_depth,7.206631467
+235,nhdplus,m,mean_depth,2.31434758
+235,nhdplus,m3,volume,5895747.088
+235,lagos,m,max_depth,9.1
+235,lagos,m,mean_depth,4.3
+235,lagos,ha,surface_area,254.5758505
+235,nla index and nla phab,m,mean_depth,2.4210526315789473
+235,nla17 index,m,max_depth,9.4
+236,globathy,m,max_depth,7.109323978424072
+236,globathy,m,mean_depth,3.310722870925038
+236,hydrolakes,km2,surface_area,0.14000000059604645
+236,hydrolakes,m,shoreline_length,2.2799999713897705
+236,hydrolakes,mcm,volume,0.5400000214576721
+236,hydrolakes,m,mean_depth,4
+236,nhdplus,km2,surface_area,0.122
+236,nhdplus,m,max_depth,10.66282716
+236,nhdplus,m,mean_depth,5.444983906
+236,nhdplus,m3,volume,662945.1982
+236,lagos,m,max_depth,7.924413289
+236,lagos,m,mean_depth,3.54
+236,lagos,ha,surface_area,13.07076442
+236,nla index and nla phab,m,mean_depth,2.3666666666666667
+236,nla17 index,m,max_depth,4.6
+237,globathy,m,max_depth,6.013627529144287
+237,globathy,m,mean_depth,2.898197652271816
+237,hydrolakes,km2,surface_area,0.119999997317791
+237,hydrolakes,m,shoreline_length,2.6600000858306885
+237,hydrolakes,mcm,volume,0.9200000166893004
+237,hydrolakes,m,mean_depth,7.599999904632568
+237,nhdplus,km2,surface_area,0.148
+237,nhdplus,m,max_depth,23.5663336
+237,nhdplus,m,mean_depth,11.02468325
+237,nhdplus,m3,volume,1634889.49
+237,lagos,m,max_depth,6.7056
+237,lagos,m,mean_depth,3.3528
+237,lagos,ha,surface_area,14.20086382
+237,nla index and nla phab,m,mean_depth,2.657142857142857
+237,nla12 index,m,max_depth,5.7
+238,globathy,m,max_depth,20.574995040893555
+238,globathy,m,mean_depth,7.295554625165583
+238,hydrolakes,km2,surface_area,5.829999923706055
+238,hydrolakes,m,shoreline_length,10.970000267028809
+238,hydrolakes,mcm,volume,73.9000015258789
+238,hydrolakes,m,mean_depth,12.699999809265137
+238,nhdplus,km2,surface_area,7.168
+238,nhdplus,m,max_depth,33.72669735
+238,nhdplus,m,mean_depth,11.94224294
+238,nhdplus,m3,volume,85600574.73
+238,lagos,m,max_depth,8.6
+238,lagos,ha,surface_area,746.1102
+238,nla index and nla phab,m,mean_depth,4.154545454545454
+238,nla17 index,m,max_depth,11.7
+239,globathy,m,max_depth,22.42117691040039
+239,globathy,m,mean_depth,7.556578098140907
+239,hydrolakes,km2,surface_area,5.329999923706055
+239,hydrolakes,m,shoreline_length,16.200000762939453
+239,hydrolakes,mcm,volume,90.6999969482422
+239,hydrolakes,m,mean_depth,17
+239,nhdplus,km2,surface_area,9.118
+239,nhdplus,m,max_depth,10.69631837
+239,nhdplus,m,mean_depth,3.619460044
+239,nhdplus,m3,volume,33002888.92
+239,nla index and nla phab,m,mean_depth,12.2
+239,nla12 index,m,max_depth,12.8
+240,globathy,m,max_depth,4.130800247192383
+240,globathy,m,mean_depth,1.4361226403110374
+240,hydrolakes,km2,surface_area,0.41999998688697815
+240,hydrolakes,m,shoreline_length,4.510000228881836
+240,hydrolakes,mcm,volume,2.5199999809265137
+240,hydrolakes,m,mean_depth,6
+240,nhdplus,km2,surface_area,0.46
+240,nhdplus,m,max_depth,6.733340951
+240,nhdplus,m,mean_depth,2.651901954
+240,nhdplus,m3,volume,1218791.315
+240,lagos,m,max_depth,6.4
+240,lagos,ha,surface_area,50.72891
+240,nla index and nla phab,m,mean_depth,3.604761904761905
+240,nla 12 phab,m,max_depth,9
+247,globathy,m,max_depth,51.181392669677734
+247,globathy,m,mean_depth,15.069691345324184
+247,hydrolakes,km2,surface_area,23.09000015258789
+247,hydrolakes,m,shoreline_length,43.81999969482422
+247,hydrolakes,mcm,volume,493.3999938964844
+247,hydrolakes,m,mean_depth,21.399999618530273
+247,nhdplus,km2,surface_area,19.19
+247,nhdplus,m,max_depth,40.05067406
+247,nhdplus,m,mean_depth,13.11496129
+247,nhdplus,m3,volume,251673686.2
+247,nla index and nla phab,m,mean_depth,45
+247,nla07 index,m,max_depth,45
+249,globathy,m,max_depth,25.131824493408203
+249,globathy,m,mean_depth,8.425100734011556
+249,hydrolakes,km2,surface_area,2.2100000381469727
+249,hydrolakes,m,shoreline_length,14.15999984741211
+249,hydrolakes,mcm,volume,48.099998474121094
+249,hydrolakes,m,mean_depth,21.799999237060547
+249,nhdplus,km2,surface_area,2.565
+249,nhdplus,m,max_depth,8.635275936
+249,nhdplus,m,mean_depth,2.907080516
+249,nhdplus,m3,volume,7456506.964
+249,lagos,m,max_depth,23.4
+249,lagos,ha,surface_area,315.6633
+249,nla index and nla phab,m,mean_depth,17.22
+249,nla17 index,m,max_depth,33
+250,globathy,m,max_depth,6.833122730255127
+250,globathy,m,mean_depth,2.7208607992603495
+250,hydrolakes,km2,surface_area,1.2300000190734863
+250,hydrolakes,m,shoreline_length,6.840000152587891
+250,hydrolakes,mcm,volume,24.5
+250,hydrolakes,m,mean_depth,19.899999618530273
+250,nhdplus,km2,surface_area,1.523
+250,nhdplus,m,max_depth,23.94711107
+250,nhdplus,m,mean_depth,9.115056279
+250,nhdplus,m3,volume,13885384.98
+250,lagos,m,max_depth,13.1
+250,lagos,ha,surface_area,153.8161
+250,nla index and nla phab,m,mean_depth,6.566666666666666
+250,nla17 index,m,max_depth,16
+253,globathy,m,max_depth,19.214452743530273
+253,globathy,m,mean_depth,7.405235241667243
+253,hydrolakes,km2,surface_area,2.4100000858306885
+253,hydrolakes,m,shoreline_length,7.96999979019165
+253,hydrolakes,mcm,volume,31.149999618530273
+253,hydrolakes,m,mean_depth,12.899999618530272
+253,nhdplus,km2,surface_area,2.114
+253,nhdplus,m,max_depth,18.03638012
+253,nhdplus,m,mean_depth,6.56525516
+253,nhdplus,m3,volume,13880907.45
+253,lagos,m,max_depth,6.5
+253,lagos,ha,surface_area,293.8417
+253,nla index and nla phab,m,mean_depth,2.7657894736842104
+253,nla12 index,m,max_depth,6.5
+263,globathy,m,max_depth,19.364900588989254
+263,globathy,m,mean_depth,7.595398152128179
+263,hydrolakes,km2,surface_area,0.800000011920929
+263,hydrolakes,m,shoreline_length,4.71999979019165
+263,hydrolakes,mcm,volume,4.96999979019165
+263,hydrolakes,m,mean_depth,6.199999809265137
+263,nhdplus,km2,surface_area,0.84
+263,nhdplus,m,max_depth,8.095822321
+263,nhdplus,m,mean_depth,2.909271048
+263,nhdplus,m3,volume,2444746.857
+263,lagos,m,max_depth,4.65
+263,lagos,ha,surface_area,87.64177
+263,nla index and nla phab,m,mean_depth,4.55
+263,nla12 index,m,max_depth,4.65
+264,globathy,m,max_depth,3.7059292793273926
+264,globathy,m,mean_depth,1.6135094210999836
+264,hydrolakes,km2,surface_area,0.1599999964237213
+264,hydrolakes,m,shoreline_length,1.659999966621399
+264,hydrolakes,mcm,volume,0.8799999952316284
+264,hydrolakes,m,mean_depth,5.5
+264,nhdplus,km2,surface_area,0.239
+264,nhdplus,m,max_depth,7.522907272
+264,nhdplus,m,mean_depth,2.975760969
+264,nhdplus,m3,volume,710675.1109
+264,nla index and nla phab,m,mean_depth,1.075
+264,nla22 index,m,max_depth,1.6
+265,globathy,m,max_depth,2.9974162578582764
+265,globathy,m,mean_depth,1.330032881204184
+265,hydrolakes,km2,surface_area,0.3499999940395355
+265,hydrolakes,m,shoreline_length,3.7300000190734863
+265,hydrolakes,mcm,volume,2.6600000858306885
+265,hydrolakes,m,mean_depth,7.599999904632568
+265,nhdplus,km2,surface_area,0.306
+265,nhdplus,m,max_depth,6.647366524
+265,nhdplus,m,mean_depth,2.875866192
+265,nhdplus,m3,volume,880702.4913
+265,nla index and nla phab,m,mean_depth,2.283333333333333
+265,nla 17 phab,m,max_depth,4
+275,globathy,m,max_depth,3.0818028450012207
+275,globathy,m,mean_depth,1.1326277740699044
+275,hydrolakes,km2,surface_area,0.5099999904632568
+275,hydrolakes,m,shoreline_length,3.9600000381469727
+275,hydrolakes,mcm,volume,1.690000057220459
+275,hydrolakes,m,mean_depth,3.299999952316284
+275,nhdplus,km2,surface_area,1.192
+275,nhdplus,m,max_depth,5.189181382
+275,nhdplus,m,mean_depth,1.598072117
+275,nhdplus,m3,volume,1904579.484
+275,lagos,m,max_depth,1.6
+275,lagos,ha,surface_area,112.9671
+275,nla index and nla phab,m,mean_depth,1.9727272727272729
+275,nla 12 phab,m,max_depth,4.8
+276,globathy,m,max_depth,3.665096521377563
+276,globathy,m,mean_depth,1.618140025685231
+276,hydrolakes,km2,surface_area,0.2800000011920929
+276,hydrolakes,m,shoreline_length,3.299999952316284
+276,hydrolakes,mcm,volume,1.0399999618530271
+276,hydrolakes,m,mean_depth,3.700000047683716
+276,nhdplus,km2,surface_area,0.315
+276,nhdplus,m,max_depth,2.622457912
+276,nhdplus,m,mean_depth,1.217672829
+276,nhdplus,m3,volume,382971.4498
+276,lagos,m,max_depth,4.1
+276,lagos,ha,surface_area,27.56228
+276,nla index and nla phab,m,mean_depth,1.8533333333333333
+276,nla17 index,m,max_depth,4.5
+281,globathy,m,max_depth,6.863195419311523
+281,globathy,m,mean_depth,2.9334074804801067
+281,hydrolakes,km2,surface_area,0.17000000178813934
+281,hydrolakes,m,shoreline_length,2.0299999713897705
+281,hydrolakes,mcm,volume,1.090000033378601
+281,hydrolakes,m,mean_depth,6.300000190734863
+281,nhdplus,km2,surface_area,0.089
+281,lagos,m,max_depth,7.62
+281,lagos,ha,surface_area,10.19836
+281,nla index and nla phab,m,mean_depth,2.17
+281,nla22 index,m,max_depth,7.6
+287,globathy,m,max_depth,36
+287,globathy,m,mean_depth,8.440763156155649
+287,hydrolakes,km2,surface_area,40.4900016784668
+287,hydrolakes,m,shoreline_length,168.83999633789065
+287,hydrolakes,mcm,volume,881.9000244140625
+287,hydrolakes,m,mean_depth,21.799999237060547
+287,nhdplus,km2,surface_area,46.572
+287,nhdplus,m,max_depth,36.08880909
+287,nhdplus,m,mean_depth,9.540415635
+287,nhdplus,m3,volume,444317909.5
+287,nla index and nla phab,m,mean_depth,11.95
+287,nla17 index,m,max_depth,36.2
+288,globathy,m,max_depth,22.374755859375
+288,globathy,m,mean_depth,6.373859178602661
+288,hydrolakes,km2,surface_area,4.099999904632568
+288,hydrolakes,m,shoreline_length,22.959999084472656
+288,hydrolakes,mcm,volume,84.9000015258789
+288,hydrolakes,m,mean_depth,20.700000762939453
+288,nhdplus,km2,surface_area,3.735
+288,nhdplus,m,max_depth,24.54339575
+288,nhdplus,m,mean_depth,6.841986223
+288,nhdplus,m3,volume,25554025.87
+288,lagos,m,max_depth,27
+288,lagos,ha,surface_area,226.6815
+288,nla index and nla phab,m,mean_depth,9.414285714285716
+288,nla 17 phab,m,max_depth,25.2
+291,globathy,m,max_depth,20.773082733154297
+291,globathy,m,mean_depth,6.979986722318562
+291,hydrolakes,km2,surface_area,1.409999966621399
+291,hydrolakes,m,shoreline_length,14.34000015258789
+291,hydrolakes,mcm,volume,51.79999923706055
+291,hydrolakes,m,mean_depth,36.70000076293945
+291,nhdplus,km2,surface_area,3.097
+291,nhdplus,m,max_depth,24.76803233
+291,nhdplus,m,mean_depth,7.440198811
+291,nhdplus,m3,volume,23044168.69
+291,nla index and nla phab,m,mean_depth,14.14
+291,nla12 index,m,max_depth,29
+296,globathy,m,max_depth,5.356137275695801
+296,globathy,m,mean_depth,1.9949496368754585
+296,hydrolakes,km2,surface_area,0.3199999928474426
+296,hydrolakes,m,shoreline_length,2.819999933242798
+296,hydrolakes,mcm,volume,1.0800000429153442
+296,hydrolakes,m,mean_depth,3.299999952316284
+296,nhdplus,km2,surface_area,0.27
+296,lagos,m,max_depth,15.8496
+296,lagos,ha,surface_area,36.08283
+296,nla index and nla phab,m,mean_depth,4.918181818181818
+296,nla17 index,m,max_depth,16
+297,globathy,m,max_depth,65.81429290771484
+297,globathy,m,mean_depth,15.544887332192795
+297,hydrolakes,km2,surface_area,43.209999084472656
+297,hydrolakes,m,shoreline_length,142.52999877929688
+297,hydrolakes,mcm,volume,2985
+297,hydrolakes,m,mean_depth,69.0999984741211
+297,nhdplus,km2,surface_area,7.313
+297,nhdplus,m,max_depth,7.633740426
+297,nhdplus,m,mean_depth,2.241677537
+297,nhdplus,m3,volume,184284.411395
+297,lagos,m,max_depth,33
+297,lagos,ha,surface_area,4470.735
+297,nla index and nla phab,m,mean_depth,10.27142857142857
+297,nla12 index,m,max_depth,33
+298,globathy,m,max_depth,49.17156600952149
+298,globathy,m,mean_depth,13.416638085166852
+298,hydrolakes,km2,surface_area,10.039999961853027
+298,hydrolakes,m,shoreline_length,28.450000762939453
+298,hydrolakes,mcm,volume,117.5
+298,hydrolakes,m,mean_depth,11.699999809265137
+298,nhdplus,km2,surface_area,8.978
+298,nhdplus,m,max_depth,13.14693181
+298,nhdplus,m,mean_depth,3.658081886
+298,nhdplus,m3,volume,32843261.2
+298,lagos,m,max_depth,21.336
+298,lagos,m,mean_depth,12.192
+298,lagos,ha,surface_area,532.3429
+298,nla index and nla phab,m,mean_depth,3.841666666666667
+298,nla17 index,m,max_depth,16
+302,globathy,m,max_depth,16.18634605407715
+302,globathy,m,mean_depth,5.533610337790009
+302,hydrolakes,km2,surface_area,3.049999952316284
+302,hydrolakes,m,shoreline_length,17.700000762939453
+302,hydrolakes,mcm,volume,68.45999908447266
+302,hydrolakes,m,mean_depth,22.5
+302,nhdplus,km2,surface_area,4.074
+302,nhdplus,m,max_depth,19.37021515
+302,nhdplus,m,mean_depth,6.515730336
+302,nhdplus,m3,volume,26544767.87
+302,lagos,m,max_depth,5.9
+302,lagos,ha,surface_area,344.8715
+302,nla index and nla phab,m,mean_depth,5.7727272727272725
+302,nla 12 phab,m,max_depth,10
+308,globathy,m,max_depth,14.602147102355955
+308,globathy,m,mean_depth,6.3273457360329886
+308,hydrolakes,km2,surface_area,0.7300000190734863
+308,hydrolakes,m,shoreline_length,4.070000171661377
+308,hydrolakes,mcm,volume,5.110000133514404
+308,hydrolakes,m,mean_depth,7
+308,nhdplus,km2,surface_area,0.767
+308,nhdplus,m,max_depth,6.355213314
+308,nhdplus,m,mean_depth,2.661881486
+308,nhdplus,m3,volume,2040408.806
+308,lagos,m,max_depth,19.05
+308,lagos,ha,surface_area,78.95439
+308,nla index and nla phab,m,mean_depth,7.416666666666667
+308,nla17 index,m,max_depth,19.3
+316,globathy,m,max_depth,15.694284439086914
+316,globathy,m,mean_depth,5.774737327378624
+316,hydrolakes,km2,surface_area,0.6299999952316284
+316,hydrolakes,m,shoreline_length,5.690000057220459
+316,hydrolakes,mcm,volume,1.7200000286102295
+316,hydrolakes,m,mean_depth,2.700000047683716
+316,nhdplus,km2,surface_area,1.552
+316,nhdplus,m,max_depth,0.315394803
+316,nhdplus,m,mean_depth,0.093944021
+316,nhdplus,m3,volume,145778.9953
+316,nla index and nla phab,m,mean_depth,2.242857142857143
+316,nla 22 phab,m,max_depth,3.8
+317,nhdplus,km2,surface_area,0.214
+317,lagos,m,max_depth,4.3
+317,lagos,ha,surface_area,22.09927
+317,nla index and nla phab,m,mean_depth,1.818181818181818
+317,nla12 index,m,max_depth,4.3
+323,globathy,m,max_depth,18.373882293701172
+323,globathy,m,mean_depth,4.60062502348939
+323,hydrolakes,km2,surface_area,6.760000228881836
+323,hydrolakes,m,shoreline_length,27.329999923706055
+323,hydrolakes,mcm,volume,31.09000015258789
+323,hydrolakes,m,mean_depth,4.599999904632568
+323,nhdplus,km2,surface_area,6.414
+323,nhdplus,m,max_depth,3.504061031
+323,nhdplus,m,mean_depth,0.901531268
+323,nhdplus,m3,volume,5782467.252
+326,globathy,m,max_depth,8.533302307128906
+326,globathy,m,mean_depth,3.3354474272458785
+326,hydrolakes,km2,surface_area,0.18000000715255737
+326,hydrolakes,m,shoreline_length,1.9800000190734863
+326,hydrolakes,mcm,volume,0.5099999904632568
+326,hydrolakes,m,mean_depth,2.799999952316284
+326,nhdplus,km2,surface_area,0.524
+326,nhdplus,m,max_depth,1.583979087
+326,nhdplus,m,mean_depth,0.6535559455
+326,nhdplus,m3,volume,348335.21902
+326,lagos,m,max_depth,4.2672
+326,lagos,m,mean_depth,2.4384
+326,lagos,ha,surface_area,122.2328
+326,nla index and nla phab,m,mean_depth,1.6666666666666667
+326,nla17 index,m,max_depth,2.7
+327,globathy,m,max_depth,4.404495716094971
+327,globathy,m,mean_depth,1.8363292115075247
+327,hydrolakes,km2,surface_area,0.5
+327,hydrolakes,m,shoreline_length,4.78000020980835
+327,hydrolakes,mcm,volume,1.25
+327,hydrolakes,m,mean_depth,2.5
+327,nhdplus,km2,surface_area,0.723
+327,nhdplus,m,max_depth,0.651613266
+327,nhdplus,m,mean_depth,0.261245184
+327,nhdplus,m3,volume,188839.0624
+327,lagos,m,max_depth,2
+327,lagos,ha,surface_area,75.07034
+327,nla index and nla phab,m,mean_depth,1.635
+327,nla07 index,m,max_depth,2.4
+328,globathy,m,max_depth,6.444838047027588
+328,globathy,m,mean_depth,2.4666612458032744
+328,hydrolakes,km2,surface_area,0.7799999713897705
+328,hydrolakes,m,shoreline_length,4.650000095367432
+328,hydrolakes,mcm,volume,4.650000095367432
+328,hydrolakes,m,mean_depth,6
+328,nhdplus,km2,surface_area,0.762
+328,nhdplus,m,max_depth,8.963710413
+328,nhdplus,m,mean_depth,3.416644384
+328,nhdplus,m3,volume,2603447.172
+328,lagos,m,max_depth,3.5
+328,lagos,ha,surface_area,71.4177
+328,nla index and nla phab,m,mean_depth,1.3692307692307693
+328,nla17 index,m,max_depth,4.8
+331,globathy,m,max_depth,4.074305057525635
+331,globathy,m,mean_depth,1.608813919774864
+331,hydrolakes,km2,surface_area,0.25999999046325684
+331,hydrolakes,m,shoreline_length,2.9600000381469727
+331,hydrolakes,mcm,volume,0.7200000286102295
+331,hydrolakes,m,mean_depth,2.799999952316284
+331,nhdplus,km2,surface_area,0.213
+331,nhdplus,m,max_depth,0.38202361
+331,nhdplus,m,mean_depth,0.18385401
+331,nhdplus,m3,volume,39084.68741
+331,lagos,m,max_depth,3.6
+331,lagos,ha,surface_area,23.23455
+331,nla index and nla phab,m,mean_depth,1.0583333333333331
+331,nla12 index,m,max_depth,3.6
+999,globathy,m,max_depth,20.955303192138672
+999,globathy,m,mean_depth,6.914588246723788
+999,hydrolakes,km2,surface_area,17.559999465942383
+999,hydrolakes,m,shoreline_length,40.06999969482422
+999,hydrolakes,mcm,volume,352.1000061035156
+999,hydrolakes,m,mean_depth,20.100000381469727
+999,nhdplus,km2,surface_area,19.418
+999,nhdplus,m,max_depth,40.85146344
+999,nhdplus,m,mean_depth,14.36422322
+999,nhdplus,m3,volume,278917686.5
+999,lagos,m,max_depth,58.5
+999,lagos,ha,surface_area,1914.024
+999,nla index and nla phab,m,mean_depth,9.6375
+999,nla12 index,m,max_depth,58.5
+1000,globathy,m,max_depth,11.889451026916504
+1000,globathy,m,mean_depth,5.93545198227678
+1000,hydrolakes,km2,surface_area,0.10000000149011612
+1000,hydrolakes,m,shoreline_length,1.8700000047683716
+1000,hydrolakes,mcm,volume,0.3499999940395355
+1000,hydrolakes,m,mean_depth,3.5
+1001,globathy,m,max_depth,15.40342617034912
+1001,globathy,m,mean_depth,6.1408400744320035
+1001,hydrolakes,km2,surface_area,2.369999885559082
+1001,hydrolakes,m,shoreline_length,8.779999732971191
+1001,hydrolakes,mcm,volume,24.860000610351563
+1001,hydrolakes,m,mean_depth,10.5
+1001,nhdplus,km2,surface_area,2.439
+1001,nhdplus,m,max_depth,9.503024354
+1001,nhdplus,m,mean_depth,3.788743992
+1001,nhdplus,m3,volume,9241363.364
+1001,lagos,m,max_depth,9.39
+1001,lagos,ha,surface_area,238.8867009
+1002,globathy,m,max_depth,19.861967086791992
+1002,globathy,m,mean_depth,6.195034222973177
+1002,hydrolakes,km2,surface_area,10.43000030517578
+1002,hydrolakes,m,shoreline_length,36.66999816894531
+1002,hydrolakes,mcm,volume,166.3000030517578
+1002,hydrolakes,m,mean_depth,15.899999618530272
+1002,nhdplus,km2,surface_area,12.277
+1002,nhdplus,m,max_depth,5.944175343
+1002,nhdplus,m,mean_depth,1.74496358
+1002,nhdplus,m3,volume,21422952.73
+1002,lagos,m,max_depth,19.32
+1002,lagos,ha,surface_area,1296.017835
+1003,globathy,m,max_depth,13.69764232635498
+1003,globathy,m,mean_depth,4.537740691171492
+1003,hydrolakes,km2,surface_area,1.840000033378601
+1003,hydrolakes,m,shoreline_length,12.25
+1003,hydrolakes,mcm,volume,27.700000762939453
+1003,hydrolakes,m,mean_depth,15
+1003,nhdplus,km2,surface_area,2.048
+1003,nhdplus,m,max_depth,10.90439494
+1003,nhdplus,m,mean_depth,3.538545357
+1003,nhdplus,m3,volume,7245787.615
+1004,globathy,m,max_depth,15.143074035644531
+1004,globathy,m,mean_depth,4.693014036766521
+1004,hydrolakes,km2,surface_area,5.539999961853027
+1004,hydrolakes,m,shoreline_length,27.670000076293945
+1004,hydrolakes,mcm,volume,61.29999923706055
+1004,hydrolakes,m,mean_depth,11.100000381469728
+1004,nhdplus,km2,surface_area,6.261
+1004,nhdplus,m,max_depth,16.15756312
+1004,nhdplus,m,mean_depth,2.387976144
+1004,nhdplus,m3,volume,31405549.58643
+1004,lagos,m,max_depth,10.09
+1004,lagos,ha,surface_area,613.0539251
+1004,nla index and nla phab,m,mean_depth,5.85
+1004,nla07 index,m,max_depth,6.2
+1005,globathy,m,max_depth,22.163888931274418
+1005,globathy,m,mean_depth,6.563367620594977
+1005,hydrolakes,km2,surface_area,19.84000015258789
+1005,hydrolakes,m,shoreline_length,63.68000030517578
+1005,hydrolakes,mcm,volume,443.6000061035156
+1005,hydrolakes,m,mean_depth,22.399999618530273
+1005,nhdplus,km2,surface_area,20.888
+1005,nhdplus,m,max_depth,24.53707369
+1005,nhdplus,m,mean_depth,7.188144613
+1005,nhdplus,m3,volume,150147492.1
+1006,globathy,m,max_depth,21.61397171020508
+1006,globathy,m,mean_depth,7.225793178031125
+1006,hydrolakes,km2,surface_area,2.25
+1006,hydrolakes,m,shoreline_length,40.189998626708984
+1006,hydrolakes,mcm,volume,207.10000610351565
+1006,hydrolakes,m,mean_depth,91.9000015258789
+1006,nhdplus,km2,surface_area,2.074
+1006,nhdplus,m,max_depth,14.57535244
+1006,nhdplus,m,mean_depth,5.352572916
+1006,nhdplus,m3,volume,11100365.04
+1006,lagos,m,max_depth,15.24
+1006,lagos,ha,surface_area,545.9409
+1007,globathy,m,max_depth,13.69556713104248
+1007,globathy,m,mean_depth,4.112819366505647
+1007,hydrolakes,km2,surface_area,2.369999885559082
+1007,hydrolakes,m,shoreline_length,20.81999969482422
+1007,hydrolakes,mcm,volume,33.20000076293945
+1007,hydrolakes,m,mean_depth,14
+1007,nhdplus,km2,surface_area,2.565
+1007,nhdplus,m,max_depth,18.84009086
+1007,nhdplus,m,mean_depth,5.550768502
+1007,nhdplus,m3,volume,14235614.99
+1007,lagos,m,max_depth,10.73
+1007,lagos,ha,surface_area,255.7169304
+1008,globathy,m,max_depth,20.057151794433594
+1008,globathy,m,mean_depth,6.011299587195964
+1008,hydrolakes,km2,surface_area,10.4399995803833
+1008,hydrolakes,m,shoreline_length,39.18000030517578
+1008,hydrolakes,mcm,volume,298.70001220703125
+1008,hydrolakes,m,mean_depth,28.600000381469727
+1008,nhdplus,km2,surface_area,10.758
+1008,nhdplus,m,max_depth,9.978261449
+1008,nhdplus,m,mean_depth,2.648378532
+1008,nhdplus,m3,volume,28490576.81
+1008,lagos,m,max_depth,33.528
+1008,lagos,ha,surface_area,1075.009754
+1009,globathy,m,max_depth,20.56532096862793
+1009,globathy,m,mean_depth,6.8841814537241
+1009,hydrolakes,km2,surface_area,1.809999942779541
+1009,hydrolakes,m,shoreline_length,26.610000610351563
+1009,hydrolakes,mcm,volume,58.79999923706055
+1009,hydrolakes,m,mean_depth,32.599998474121094
+1010,globathy,m,max_depth,24.141578674316406
+1010,globathy,m,mean_depth,6.550437082891391
+1010,hydrolakes,km2,surface_area,27.850000381469727
+1010,hydrolakes,m,shoreline_length,128.6999969482422
+1010,hydrolakes,mcm,volume,757.5
+1010,hydrolakes,m,mean_depth,27.200000762939453
+1010,nhdplus,km2,surface_area,33.683
+1010,nhdplus,m,max_depth,83.09836404
+1010,nhdplus,m,mean_depth,17.99468683
+1010,nhdplus,m3,volume,606123571.7
+1011,globathy,m,max_depth,10.58664608001709
+1011,globathy,m,mean_depth,2.7237127756119204
+1011,hydrolakes,km2,surface_area,4.829999923706055
+1011,hydrolakes,m,shoreline_length,29.219999313354492
+1011,hydrolakes,mcm,volume,24.6200008392334
+1011,hydrolakes,m,mean_depth,5.099999904632568
+1011,nhdplus,km2,surface_area,5.404
+1011,nhdplus,m,max_depth,8.847052011
+1011,nhdplus,m,mean_depth,2.370415771
+1011,nhdplus,m3,volume,12809006.03
+1011,lagos,m,max_depth,8.41
+1011,lagos,ha,surface_area,527.0098236
+1012,globathy,m,max_depth,11.039348602294922
+1012,globathy,m,mean_depth,4.099401080584362
+1012,hydrolakes,km2,surface_area,2.559999942779541
+1012,hydrolakes,m,shoreline_length,13.640000343322754
+1012,hydrolakes,mcm,volume,30.799999237060547
+1012,hydrolakes,m,mean_depth,12
+1012,nhdplus,km2,surface_area,2.622
+1012,nhdplus,m,max_depth,9.656919683
+1012,nhdplus,m,mean_depth,3.146233735
+1012,nhdplus,m3,volume,8250307.664
+1012,lagos,m,max_depth,10.94
+1012,lagos,ha,surface_area,281.502092
+1013,globathy,m,max_depth,20.217119216918945
+1013,globathy,m,mean_depth,6.246160710816872
+1013,hydrolakes,km2,surface_area,3.559999942779541
+1013,hydrolakes,m,shoreline_length,24.239999771118164
+1013,hydrolakes,mcm,volume,162.8000030517578
+1013,hydrolakes,m,mean_depth,45.70000076293945
+1013,nhdplus,km2,surface_area,3.916
+1013,nhdplus,m,max_depth,3.12174266
+1013,nhdplus,m,mean_depth,0.924980176
+1013,nhdplus,m3,volume,3622493.037
+1013,lagos,m,max_depth,10.03
+1013,lagos,ha,surface_area,454.1452265
+1013,nla index and nla phab,m,mean_depth,1.8625
+1013,nla07 index,m,max_depth,5.4
+1014,globathy,m,max_depth,15.28205680847168
+1014,globathy,m,mean_depth,4.826561664564357
+1014,hydrolakes,km2,surface_area,4.940000057220459
+1014,hydrolakes,m,shoreline_length,25.63999938964844
+1014,hydrolakes,mcm,volume,338
+1014,hydrolakes,m,mean_depth,68.4000015258789
+1014,nhdplus,km2,surface_area,5.265
+1014,nhdplus,m,max_depth,20.89536663
+1014,nhdplus,m,mean_depth,6.698848882
+1014,nhdplus,m3,volume,35266527.34
+1014,lagos,m,max_depth,9.69
+1014,lagos,ha,surface_area,528.9576754
+1015,globathy,m,max_depth,16.112735748291016
+1015,globathy,m,mean_depth,6.077090477346016
+1015,hydrolakes,km2,surface_area,1.2899999618530271
+1015,hydrolakes,m,shoreline_length,9.880000114440918
+1015,hydrolakes,mcm,volume,10.119999885559082
+1015,hydrolakes,m,mean_depth,7.800000190734863
+1015,nhdplus,km2,surface_area,1.198
+1015,nhdplus,m,max_depth,8.033295966
+1015,nhdplus,m,mean_depth,2.990431602
+1015,nhdplus,m3,volume,3582102.327
+1015,lagos,m,max_depth,5
+1015,lagos,ha,surface_area,125.8893561
+1016,globathy,m,max_depth,12.480257034301758
+1016,globathy,m,mean_depth,5.311001146432572
+1016,hydrolakes,km2,surface_area,1.5099999904632568
+1016,hydrolakes,m,shoreline_length,7.619999885559082
+1016,hydrolakes,mcm,volume,10.75
+1016,hydrolakes,m,mean_depth,7.099999904632568
+1016,nhdplus,km2,surface_area,1.527
+1016,nhdplus,m,max_depth,9.81100055
+1016,nhdplus,m,mean_depth,4.064103163
+1016,nhdplus,m3,volume,6204343.491
+1016,lagos,m,max_depth,4.08
+1016,lagos,ha,surface_area,156.616708
+1016,nla index and nla phab,m,mean_depth,4
+1016,nla07 index,m,max_depth,4
+1017,globathy,m,max_depth,11.59836196899414
+1017,globathy,m,mean_depth,3.930885998809847
+1017,hydrolakes,km2,surface_area,1.7899999618530271
+1017,hydrolakes,m,shoreline_length,12.119999885559082
+1017,hydrolakes,mcm,volume,7.21999979019165
+1017,hydrolakes,m,mean_depth,4
+1017,nhdplus,km2,surface_area,1.953
+1017,nhdplus,m,max_depth,6.017502166
+1017,nhdplus,m,mean_depth,1.930958108
+1017,nhdplus,m3,volume,3771388.666
+1017,lagos,m,max_depth,11.92
+1017,lagos,ha,surface_area,187.5780914
+1018,globathy,m,max_depth,20.716405868530273
+1018,globathy,m,mean_depth,6.641604782094124
+1018,hydrolakes,km2,surface_area,5.559999942779541
+1018,hydrolakes,m,shoreline_length,22.450000762939453
+1018,hydrolakes,mcm,volume,50.900001525878906
+1018,hydrolakes,m,mean_depth,9.199999809265137
+1018,nhdplus,km2,surface_area,5.752
+1018,nhdplus,m,max_depth,13.17861144
+1018,nhdplus,m,mean_depth,2.610572897
+1018,nhdplus,m3,volume,23078508.39263
+1018,lagos,m,max_depth,8
+1018,lagos,ha,surface_area,575.3118112
+1018,nla index and nla phab,m,mean_depth,6.4
+1018,nla07 index,m,max_depth,6.4
+1019,globathy,m,max_depth,8.195533752441406
+1019,globathy,m,mean_depth,2.298918744821227
+1019,hydrolakes,km2,surface_area,2.4600000381469727
+1019,hydrolakes,m,shoreline_length,23.6200008392334
+1019,hydrolakes,mcm,volume,4.150000095367432
+1019,hydrolakes,m,mean_depth,1.7000000476837158
+1019,nhdplus,km2,surface_area,3.271
+1019,nhdplus,m,max_depth,1.080465869
+1019,nhdplus,m,mean_depth,0.292527778
+1019,nhdplus,m3,volume,956914.9978
+1019,lagos,m,max_depth,1
+1019,lagos,ha,surface_area,345.7064839
+1019,nla index and nla phab,m,mean_depth,0.953846153846154
+1019,nla 12 phab,m,max_depth,1.3
+1020,globathy,m,max_depth,14.447388648986816
+1020,globathy,m,mean_depth,4.829324530539765
+1020,hydrolakes,km2,surface_area,6.329999923706055
+1020,hydrolakes,m,shoreline_length,22.420000076293945
+1020,hydrolakes,mcm,volume,57.5
+1020,hydrolakes,m,mean_depth,9.100000381469728
+1020,nhdplus,km2,surface_area,6.9
+1020,nhdplus,m,max_depth,5.370160327
+1020,nhdplus,m,mean_depth,1.562874539
+1020,nhdplus,m3,volume,10783440.9
+1020,lagos,m,max_depth,10.88
+1020,lagos,ha,surface_area,669.9656028
+1021,globathy,m,max_depth,15.991484642028809
+1021,globathy,m,mean_depth,4.809476195074695
+1021,hydrolakes,km2,surface_area,2.0899999141693115
+1021,hydrolakes,m,shoreline_length,13.15999984741211
+1021,hydrolakes,mcm,volume,16.200000762939453
+1021,hydrolakes,m,mean_depth,7.699999809265137
+1021,nhdplus,km2,surface_area,2.091
+1021,nhdplus,m,max_depth,20.34691461
+1021,nhdplus,m,mean_depth,6.557504168
+1021,nhdplus,m3,volume,13710332.5
+1022,globathy,m,max_depth,13.8582763671875
+1022,globathy,m,mean_depth,4.747502238862518
+1022,hydrolakes,km2,surface_area,1.3200000524520874
+1022,hydrolakes,m,shoreline_length,11.479999542236328
+1022,hydrolakes,mcm,volume,3.950000047683716
+1022,hydrolakes,m,mean_depth,3
+1022,nhdplus,km2,surface_area,1.842
+1022,nhdplus,m,max_depth,2.595650299
+1022,nhdplus,m,mean_depth,0.853211704
+1022,nhdplus,m3,volume,1572016.741
+1023,globathy,m,max_depth,13.587620735168455
+1023,globathy,m,mean_depth,4.9509991299998655
+1023,hydrolakes,km2,surface_area,0.8199999928474426
+1023,hydrolakes,m,shoreline_length,10.479999542236328
+1023,hydrolakes,mcm,volume,2.0999999046325684
+1023,hydrolakes,m,mean_depth,2.5999999046325684
+1023,nhdplus,km2,surface_area,1.266
+1023,nhdplus,m,max_depth,1.108531649
+1023,nhdplus,m,mean_depth,0.31478222300000003
+1023,nhdplus,m3,volume,398439.4909
+1023,lagos,m,max_depth,7
+1023,lagos,ha,surface_area,119.0799903
+1023,nla index and nla phab,m,mean_depth,7
+1023,nla07 index,m,max_depth,7
+1024,globathy,m,max_depth,18.05400276184082
+1024,globathy,m,mean_depth,5.329495399241568
+1024,hydrolakes,km2,surface_area,9
+1024,hydrolakes,m,shoreline_length,37.04999923706055
+1024,hydrolakes,mcm,volume,153
+1024,hydrolakes,m,mean_depth,17
+1024,nhdplus,km2,surface_area,10.646
+1024,nhdplus,m,max_depth,10.38743355
+1024,nhdplus,m,mean_depth,2.464289492
+1024,nhdplus,m3,volume,26235973.01
+1024,lagos,m,max_depth,12.8
+1024,lagos,ha,surface_area,1054.110793
+1024,nla index and nla phab,m,mean_depth,12.8
+1024,nla07 index,m,max_depth,12.8
+1025,globathy,m,max_depth,15.981258392333984
+1025,globathy,m,mean_depth,3.822351325462394
+1025,hydrolakes,km2,surface_area,4.639999866485596
+1025,hydrolakes,m,shoreline_length,29.540000915527344
+1025,hydrolakes,mcm,volume,178.89999389648438
+1025,hydrolakes,m,mean_depth,38.5
+1025,nhdplus,km2,surface_area,4.705
+1025,nhdplus,m,max_depth,11.2097739
+1025,nhdplus,m,mean_depth,3.016750461
+1025,nhdplus,m3,volume,14194016.95
+1025,lagos,m,max_depth,12.68
+1025,lagos,ha,surface_area,470.0507952
+1026,globathy,m,max_depth,20.16087532043457
+1026,globathy,m,mean_depth,4.688315018083954
+1026,hydrolakes,km2,surface_area,8.460000038146973
+1026,hydrolakes,m,shoreline_length,47.369998931884766
+1026,hydrolakes,mcm,volume,82.30000305175781
+1026,hydrolakes,m,mean_depth,9.699999809265137
+1026,nhdplus,km2,surface_area,8.571
+1026,nhdplus,m,max_depth,33.81112308
+1026,nhdplus,m,mean_depth,8.64213716
+1026,nhdplus,m3,volume,74073506.93
+1026,lagos,m,max_depth,9.78
+1026,lagos,ha,surface_area,920.5097601
+1027,globathy,m,max_depth,18.308286666870117
+1027,globathy,m,mean_depth,6.744925354834333
+1027,hydrolakes,km2,surface_area,2.869999885559082
+1027,hydrolakes,m,shoreline_length,12.619999885559082
+1027,hydrolakes,mcm,volume,108.1999969482422
+1027,hydrolakes,m,mean_depth,37.70000076293945
+1027,nhdplus,km2,surface_area,3.113
+1027,nhdplus,m,max_depth,12.81437299
+1027,nhdplus,m,mean_depth,4.321260882
+1027,nhdplus,m3,volume,13450981.12
+1027,lagos,m,max_depth,12.07
+1027,lagos,ha,surface_area,315.3324436
+1028,globathy,m,max_depth,16.174379348754883
+1028,globathy,m,mean_depth,5.20479552364824
+1028,hydrolakes,km2,surface_area,7.510000228881836
+1028,hydrolakes,m,shoreline_length,30.13999938964844
+1028,hydrolakes,mcm,volume,107.4000015258789
+1028,hydrolakes,m,mean_depth,14.300000190734863
+1028,nhdplus,km2,surface_area,7.982
+1028,nhdplus,m,max_depth,8.722118404
+1028,nhdplus,m,mean_depth,2.833119697
+1028,nhdplus,m3,volume,22614511.7
+1028,lagos,m,max_depth,12.95
+1028,lagos,ha,surface_area,805.4261382
+1029,globathy,m,max_depth,18.23667335510254
+1029,globathy,m,mean_depth,5.351912502831186
+1029,hydrolakes,km2,surface_area,13.770000457763672
+1029,hydrolakes,m,shoreline_length,47.400001525878906
+1029,hydrolakes,mcm,volume,109.1999969482422
+1029,hydrolakes,m,mean_depth,7.900000095367432
+1029,nhdplus,km2,surface_area,13.807
+1029,nhdplus,m,max_depth,30.17468415
+1029,nhdplus,m,mean_depth,8.364333163
+1029,nhdplus,m3,volume,115483510.4
+1029,lagos,m,max_depth,6.58
+1029,lagos,ha,surface_area,1406.577892
+1030,globathy,m,max_depth,18.59371757507324
+1030,globathy,m,mean_depth,4.852095423210965
+1030,hydrolakes,km2,surface_area,8.25
+1030,hydrolakes,m,shoreline_length,45.90999984741211
+1030,hydrolakes,mcm,volume,76
+1030,hydrolakes,m,mean_depth,9.199999809265137
+1030,nhdplus,km2,surface_area,8.077
+1030,nhdplus,m,max_depth,33.25917998
+1030,nhdplus,m,mean_depth,9.175449108
+1030,nhdplus,m3,volume,74108796.81
+1030,lagos,m,max_depth,4.76
+1030,lagos,ha,surface_area,864.6808439
+1031,globathy,m,max_depth,17.0280818939209
+1031,globathy,m,mean_depth,4.278824156328652
+1031,hydrolakes,km2,surface_area,7.820000171661377
+1031,hydrolakes,m,shoreline_length,39.7599983215332
+1031,hydrolakes,mcm,volume,363.6000061035156
+1031,hydrolakes,m,mean_depth,46.5
+1031,nhdplus,km2,surface_area,8.262
+1031,nhdplus,m,max_depth,16.08263233
+1031,nhdplus,m,mean_depth,3.856245759
+1031,nhdplus,m3,volume,31859162.57
+1031,lagos,m,max_depth,36.45
+1031,lagos,ha,surface_area,799.2543721
+1032,globathy,m,max_depth,8.926976203918457
+1032,globathy,m,mean_depth,3.4727335867103912
+1032,hydrolakes,km2,surface_area,1.6299999952316284
+1032,hydrolakes,m,shoreline_length,7.760000228881836
+1032,hydrolakes,mcm,volume,4.25
+1032,hydrolakes,m,mean_depth,2.5999999046325684
+1032,nhdplus,km2,surface_area,1.515
+1032,nhdplus,m,max_depth,7.763137686
+1032,nhdplus,m,mean_depth,2.087505393
+1032,nhdplus,m3,volume,3162151.979
+1033,globathy,m,max_depth,17.133316040039063
+1033,globathy,m,mean_depth,3.2470101149024644
+1033,hydrolakes,km2,surface_area,38.45000076293945
+1033,hydrolakes,m,shoreline_length,177.44000244140625
+1033,hydrolakes,mcm,volume,1259.4000244140625
+1033,hydrolakes,m,mean_depth,32.79999923706055
+1033,nhdplus,km2,surface_area,55.279
+1033,nhdplus,m,max_depth,17.79735357
+1033,nhdplus,m,mean_depth,3.289727308
+1033,nhdplus,m3,volume,175864582.3
+1033,lagos,m,max_depth,7
+1033,lagos,ha,surface_area,5243.9466115
+1033,nla index and nla phab,m,mean_depth,7
+1033,nla07 index,m,max_depth,7

@@ -1,0 +1,249 @@
+lake_id,source,units,variable,value
+2,nla index and nla phab,m,mean_depth,1.8642857142857143
+2,nla17 index,m,max_depth,7
+3,nla index and nla phab,m,mean_depth,2.473307692307692
+3,nla07 index,m,max_depth,10.1
+4,nla index and nla phab,m,mean_depth,2.43
+4,nla07 index,m,max_depth,6.5
+10,nla index and nla phab,m,mean_depth,3.203846153846154
+10,nla22 index,m,max_depth,7.3
+11,nla index and nla phab,m,mean_depth,3.1794444444444445
+11,nla17 index,m,max_depth,13.23
+13,nla index and nla phab,m,mean_depth,1.1222222222222222
+13,nla12 index,m,max_depth,1.7
+14,nla index and nla phab,m,mean_depth,2.525
+14,nla12 index,m,max_depth,6.2
+16,nla index and nla phab,m,mean_depth,1.657142857142857
+16,nla12 index,m,max_depth,2.3
+17,nla index and nla phab,m,mean_depth,1.758
+17,nla17 index,m,max_depth,2.3
+18,nla index and nla phab,m,mean_depth,1.0285714285714285
+18,nla12 index,m,max_depth,3.4
+44,nla index and nla phab,m,mean_depth,1.8800000000000001
+44,nla17 index,m,max_depth,4.2
+45,nla index and nla phab,m,mean_depth,2.4435714285714285
+45,nla17 index,m,max_depth,4.5
+46,nla index and nla phab,m,mean_depth,1.305
+46,nla 12 phab,m,max_depth,2
+47,nla index and nla phab,m,mean_depth,1.49375
+47,nla17 index,m,max_depth,3.9
+49,nla index and nla phab,m,mean_depth,1.2125
+49,nla12 index,m,max_depth,2.1
+51,nla index and nla phab,m,mean_depth,2.3133333333333335
+51,nla17 index,m,max_depth,12.6
+52,nla index and nla phab,m,mean_depth,5.141666666666667
+52,nla22 index,m,max_depth,21.4
+53,nla index and nla phab,m,mean_depth,7.480555555555556
+53,nla07 index,m,max_depth,25.3
+54,nla index and nla phab,m,mean_depth,1.1388888888888888
+54,nla 12 phab,m,max_depth,3.5
+55,nla index and nla phab,m,mean_depth,2.85
+55,nla22 index,m,max_depth,3.2
+57,nla index and nla phab,m,mean_depth,2.833333333333333
+57,nla07 index,m,max_depth,5.3
+64,nla index and nla phab,m,mean_depth,1.840625
+64,nla12 index,m,max_depth,3.9
+65,nla index and nla phab,m,mean_depth,1.2880952380952382
+65,nla 17 phab,m,max_depth,2.2
+66,nla index and nla phab,m,mean_depth,1.2666666666666666
+66,nla07 index,m,max_depth,2.2
+67,nla index and nla phab,m,mean_depth,3.9
+67,nla17 index,m,max_depth,7
+67,nla17 index,m,max_depth,7
+68,nla index and nla phab,m,mean_depth,1.9333333333333333
+68,nla12 index,m,max_depth,15
+69,nla index and nla phab,m,mean_depth,9.04625
+69,nla17 index,m,max_depth,28.9
+70,nla index and nla phab,m,mean_depth,9.4
+70,nla17 index,m,max_depth,19.2
+71,nla index and nla phab,m,mean_depth,10.7
+71,nla07 index,m,max_depth,15.9
+72,nla index and nla phab,m,mean_depth,9.5
+72,nla17 index,m,max_depth,10.5
+75,nla index and nla phab,m,mean_depth,1.725
+75,nla17 index,m,max_depth,3.3
+76,nla index and nla phab,m,mean_depth,7
+76,nla07 index,m,max_depth,8.2
+77,nla index and nla phab,m,mean_depth,2.3000000000000003
+77,nla12 index,m,max_depth,3.7
+78,nla index and nla phab,m,mean_depth,1.361904761904762
+78,nla12 index,m,max_depth,4.8
+79,nla index and nla phab,m,mean_depth,1.7736842105263158
+79,nla17 index,m,max_depth,5.1
+82,nla index and nla phab,m,mean_depth,5.457142857142857
+82,nla12 index,m,max_depth,12
+83,nla index and nla phab,m,mean_depth,3.2933333333333334
+83,nla 12 phab,m,max_depth,7
+83,nla17 index,m,max_depth,7
+84,nla index and nla phab,m,mean_depth,4.177777777777778
+84,nla12 index,m,max_depth,10.8
+98,nla index and nla phab,m,mean_depth,3.6
+98,nla17 index,m,max_depth,6.8
+99,nla index and nla phab,m,mean_depth,9.258
+99,nla07 index,m,max_depth,30
+100,nla index and nla phab,m,mean_depth,2.8625
+100,nla07 index,m,max_depth,8.6
+100,nla07 index,m,max_depth,8.6
+101,nla index and nla phab,m,mean_depth,4.58
+101,nla17 index,m,max_depth,12.4
+102,nla index and nla phab,m,mean_depth,3.414285714285714
+102,nla12 index,m,max_depth,8.6
+103,nla index and nla phab,m,mean_depth,5.414285714285715
+103,nla07 index,m,max_depth,9.1
+103,nla22 index,m,max_depth,9.1
+116,nla index and nla phab,m,mean_depth,1.796875
+116,nla12 index,m,max_depth,2.5
+117,nla index and nla phab,m,mean_depth,1.85
+117,nla17 index,m,max_depth,5
+117,nla22 index,m,max_depth,5
+119,nla index and nla phab,m,mean_depth,1.62
+119,nla07 index,m,max_depth,2.5
+136,nla index and nla phab,m,mean_depth,2.3157894736842106
+136,nla 12 phab,m,max_depth,6.1
+137,nla index and nla phab,m,mean_depth,4.1125
+137,nla12 index,m,max_depth,9.9
+138,nla index and nla phab,m,mean_depth,2.4625
+138,nla17 index,m,max_depth,5.5
+138,nla22 index,m,max_depth,5.5
+146,nla index and nla phab,m,mean_depth,1.645
+146,nla07 index,m,max_depth,7.5
+146,nla17 index,m,max_depth,7.5
+147,nla index and nla phab,m,mean_depth,2.8333333333333335
+147,nla07 index,m,max_depth,9.3
+148,nla index and nla phab,m,mean_depth,6.1461538461538465
+148,nla07 index,m,max_depth,20.6
+149,nla index and nla phab,m,mean_depth,3.0710526315789473
+149,nla22 index,m,max_depth,14.7
+155,nla index and nla phab,m,mean_depth,2.9226666666666667
+155,nla17 index,m,max_depth,13.34
+157,nla index and nla phab,m,mean_depth,2.4
+157,nla17 index,m,max_depth,7.5
+159,nla index and nla phab,m,mean_depth,2.4555555555555557
+159,nla22 index,m,max_depth,10
+165,nla index and nla phab,m,mean_depth,1.7428571428571429
+165,nla17 index,m,max_depth,3.4
+166,nla index and nla phab,m,mean_depth,1.07
+166,nla07 index,m,max_depth,3.1
+166,nla17 index,m,max_depth,3.1
+167,nla index and nla phab,m,mean_depth,1.4230769230769231
+167,nla 17 phab,m,max_depth,3
+167,nla07 index,m,max_depth,3
+184,nla index and nla phab,m,mean_depth,2.54
+184,nla07 index,m,max_depth,4.7
+186,nla index and nla phab,m,mean_depth,4.62
+186,nla07 index,m,max_depth,7
+188,nla index and nla phab,m,mean_depth,1.4222222222222223
+188,nla07 index,m,max_depth,7.1
+190,nla index and nla phab,m,mean_depth,5.2
+190,nla17 index,m,max_depth,14.9
+191,nla index and nla phab,m,mean_depth,2.41
+191,nla12 index,m,max_depth,6.6
+195,nla index and nla phab,m,mean_depth,2.87
+195,nla17 index,m,max_depth,6.5
+204,nla index and nla phab,m,mean_depth,3.125
+204,nla17 index,m,max_depth,9.7
+205,nla index and nla phab,m,mean_depth,2.825
+205,nla17 index,m,max_depth,9
+206,nla index and nla phab,m,mean_depth,4.608333333333333
+206,nla12 index,m,max_depth,15
+207,nla index and nla phab,m,mean_depth,5.601428571428571
+207,nla12 index,m,max_depth,15
+208,nla index and nla phab,m,mean_depth,3.2027272727272726
+208,nla07 index,m,max_depth,9.5
+209,nla index and nla phab,m,mean_depth,1.9785714285714286
+209,nla22 index,m,max_depth,6.5
+210,nla index and nla phab,m,mean_depth,1.1666666666666667
+210,nla17 index,m,max_depth,1.6
+211,nla index and nla phab,m,mean_depth,1.0366666666666666
+211,nla22 index,m,max_depth,2.1
+214,nla index and nla phab,m,mean_depth,1.2307692307692308
+214,nla17 index,m,max_depth,3.4
+230,nla index and nla phab,m,mean_depth,2.9
+230,nla12 index,m,max_depth,7
+231,nla index and nla phab,m,mean_depth,1.45
+231,nla17 index,m,max_depth,6
+232,nla index and nla phab,m,mean_depth,2.9285714285714284
+232,nla22 index,m,max_depth,4.5
+233,nla index and nla phab,m,mean_depth,2.4794117647058824
+233,nla17 index,m,max_depth,11
+234,nla index and nla phab,m,mean_depth,3.533333333333333
+234,nla17 index,m,max_depth,13.1
+234,nla12 index,m,max_depth,13.1
+235,nla index and nla phab,m,mean_depth,2.4210526315789473
+235,nla17 index,m,max_depth,9.4
+236,nla index and nla phab,m,mean_depth,2.3666666666666667
+236,nla17 index,m,max_depth,4.6
+237,nla index and nla phab,m,mean_depth,2.657142857142857
+237,nla12 index,m,max_depth,5.7
+238,nla index and nla phab,m,mean_depth,4.154545454545454
+238,nla17 index,m,max_depth,11.7
+239,nla index and nla phab,m,mean_depth,12.2
+239,nla12 index,m,max_depth,12.8
+240,nla index and nla phab,m,mean_depth,3.604761904761905
+240,nla 12 phab,m,max_depth,9
+247,nla index and nla phab,m,mean_depth,45
+247,nla07 index,m,max_depth,45
+249,nla index and nla phab,m,mean_depth,17.22
+249,nla17 index,m,max_depth,33
+250,nla index and nla phab,m,mean_depth,6.566666666666666
+250,nla17 index,m,max_depth,16
+253,nla index and nla phab,m,mean_depth,2.7657894736842104
+253,nla12 index,m,max_depth,6.5
+263,nla index and nla phab,m,mean_depth,4.55
+263,nla12 index,m,max_depth,4.65
+264,nla index and nla phab,m,mean_depth,1.075
+264,nla22 index,m,max_depth,1.6
+265,nla index and nla phab,m,mean_depth,2.283333333333333
+265,nla 17 phab,m,max_depth,4
+275,nla index and nla phab,m,mean_depth,1.9727272727272727
+275,nla 12 phab,m,max_depth,4.8
+276,nla index and nla phab,m,mean_depth,1.8533333333333333
+276,nla17 index,m,max_depth,4.5
+281,nla index and nla phab,m,mean_depth,2.17
+281,nla22 index,m,max_depth,7.6
+287,nla index and nla phab,m,mean_depth,11.950000000000001
+287,nla17 index,m,max_depth,36.2
+288,nla index and nla phab,m,mean_depth,9.414285714285715
+288,nla 17 phab,m,max_depth,25.2
+291,nla index and nla phab,m,mean_depth,14.14
+291,nla12 index,m,max_depth,29
+296,nla index and nla phab,m,mean_depth,4.918181818181818
+296,nla17 index,m,max_depth,16
+297,nla index and nla phab,m,mean_depth,10.27142857142857
+297,nla12 index,m,max_depth,33
+298,nla index and nla phab,m,mean_depth,3.841666666666667
+298,nla17 index,m,max_depth,16
+302,nla index and nla phab,m,mean_depth,5.7727272727272725
+302,nla 12 phab,m,max_depth,10
+308,nla index and nla phab,m,mean_depth,7.416666666666667
+308,nla17 index,m,max_depth,19.3
+316,nla index and nla phab,m,mean_depth,2.242857142857143
+316,nla 22 phab,m,max_depth,3.8
+317,nla index and nla phab,m,mean_depth,1.8181818181818181
+317,nla12 index,m,max_depth,4.3
+326,nla index and nla phab,m,mean_depth,1.6666666666666667
+326,nla17 index,m,max_depth,2.7
+327,nla index and nla phab,m,mean_depth,1.635
+327,nla07 index,m,max_depth,2.4
+328,nla index and nla phab,m,mean_depth,1.3692307692307693
+328,nla17 index,m,max_depth,4.8
+331,nla index and nla phab,m,mean_depth,1.0583333333333333
+331,nla12 index,m,max_depth,3.6
+999,nla index and nla phab,m,mean_depth,9.6375
+999,nla12 index,m,max_depth,58.5
+1004,nla index and nla phab,m,mean_depth,5.85
+1004,nla07 index,m,max_depth,6.2
+1013,nla index and nla phab,m,mean_depth,1.8625
+1013,nla07 index,m,max_depth,5.4
+1016,nla index and nla phab,m,mean_depth,4
+1016,nla07 index,m,max_depth,4
+1018,nla index and nla phab,m,mean_depth,6.4
+1018,nla07 index,m,max_depth,6.4
+1019,nla index and nla phab,m,mean_depth,0.9538461538461539
+1019,nla 12 phab,m,max_depth,1.3
+1023,nla index and nla phab,m,mean_depth,7
+1023,nla07 index,m,max_depth,7
+1024,nla index and nla phab,m,mean_depth,12.8
+1024,nla07 index,m,max_depth,12.8
+1033,nla index and nla phab,m,mean_depth,7
+1033,nla07 index,m,max_depth,7
